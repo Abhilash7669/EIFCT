@@ -1,0 +1,85 @@
+.purpose {
+    padding: 2rem;
+    font-size: 1rem;
+}
+.purpose_Container {
+    padding: 2em 4em;
+}
+.purpose_Content {
+    /* border: 1px red solid; */
+
+}
+.purpose_Header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.purpose_Title {
+    padding: 1em 0;
+}
+.purpose_Title > p {
+    font-size: 3em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+.purpose_Description > p {
+    font-size: 1.1em;
+}
+.purpose_Cards {
+    margin: 1em 0;
+}
+.purpose_Cards_Wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.purpose_Card_Item {
+    height: 29.6em;
+    width: 24.43em;
+    margin: 2em 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #F5F5F5;
+    border-radius: 0.4em;
+}
+.purpose_Card_img {
+    height: 40%;
+    width: 100%;
+}
+.purpose_Card_img > img {
+    height: 100%;
+    width: 100%;
+
+    border-top-right-radius: 0.4em;
+    border-top-left-radius: 0.4em;
+    object-fit: cover;
+}
+.purpose_Card_Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 1em;
+}
+.purpose_Card_title {
+    margin: 1em 0 0 0;
+}
+.purpose_Card_title > p {
+    font-size: 1.3em;
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+.purpose_Card_description {
+    padding: 1em 0;
+}
+.purpose_Card_description > p{
+    text-align: center;
+    font-size: 1em;
+    line-height: 135%;
+}

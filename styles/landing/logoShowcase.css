@@ -1,0 +1,33 @@
+.logo_Showcase {
+    padding: 2rem;
+    font-size: 1rem;
+}
+.logo_Showcase_Container {
+    padding: 6em 4em;
+}
+.logo_Showcase_Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_Showcase_Image {
+    width: 18.5em;
+    height: 19.18em;
+}
+.logo_Showcase_Image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.logo_Showcase_Description {
+    width: 70%;
+
+    margin: 3em 0 0 0;
+}
+.logo_Showcase_Description > p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 150%;
+
+    color: #0E0E0E;
+}
