@@ -1,15 +1,25 @@
 .nav {
-
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    background: #FFFF;
 }
 .nav_Container {
+    padding: 1em 12em;
 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo_Container {
-
+    height: 6em;
+    width: 6em;
 }
 .nav_List {
-
+    display: flex;
+    align-items: center;
 }
 .navItem {
-    
+    margin-inline: 2em;
+
+    cursor: pointer;
 }
