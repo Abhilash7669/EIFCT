@@ -1,0 +1,49 @@
+
+.statsB {
+    background: #222222;
+    padding: 2rem 4rem; 
+    font-size: 1rem;
+}
+.statsBContainer {
+    padding: 4em;
+}
+.about_StatsItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about_StatsItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_StatsIcon {
+    height: 5.9em;
+    width: 5.9em;
+}
+.about_StatsIcon > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}
+.about_StatsInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about_Stats_Stat {
+    padding: 1em 0 0.6em;
+}
+.about_Stats_Stat > p {
+    font-size: 2em;
+    font-weight: 600;
+
+    color: #f5f5f5;
+}
+.about_Stats_Descript > p {
+    font-size: 1.4em;
+    text-transform: uppercase;
+}

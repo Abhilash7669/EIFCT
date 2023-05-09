@@ -4,15 +4,15 @@
     background: #FFFF;
 }
 .nav_Container {
-    padding: 1em 12em;
+    padding: 0.2em 12em;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .logo_Container {
-    height: 6em;
-    width: 6em;
+    height: 4em;
+    width: 4em;
 }
 .nav_List {
     display: flex;

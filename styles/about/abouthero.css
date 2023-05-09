@@ -1,0 +1,46 @@
+.aboutHero {
+    height: 100vh;
+    padding: 2rem;
+    font-size: 1rem;
+    position: relative;
+
+    background: url('/About/aboutHero.png') no-repeat center center/cover;
+    z-index: -10;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aboutHero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 40%);
+    z-index: -10;
+}
+.about_Container {
+    padding: 2em 4em;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_Title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1em 0;
+}
+.about_Title > p {
+    font-size: 3em;
+    color: #ffff;
+}
+.about_Descript > p {
+    font-size: 1.3em;
+    color: #fff;
+}
