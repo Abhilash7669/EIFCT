@@ -70,7 +70,7 @@ export default function OurWork() {
                             })
                         }
                         <div className="ourwork_Link">
-                            <Link href={'/about-us'}><div className="ourwork_Link_Text blue"><p>See more</p></div></Link>
+                            <Link href={'/endeavours'}><div className="ourwork_Link_Text blue"><p>See more</p></div></Link>
                         </div>
                     </div>
                 </div>

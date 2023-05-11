@@ -11,7 +11,9 @@ import '../styles/about/missionvision.css'
 import '../styles/about/statsB.css'
 import '../styles/about/leadership.css'
 
+
 import '../styles/endeavours/ehero.css'
+import '../styles/awards/awards.css'
 
 
 import '../styles/header.css'
