@@ -57,7 +57,16 @@ export default function OurWork() {
                                                 <p>{ data.title } <span className="blue">{ data.colorTitle }</span></p>
                                             </div>
                                         </div>
-                                        <div className="ourwork_Item_Bottom" style={{display:'flex', flexDirection: `${ i % 2 == 0 ? 'row' : 'row-reverse'}`}}>
+                                        <div className="ourwork_Item_Bottom" style={{flexDirection: `${ i % 2 == 0 ? 'row' : 'row-reverse'}`}}>
+                                            <div className="ourwork_Item_img">
+                                                <img src={ data.src } alt='img' />
+                                            </div>
+                                            <div className="ourwork_Item_description">
+                                                <p>{ data.descriptionA } <br /> <br /> { data.descriptionB }</p>
+                                            </div>   
+                                        </div>
+                                        {/* mob */}
+                                        <div className="ourwork_Item_Bottom Mob" style={{background: `${i % 2 == 0 ? 'rgb(117, 155, 69)':'#f5f5f5'}`, color:`${i % 2 == 0 ? '#F5F5F5':''}`}}>
                                             <div className="ourwork_Item_img">
                                                 <img src={ data.src } alt='img' />
                                             </div>

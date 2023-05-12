@@ -40,10 +40,10 @@
         width: 100%;
     }
     .logo_Showcase_Container {
-        padding: 12em 2em;
+        padding: 12em 2em 4em 2em;
     }
     .logo_Showcase_Description > p {
-        font-size: 1.45em;
+        font-size: 1.6em; /* was 1.45em */
         line-height: 160%;
     }
 }
