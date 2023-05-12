@@ -23,3 +23,22 @@
 
     cursor: pointer;
 }
+
+@media(max-width: 780px) {
+    .nav {
+        padding: 2em;
+    }
+    .logo_Container {
+        height: 12em;
+        width: 12em;
+    }
+    .nav_Container {
+        padding: 0.2em 6em;
+    }
+    .navItem {
+        margin-inline: 1.6em;
+    }
+    .navItem > p {
+        font-size: 2.4em;
+    }
+}

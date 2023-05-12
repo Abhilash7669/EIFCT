@@ -3,7 +3,7 @@
 
 export default function Header(){
 
-    let navItem = [{item: 'About us', link:'/about-us'},{item: 'Endeavours', link:'/endeavours'},{item: 'Awards and Gallery', link:'/awards&gallery'}];
+    let navItem = [{item: 'Home', link: '/'},{item: 'About us', link:'/about-us'},{item: 'Endeavours', link:'/endeavours'},{item: 'Awards and Gallery', link:'/awards&gallery'}];
 
     return(
         <nav className="nav">

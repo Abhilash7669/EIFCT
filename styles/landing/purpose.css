@@ -34,6 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 .purpose_Card_Item {
     height: 29.6em;
@@ -82,4 +83,29 @@
     text-align: center;
     font-size: 1em;
     line-height: 135%;
+}
+
+@media(max-width: 780px) {
+    .purpose {
+        font-size: 2rem;
+    }
+    .purpose_Title {
+        padding: 2em 0;
+    }
+    .purpose_Description {
+        margin: 0 0 2em 0;
+    }
+    .purpose_Description > p {
+        font-size: 1.45em;
+    }
+    .purpose_Card_description > p {
+        font-size: 1.45em;
+    }
+    .purpose_Cards_Wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+    .purpose_Card_Item {
+        /* height: 40em; */
+    }
 }

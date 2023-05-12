@@ -37,3 +37,19 @@
     line-height: 130%;
     color: #FFF;
 }
+
+@media(max-width: 780px) {
+    .showcaseA {
+        font-size: 2rem;
+
+        background: url('/Landing/Purpose/purposeShowcase.png') no-repeat center center/cover;
+        background-attachment: fixed;
+    }
+    .showcaseA_Content {
+        width: 80%;
+    }
+    .showcaseA_Content > p {
+        font-size: 1.8em;
+        line-height: 150%;
+    }
+}

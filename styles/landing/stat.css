@@ -59,3 +59,18 @@
     font-size: 1.7em;
     color: #FFECD2;
 }
+
+@media(max-width: 780px) {
+    .stats {
+        font-size: 2rem;
+    }
+    .stats_Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .stat_Item {
+        margin: 0 0 4em 0;
+    }
+}

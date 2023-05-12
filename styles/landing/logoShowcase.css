@@ -31,3 +31,19 @@
 
     color: #0E0E0E;
 }
+
+@media(max-width: 780px) {
+    .logo_Showcase {
+        font-size: 2rem;
+    }
+    .logo_Showcase_Description {
+        width: 100%;
+    }
+    .logo_Showcase_Container {
+        padding: 12em 2em;
+    }
+    .logo_Showcase_Description > p {
+        font-size: 1.45em;
+        line-height: 160%;
+    }
+}

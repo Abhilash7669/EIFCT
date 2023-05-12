@@ -88,3 +88,17 @@
     font-size: 1.2em;
     line-height: 150%;
 }
+
+@media(max-width: 780px) {
+    .leadership {
+        font-size: 1.4rem;
+
+        padding: 2em 0;
+    }
+    .leadership__container {
+        padding: 2em;
+    }
+    .aboutLeader > p {
+        font-size: 1.4em;
+    }
+}

@@ -44,3 +44,19 @@
     font-size: 1.3em;
     color: #fff;
 }
+
+@media(max-width: 780px) {
+    .aboutHero {
+        font-size: 2rem;
+
+        background-attachment: fixed;
+    }
+    .about_Title > p {
+        font-size: 6em;
+        font-weight: 600;
+    }
+    .about_Descript > p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}

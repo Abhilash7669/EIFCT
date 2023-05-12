@@ -95,3 +95,55 @@
     height: 100%;
     object-fit: contain;
 }
+
+
+@media(max-width: 780px) {
+    .mvContainer {
+        padding: 20em 4em;
+    }
+    .missionTitle > p {    
+        font-size: 6em;
+    }
+    .visionTitle > p {
+        font-size: 6em;
+    }
+    .visionDescription > p {
+        font-size: 2em;
+    }
+    .missionDescription > p {
+        font-size: 2em;
+    }
+    .missionImg {
+        width: 48em;
+        height: 80.25em;
+        position: absolute;
+        top: 8%;
+        left: -78%;
+        z-index: 100;
+    }
+    .missionImg > img {
+        object-fit: cover;
+    }
+    .visionImg {
+        width: 48em;
+        height: 80.25em;
+        position: absolute;
+        top: -20%;
+        right: -80%;
+    }
+    .visionImg > img {
+        object-fit: cover;
+    }
+    .mission {
+        width: 50.8em;
+        height: auto;
+    
+        padding: 6em 6em 18em 12em;
+    }
+    .vision {    
+        width: 50.8em;
+        height: auto;
+    
+        padding: 20em 8em 16em 12em;
+    }
+}

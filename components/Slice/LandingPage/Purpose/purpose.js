@@ -29,12 +29,12 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/medicalInstitutions.png',
             title: 'Medical Institutions',
-            description: 'We are committed to improving medical facilities across India. We build hospitals, medical colleges, and research centers in various fields, including Ayurveda and Homeopathy. Additionally, we provide medical relief and support to marginalized communities.'
+            description: 'We build hospitals, medical colleges, and research centers in various fields, including Ayurveda and Homeopathy.'
         },
         {
             src: '/Landing/Purpose/education.png',
             title: 'Education',
-            description: 'We promote education by providing scholarships, grants, and free educational resources to deserving children. Additionally, we establish free reading rooms, libraries, and learning centers to foster a culture of learning and knowledge dissemination.'
+            description: 'We promote education by providing scholarships, grants, and free educational resources to deserving children.'
         }
     ]
 

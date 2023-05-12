@@ -52,7 +52,7 @@ export default function OurWork() {
                             ourWorkData.map((data, i) => {
                                 return(
                                     <div key={i} className="ourwork_Item">
-                                        <div style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
+                                        <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
                                             <div className="ourwork_Item_Title">
                                                 <p>{ data.title } <span className="blue">{ data.colorTitle }</span></p>
                                             </div>
