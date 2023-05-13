@@ -16,10 +16,11 @@ export default function Header(){
                 </div>
                 <div className="nav_List">
                     {
-                        navItem.map((item, i) => {
+                        navItem.map((data, i) => {
+
                             return(
-                                <div onClick={() => window.location.href=item.link} className="navItem" key={i}>
-                                    <p>{item.item}</p>
+                                <div onClick={() => window.location.href=data.link} className="navItem" key={i}>
+                                    <p>{data.item}</p>
                                 </div>
                             )
                         })

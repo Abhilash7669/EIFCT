@@ -52,16 +52,6 @@ export default function Endeavours() {
 
         {/* endeavour stats */}
         <section>
-            <div style={{backgroundColor:'#222222', padding:'2em 0', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                <div className="pHouseTitle">
-                    <p style={{color:'#FFF'}}>A Power House of solutions</p>
-                </div>
-                <div className="pHouseDescript">
-                    <p style={{color:'#FFFF'}}>
-                        {phouseDescript}
-                    </p>
-                </div>
-            </div>
         <div className="statsB">
                 <div className="statsBContainer">
                     <div className="about_StatsItems">
@@ -95,86 +85,108 @@ export default function Endeavours() {
         {/* ---- */}
         {/* solutions section */}
         <section className="ourSol" style={{padding:'2em 0'}}>
-            <div className="ourSol_Container">
-                        {/* contentA */}
-                <div className="ourSol_Content" style={{display:'flex'}}>
-                    <div className="ourSol_TextContainer" style={{width:'50%', padding:'0 2em'}}>
-                        <div className="ourSol_Text" style={{width:'66%', padding:"2em 0"}}>
-                            <p style={{fontSize:'1.6em', fontWeight:'600'}}>
-                            <span className="blue">Devloping</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
+                <div className="ourSol_Container">
+                            {/* contentA */}
+                    <div className="pHouseContainer">
+                        <div className="pHouseTitle">
+                            <p style={{color:'#000'}}>A Power House of Solutions</p>
+                        </div>
+                        <div className="pHouseDescript">
+                            <p style={{color:'#000'}}>
+                                {phouseDescript}
                             </p>
                         </div>
-                        <div style={{width:'80%'}}>
-                            <p style={{fontSize:'1.2em', lineHeight:'150%'}}>{textA}</p>
-                        </div>
                     </div>
-                    <div className="ourSol_img" style={{width:'50%', height:'32.06em'}}>
-                        <img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/A.png" alt="img"/>
-                    </div>
-                </div>
-                        {/* Content B */}
-                    <div className="ourSol_Content" style={{display:'flex', flexDirection:'row-reverse', justifyContent:'space-between'}}>
-                    <div className="ourSol_TextContainer" style={{width:'40%', margin:'2em 0'}}>
-                        <div className="ourSol_Text" style={{width:'62%', padding:"2em 0"}}>
-                           <p style={{fontSize:'1.6em', fontWeight:'600'}}>
-                                <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
+                    <div className="ourSol_Content">
+                        <div className="ourSol_TextContainer">
+                            <div className="ourSol_Text">
+                                <p>
+                                <span className="blue">Devloping</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
                                 </p>
+                            </div>
+                                <div className="ourSol_img mob">
+                                    <img src="/endeavours/A.png" alt="img"/>
+                                </div>
+                            <div className="ourSol_Descript">
+                                <p>{textA}</p>
+                            </div>
                         </div>
-                        <div style={{width:'80%'}}>
-                            <p style={{fontSize:'1.2em', lineHeight:'150%'}}>{textB}</p>
+                        <div className="ourSol_img">
+                            <img src="/endeavours/A.png" alt="img"/>
                         </div>
                     </div>
-                    <div className="ourSol_img" style={{width:'50%', height:'32.06em'}}>
-                        <img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/A.png" alt="img"/>
+                        {/* Content B */}
+                    <div className="ourSol_Content reverse" >
+                        <div className="ourSol_TextContainer setB">
+                            <div className="ourSol_Text setBtext ">
+                            <p>
+                                    <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
+                                    </p>
+                            </div>
+                            <div className="ourSol_img mob">
+                                <img src="/endeavours/A.png" alt="img"/>
+                            </div>
+                            <div className="ourSol_Descript">
+                                <p>{textB}</p>
+                            </div>
+                        </div>
+                        <div className="ourSol_img">
+                            <img src="/endeavours/A.png" alt="img"/>
+                        </div>
                     </div>
-                </div>
                     {/* contentC */}
-                    <div className="ourSol_ContentAbsolute" style={{position:'relative', height:'80vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                        <div style={{position:'absolute', top:'0', left:'0', height:'100%', width:'100%', zIndex:'-100'}}><img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/C.png" alt="img" /></div>
-                        <div className="" style={{zIndex:'100000', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                            <div style={{padding:'0'}}><p style={{fontSize:'1.6em', color:'#FFF', fontWeight:'600'}}>Yoga, Meditation and Nature Welfare</p></div>
-                            <div style={{width:'70%', padding:'2em 0'}}><p style={{fontSize:'1.2em', lineHeight:'150%', textAlign:'center', color:'#FFF'}}>{textC}</p></div>
+                    <div className="ourSol_ContentAbsolute">
+                        <div className="ourSol_AbsoluteImg"><img src="/endeavours/C.png" alt="img" /></div>
+                        <div className="ourSol_AbsoluteContent">
+                            <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
+                            <div className="ourSol_AbsoluteDescript"><p  >{textC}</p></div>
                         </div>
                     </div>
                     {/* secondSet */}
-                            {/* contentA */}
-                <div className="ourSol_Content" style={{display:'flex'}}>
-                    <div className="ourSol_TextContainer" style={{width:'50%', padding:'0 2em', margin:'4em 0'}}>
-                        <div className="ourSol_Text" style={{width:'66%', padding:"2em 0"}}>
-                            <p style={{fontSize:'1.6em', fontWeight:'600'}}>
-                            <span className="blue">Devloping</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
-                            </p>
-                        </div>
-                        <div style={{width:'80%'}}>
-                            <p style={{fontSize:'1.2em', lineHeight:'150%'}}>{textA}</p>
-                        </div>
-                    </div>
-                    <div className="ourSol_img" style={{width:'50%', height:'32.06em'}}>
-                        <img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/D.png" alt="img"/>
-                    </div>
-                </div>
-                        {/* Content B */}
-                    <div className="ourSol_Content" style={{display:'flex', flexDirection:'row-reverse', justifyContent:'space-between'}}>
-                    <div className="ourSol_TextContainer" style={{width:'40%', margin:'2em 0'}}>
-                        <div className="ourSol_Text" style={{width:'62%', padding:"2em 0"}}>
-                           <p style={{fontSize:'1.6em', fontWeight:'600'}}>
-                                <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
+                    {/* contentA */}
+                    <div className="ourSol_Content">
+                        <div className="ourSol_TextContainer">
+                            <div className="ourSol_Text">
+                                <p>
+                                <span className="blue">Developing</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
                                 </p>
+                            </div>
+                            <div className="ourSol_img mob">
+                                <img src="/endeavours/D.png" alt="img"/>
+                            </div>
+                            <div className="ourSol_Descript">
+                                <p>{textA}</p>
+                            </div>
                         </div>
-                        <div style={{width:'80%'}}>
-                            <p style={{fontSize:'1.2em', lineHeight:'150%'}}>{textB}</p>
+                        <div className="ourSol_img">
+                            <img src="/endeavours/D.png" alt="img"/>
                         </div>
                     </div>
-                    <div className="ourSol_img" style={{width:'50%', height:'32.06em'}}>
-                        <img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/E.png" alt="img"/>
+                        {/* Content B */}
+                    <div className="ourSol_Content reverse">
+                        <div className="ourSol_TextContainer setB">
+                            <div className="ourSol_Text setBtext">
+                            <p>
+                            <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
+                            </p>
+                            </div>
+                            <div className="ourSol_img mob">
+                                <img src="/endeavours/E.png" alt="img"/>
+                            </div>
+                            <div className="ourSol_Descript">
+                                <p>{textB}</p>
+                            </div>
+                        </div>
+                        <div className="ourSol_img">
+                            <img src="/endeavours/E.png" alt="img"/>
+                        </div>
                     </div>
-                </div>
                     {/* contentC */}
-                    <div className="ourSol_ContentAbsolute" style={{position:'relative', height:'80vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
-                        <div style={{position:'absolute', top:'0', left:'0', height:'100%', width:'100%', zIndex:'-100'}}><img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/endeavours/F.png" alt="img" /></div>
-                        <div className="" style={{zIndex:'100000', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                            <div style={{padding:'0'}}><p style={{fontSize:'1.6em', color:'#FFF', fontWeight:'600'}}>Yoga, Meditation and Nature Welfare</p></div>
-                            <div style={{width:'70%', padding:'2em 0'}}><p style={{fontSize:'1.2em', lineHeight:'150%', textAlign:'center', color:'#FFF'}}>{textC}</p></div>
+                    <div className="ourSol_ContentAbsolute">
+                        <div className="ourSol_AbsoluteImg"><img src="/endeavours/F.png" alt="img" /></div>
+                        <div className="ourSol_AbsoluteContent">
+                            <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
+                            <div className="ourSol_AbsoluteDescript"><p>{textC}</p></div>
                         </div>
                     </div>
             </div>

@@ -1,6 +1,7 @@
 .purpose {
     padding: 2rem;
     font-size: 1rem;
+    background: #224435;
 }
 .purpose_Container {
     padding: 2em 4em;
@@ -21,11 +22,13 @@
 .purpose_Title > p {
     font-size: 3em;
     font-weight: 600;
+    color: #FFF;
 
     text-transform: uppercase;
 }
 .purpose_Description > p {
-    font-size: 1.1em;
+    font-size: 1.3em;
+    color: #F5F5F5;
 }
 .purpose_Cards {
     margin: 1em 0;
@@ -37,7 +40,7 @@
 
 }
 .purpose_Card_Item {
-    height: 29.6em;
+    height: 24.6em;
     width: 24.43em;
     margin: 2em 0;
 
@@ -45,7 +48,7 @@
     flex-direction: column;
     align-items: center;
 
-    background: #F5F5F5;
+    background: #dcdbdb;
     border-radius: 0.4em;
 }
 .purpose_Card_img {
@@ -65,7 +68,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 0 1em;
+    padding: 1em 1em;
 }
 .purpose_Card_title {
     margin: 1em 0 0 0;
@@ -112,7 +115,8 @@
         padding: 2em 2em 4em 2em;
 
         /* background: rgb(117, 155, 69); */
-        background: rgb(106, 140, 64);
+        /* background: rgb(106, 140, 64); */
+        background: #224435;
 
     }
     .purpose_Card_title > p {

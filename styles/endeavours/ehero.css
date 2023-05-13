@@ -9,6 +9,7 @@
     justify-content: center;
 
     background: url('/endeavours/EHero.png') no-repeat center center/cover;
+    background-attachment: fixed;
 }
 .endeavorus::after {
     content: '';
@@ -47,7 +48,113 @@
     line-height: 130%;
 }
 
-/* next section */
+/* powerhouse/solutions section */
+.ourSol {
+    font-size: 1rem;
+    padding: 2em 0;
+}
+.ourSol_Container {
+
+}
+.ourSol_Content {
+    display: flex;
+}
+.ourSol_TextContainer {
+    width: 50%;
+    padding: 0 2em;
+}
+.ourSol_Text {
+    width: 70%;
+    padding: 5em 0 1em 0;
+}
+.ourSol_Text > p {
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 140%;
+
+}
+.ourSol_Descript {
+    width: 90%;
+    padding: 0 0 2.4em 0;
+}
+.ourSol_Descript > p {
+    font-size: 1.2em;
+    line-height: 150%;
+}
+.ourSol_img {
+    width: 50%;
+    height: 32.06em;
+}
+.ourSol_img > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+/* setB reverse */
+.ourSol_Content.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.ourSol_TextContainer.setB {
+    width: 45%;
+    margin: 2em 0;
+}
+.ourSol_Text.setBtext {
+    width: 62%;
+    padding: 5em 0 1em 0;
+}
+/* contentC[wide] */
+.ourSol_ContentAbsolute {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ourSol_AbsoluteImg {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: -100;
+}
+.ourSol_AbsoluteImg > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ourSol_AbsoluteContent {
+    z-index: 100000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ourSol_AbsoluteTitle > p {
+    font-size: 1.6em;
+    color: #FFFF;
+    font-weight: 600;
+}
+.ourSol_AbsoluteDescript {
+    width: 70%;
+    padding: 2em 0;
+}
+.ourSol_AbsoluteDescript > p {
+    font-size: 1.2em;
+    line-height: 150%;
+    text-align: center;
+    color: #FFF;
+}
+/* powerhouse */
+.pHouseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em 2em 8em 2em;
+}
 .pHouseTitle {
     padding: 2em 0;
 }
@@ -64,4 +171,97 @@
     line-height: 150%;
 }
 
-/* solutions section */
+.ourSol_img.mob {
+    display: none;
+}
+
+
+
+
+
+
+
+/* endeavours from Hero */
+@media(max-width: 780px) {
+    .endeavorus {
+        font-size: 2rem;
+    }
+    .endeavours_Title > p {
+        font-size: 6em;
+        font-weight: 600;
+    }
+    .endeavours_Descript {
+        width: 80%;
+    }
+    .endeavours_Descript > p {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    /* powerhouse/ourSol */
+    .ourSol {
+        font-size: 2rem;
+    }
+    .pHouseTitle > p {
+        font-size: 4.4em;
+        text-align: center;
+    }
+    .pHouseDescript {
+        width: 100%;
+    }
+    .pHouseDescript > p {
+        font-size: 1.6em;
+    }
+    .pHouseContainer {
+        padding: 4em 2em 2em 2em;
+    }
+    .ourSol_Text > p {
+        font-size: 2.2em;
+    }
+    .ourSol_Descript > p {
+        font-size: 1.6em;
+    }
+    .ourSol_Content {
+        flex-direction: column;
+    }
+    .ourSol_Content.reverse {
+        flex-direction: column;
+    }
+    .ourSol_TextContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourSol_TextContainer.setB {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ourSol_img {
+        display: none;
+    }
+    .ourSol_img.mob {
+        display: block;
+        width: 100%;
+    }
+    .ourSol_Text {
+        width: 100%;
+        padding: 4em 0 2em 0;
+    }
+    .ourSol_Text > p {
+        text-align: center;
+        font-size: 2.5em;
+        line-height: 140%;
+    }
+
+    .ourSol_AbsoluteTitle > p {
+        font-size: 2.6em;
+    }
+    .ourSol_AbsoluteDescript {
+        width: 90%;
+    }
+    .ourSol_AbsoluteDescript > p {
+        font-size: 1.6em;
+    }
+}

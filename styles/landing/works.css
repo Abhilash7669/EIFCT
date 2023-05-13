@@ -1,7 +1,10 @@
 .ourwork {
     padding: 2rem;
-
+    background: #224435;
+    /* background: #65794D; */
     font-size: 1rem;
+
+    color: #FFFF;
 }
 .ourwork_Container {
     padding: 2em 4em;
@@ -159,7 +162,11 @@
         transform: translate(-50%, 0);
         width: 70%;
         height: 1px;
-        background-color: #000;
+        background-color: #FFFF;
+    }
+    .ourwork_Link_Text {
+        color: #88d4ae;
+        font-size: 1.5em;
     }
 
 }

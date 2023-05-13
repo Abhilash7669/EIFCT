@@ -3,6 +3,8 @@
     position: relative;
 
     background: url('/Landing/Purpose/purposeShowcase.png') no-repeat center center/cover;
+    background-attachment: fixed;
+
     z-index: -1;
     display: flex;
     align-items: center;

@@ -98,38 +98,41 @@
 
 
 @media(max-width: 780px) {
+    .mv {
+        padding: 2em 0;
+    }
     .mvContainer {
-        padding: 20em 4em;
+        padding: 20em 0em;
     }
     .missionTitle > p {    
-        font-size: 6em;
+        font-size: 8em;
     }
     .visionTitle > p {
-        font-size: 6em;
+        font-size: 8em;
     }
     .visionDescription > p {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     .missionDescription > p {
-        font-size: 2em;
+        font-size: 2.4em;
     }
     .missionImg {
-        width: 48em;
+        width: 52em;
         height: 80.25em;
         position: absolute;
-        top: 8%;
-        left: -78%;
+        top: 15%;
+        left: -102%;
         z-index: 100;
     }
     .missionImg > img {
         object-fit: cover;
     }
     .visionImg {
-        width: 48em;
+        width: 52em;
         height: 80.25em;
         position: absolute;
-        top: -20%;
-        right: -80%;
+        top: 0%;
+        right: -100%;
     }
     .visionImg > img {
         object-fit: cover;
@@ -138,12 +141,12 @@
         width: 50.8em;
         height: auto;
     
-        padding: 6em 6em 18em 12em;
+        padding: 6em 6em 18em 6em;
     }
     .vision {    
         width: 50.8em;
         height: auto;
     
-        padding: 20em 8em 16em 12em;
+        padding: 12em 8em 16em 6em;
     }
 }

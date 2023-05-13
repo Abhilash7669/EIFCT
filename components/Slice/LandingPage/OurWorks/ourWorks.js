@@ -54,7 +54,7 @@ export default function OurWork() {
                                     <div key={i} className="ourwork_Item">
                                         <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
                                             <div className="ourwork_Item_Title">
-                                                <p>{ data.title } <span className="blue">{ data.colorTitle }</span></p>
+                                                <p>{ data.title } <span>{ data.colorTitle }</span></p>
                                             </div>
                                         </div>
                                         <div className="ourwork_Item_Bottom" style={{flexDirection: `${ i % 2 == 0 ? 'row' : 'row-reverse'}`}}>
@@ -66,7 +66,9 @@ export default function OurWork() {
                                             </div>   
                                         </div>
                                         {/* mob */}
-                                        <div className="ourwork_Item_Bottom Mob" style={{background: `${i % 2 == 0 ? 'rgb(117, 155, 69)':'#f5f5f5'}`, color:`${i % 2 == 0 ? '#F5F5F5':''}`}}>
+                                        <div className="ourwork_Item_Bottom Mob" style={{
+                                            // background: `${i % 2 == 0 ? 'rgb(117, 155, 69)':'#f5f5f5'}`
+                                        color:`${i % 2 == 0 ? '#F5F5F5':''}`}}>
                                             <div className="ourwork_Item_img">
                                                 <img src={ data.src } alt='img' />
                                             </div>
@@ -79,7 +81,7 @@ export default function OurWork() {
                             })
                         }
                         <div className="ourwork_Link">
-                            <Link href={'/endeavours'}><div className="ourwork_Link_Text blue"><p>See more</p></div></Link>
+                            <Link href={'/endeavours'}><div className="ourwork_Link_Text blue"><p>See more...</p></div></Link>
                         </div>
                     </div>
                 </div>

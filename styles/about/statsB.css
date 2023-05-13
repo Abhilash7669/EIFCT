@@ -55,11 +55,21 @@
     .statsB {
         font-size: 2rem;
     }
+    
     .statsBContainer {
-        padding: 14em 4em;
+        padding: 14em 2em;
     }
     .about_StatsItem {
         width: 50%;
         margin: 2em 0;
+    }
+    .about_Stats_Stat {
+        padding: 1em 0;
+    }
+    .about_Stats_Stat > p {
+        font-size: 2.2em;
+    }
+    .about_Stats_Descript > p {
+        font-size: 1.7em;
     }
 }

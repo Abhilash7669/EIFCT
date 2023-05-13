@@ -48,7 +48,7 @@ export default function Leadership() {
                                                 </div>
                                                 <div className="leaderPositionWrap">
                                                     <div className="leaderName"><p>{item.name}</p></div>
-                                                    <div className="leaderPos"><p>{item.position}</p></div>
+                                                    {/* <div className="leaderPos"><p>{item.position}</p></div> */}
                                                 </div>
                                             </div>
                                             <div className="leaderContentB">
