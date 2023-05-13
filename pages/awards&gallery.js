@@ -17,41 +17,37 @@ export default function AwardsGallery() {
 
     return(
         <>
-            <main className="" style={{position:'relative', height:'80vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
-            <div style={{position:'absolute', top:'0', left:'0', height:'100%', width:'100%', zIndex:'-100'}}><img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/About/aboutHero.png" alt="image" /></div>
-            <div style={{zIndex:'10000', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                <div style={{padding:'2em 0'}}>
-                    <p style={{fontSize:'3em', color:'#FFFF', fontWeight:'500'}}>Awards & Gallery</p>
+        <main className="awardsHero">
+            <div className="awards_TextContainer">
+                <div className="awards_Title">
+                    <p>Awards & Gallery</p>
                 </div>
                 <div style={{width:'80%'}}>
                     <p style={{fontSize:'1.3em', textAlign:'center', fontWeight:'400', lineHeight:'140%', color:'#FFFF'}}>{text}</p>
                 </div>
             </div>
         </main>
-        {/* video */}
-        <section style={{padding:'2em'}}>
-            <div style={{padding:'6em 4em', display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                <div style={{padding:'6em 0'}}><p style={{fontSize:'2.4em', textTransform:'uppercase', fontWeight:'600'}}>Agenda</p></div>
-                <div style={{height:'26em', width:'50em'}}>
-                    <video style={{height:'100%', width:'100%', borderRadius:'0.4em'}} src="/awards/videoO.mp4" type="video/mp4" playsInline="true" controls="controls"/>
-                </div>
-            </div>
-            <div className="honors" style={{padding:'2em 4em'}}>
-                <div className="honorsWrapper" style={{display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                    <div className="honorsWrapper Title" style={{padding:'0 0 4em 0'}}>
-                        <p style={{fontSize:'2.4em', fontWeight:'600', textTransform:'uppercase'}}>Honors & Achievements</p>
+
+        {/* honors */}
+        <section className="honors">
+            <div className="honorsContainer">
+                <div className="honorsWrapper">
+                    <div className="honorsWrapperTitle">
+                        <p>Honors & Achievements</p>
                     </div>
-                    <div className="honorsShowcase" style={{height:'50vh', width:'100%'}}>
+                    <div className="honorsShowcase">
                         <div style={{height:'100%', width: '100%'}}>
-                            <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/honorsShowcase.png" alt="image" />
+                            <img style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'.4em'}} src="/awards/honorsShowcase.png" alt="image" />
                         </div>
                     </div>
-                    <div className="honorsDescript" style={{margin:'4em 0', width:'80%'}}>
-                        <div><p style={{textAlign:'center', fontSize:'1.3em', lineHeight:'140%'}}>{showcaseDescript}</p></div>
+                    <div className="honorsDescript">
+                        <p>{showcaseDescript}</p>
                     </div>
                 </div>
             </div>
-
+        </section>
+        {/* charitable Builder */}
+        <section className="charitableMain" >
             <div className="charitable" style={{padding:'2em 0'}}>
                 <div className="charitableContainer" style={{padding:'2em 4em', display:'flex', alignItems:'center', justifyContent:'space-between'}}>
                     <div className="charitableA" style={{width: '48%', height:'80vh'}}>
@@ -67,6 +63,17 @@ export default function AwardsGallery() {
                     </div>
                 </div>
             </div>
+        </section>
+        {/* video */}
+        <section style={{padding:'2em'}}>
+
+            {/* <div style={{padding:'6em 4em', display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
+                <div style={{padding:'6em 0'}}><p style={{fontSize:'2.4em', textTransform:'uppercase', fontWeight:'600'}}>Agenda</p></div>
+                <div style={{height:'26em', width:'50em'}}>
+                    <video style={{height:'100%', width:'100%', borderRadius:'0.4em'}} src="/awards/videoO.mp4" type="video/mp4" playsInline="true" controls="controls"/>
+                </div>
+            </div> */}
+
 
             <div className="collageContainer" style={{padding:'12em 0'}}>
                 <div style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'0 0 2em 0'}}>

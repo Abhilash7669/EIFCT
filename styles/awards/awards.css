@@ -1,16 +1,94 @@
+.awardsHero {
+    position: relative;
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: url('/About/aboutHero.png') no-repeat center center/cover;
+    background-attachment: fixed;
+
+    font-size: 1rem;
+}
+.awardsHero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
+}
+.awards_TextContainer {
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.awards_Title {
+    padding: 2em 0;
+}
+.awards_Title > p {
+    font-size: 3em;
+    color: #FFF;
+    font-weight: 500;
+}
+
+
+
+
+
+/* honors */
+.honors {
+    padding: 2em 4em;
+    font-size: 1rem;
+    background: #224435;
+}
+.honorsContainer {
+    padding: 4em 4em;
+}
+.honorsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.honorsWrapperTitle {
+    padding: 0 0 4em 0;
+}
+.honorsWrapperTitle > p {
+    font-size: 2.4em;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    color: #F5F5F5;
+}
 .honorsShowcase {
+    height: 60vh;
     position: relative;
 }
 .honorsShowcase::after {
     content: '';
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-
-    /* border-radius: 2em; */
-
+    left: 0;
+    width: 100%;
     height: 100%;
-    width: 62.5%;
-    background: rgba(0, 0, 0, 0.2);
+    border-radius: .4em;
+
+    background: rgba(0, 0, 0, 0.3);
+}
+.honorsDescript {
+    margin: 4em 0;
+    width: 80%;
+}
+.honorsDescript > p {
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 140%;
+
+    color: #F5F5F5;
 }
