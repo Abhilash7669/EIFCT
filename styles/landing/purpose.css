@@ -93,6 +93,7 @@
 @media(max-width: 780px) {
     .purpose {
         font-size: 2rem;
+        background: #FFF;
     }
     .purpose_Title {
         padding: 2em 0;
