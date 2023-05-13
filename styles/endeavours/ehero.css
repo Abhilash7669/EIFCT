@@ -111,6 +111,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: url('/endeavours/C.png') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.ourSol_ContentAbsolute.C {
+    position: relative;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/endeavours/F.png') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+.ourSol_ContentAbsolute::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background: rgba(0, 0, 0, 0.5);
 }
 .ourSol_AbsoluteImg {
    position: absolute;
@@ -217,8 +238,11 @@
     .ourSol_Text > p {
         font-size: 2.2em;
     }
+    .ourSol_Descript {
+        padding: 3em 0;
+    }
     .ourSol_Descript > p {
-        font-size: 1.6em;
+        font-size: 1.7em;
     }
     .ourSol_Content {
         flex-direction: column;

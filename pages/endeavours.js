@@ -136,7 +136,6 @@ export default function Endeavours() {
                     </div>
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute">
-                        <div className="ourSol_AbsoluteImg"><img src="/endeavours/C.png" alt="img" /></div>
                         <div className="ourSol_AbsoluteContent">
                             <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
                             <div className="ourSol_AbsoluteDescript"><p  >{textC}</p></div>
@@ -182,8 +181,7 @@ export default function Endeavours() {
                         </div>
                     </div>
                     {/* contentC */}
-                    <div className="ourSol_ContentAbsolute">
-                        <div className="ourSol_AbsoluteImg"><img src="/endeavours/F.png" alt="img" /></div>
+                    <div className="ourSol_ContentAbsolute C" >
                         <div className="ourSol_AbsoluteContent">
                             <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
                             <div className="ourSol_AbsoluteDescript"><p>{textC}</p></div>
