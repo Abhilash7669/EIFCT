@@ -100,12 +100,14 @@
     }
     .purpose_Title > p {
         font-size: 4.4em;
+        color: #0E0E0E;
     }
     .purpose_Description {
         margin: 0 0 2em 0;
     }
     .purpose_Description > p {
         font-size: 1.6em;
+        color: #0E0E0E;
     }
     .purpose_Card_Text {
         padding: 1em 0 0 0;
