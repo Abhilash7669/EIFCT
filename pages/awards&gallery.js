@@ -10,10 +10,38 @@ export default function AwardsGallery() {
 
     let charitableTitle = 'CHARITABLE BUILDER'
 
+    let neemTitle = 'Planting Hope: A Charitable Journey of Neem Leaf Cultivation'
+    let neemDescA = 'Join us on an inspiring and charitable journey as we follow the footsteps of a selfless individual dedicated to making a positive impact on our environment and community. '
+    let neemDescB = '"Planting Hope" is a celebration of human kindness, environmental consciousness, and the profound impact of small actions. It inspires viewers to recognize the power within themselves to make a difference, whether through planting trees, supporting local initiatives, or spreading awareness about the importance of sustainable practices.'
+
     let cDescA = 'A philanthropist and charitable builder. Mr.Presannan is dedicated to making a positive impact on society by providing housing and other essential services to those in need.'
     let cDescB = 'Mr.Presannan built more than 13000 homes for the Tribals ,poor homeless.He was the District President of Sainik Association'
     let cDescC = 'Chittar Presannan has also been a vocal advocate for social justice and has reacted to several instances of social discrimination. His efforts have helped to bring about positive change and justice in many cases. His activism and dedication to social causes have made him a respected and influential figure in his community.'
     let cDescD = 'Overall, Chittar Praeannan"s life and work exemplify a deep commitment to social justice and community service. His entrepreneurial success and charitable work have made him an inspiration to many and a role model for those who seek to make a positive impact on the world around them.'
+
+    let carouselImg = [
+        // {
+        //     src: '/awards/neem/neemA.jpg'
+        // },
+        {
+            src: '/awards/neem/neemB.jpg'
+        },
+        {
+            src: '/awards/neem/neemC.jpg',
+        },
+        {
+            src: '/awards/neem/neemD.jpg'
+        },
+        {
+            src: '/awards/neem/neemB.jpg'
+        },
+        {
+            src: '/awards/neem/neemC.jpg',
+        },
+        {
+            src: '/awards/neem/neemD.jpg'
+        },
+    ]
 
     return(
         <>
@@ -48,17 +76,47 @@ export default function AwardsGallery() {
         </section>
         {/* charitable Builder */}
         <section className="charitableMain" >
-            <div className="charitable" style={{padding:'2em 0'}}>
-                <div className="charitableContainer" style={{padding:'2em 4em', display:'flex', alignItems:'center', justifyContent:'space-between'}}>
-                    <div className="charitableA" style={{width: '48%', height:'80vh'}}>
+            <div className="charitable">
+                <div className="charitableContainer">
+                    <div className="charitableA">
                         <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
                     </div>
-                    <div className="charitableB" style={{width: '48%', display:'flex', flexDirection:'column', alignItems:'center'}}>
-                        <div className="charitableTitle" style={{padding:'0 0 2em 0'}}>
-                            <p style={{fontSize:'2.4em', fontWeight:'600'}}>{charitableTitle}</p>
+                    <div className="charitableB">
+                        <div className="charitableTitle">
+                            <p>{charitableTitle}</p>
                         </div>
-                        <div className="charitableDescript" style={{padding:'0.5em 0'}}>
-                            <p style={{fontSize:'1.3em', lineHeight:'140%'}}>{cDescA} <br /> <br />{cDescB} <br /><br />{cDescC} <br /><br />{cDescD}</p>
+                        <div className="charitableDescript">
+                            <p>{cDescA} <br /> <br />{cDescB} <br /><br />{cDescC} <br /><br />{cDescD}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section className="neemMain" style={{background:'#224435'}}>
+            <div className="neem">
+                <div className="neemContainer">
+                    <div className="neemA">
+                        <div className="neemTitle" style={{padding:'2em 0 4em 0'}}>
+                            <p style={{color:'#FFF'}}>{neemTitle}</p>
+                        </div>
+                        {/* carousel */}
+                        <div className="carouselContainer" style={{display:'flex', alignItems:'center', width:'100%', overflow:'hidden', flexWrap:'nowrap', whiteSpace:'nowrap'}}>
+                            {
+                                carouselImg.map((data, i) => {
+                                    return(
+                                            <div className="neemAnim" style={{flex:'0 0 40%', aspectRatio:"3/2", transition:'all 1s ease', transform:'translateX(-50%)', margin:'0 1em'}} key={i}>
+                                            <img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.src} alt="img" />
+                                        </div>
+                                      
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div className="charitableB">
+                        <div className="charitableDescript" style={{padding:'4em 0'}}>
+                            <p style={{textAlign:'center', color:'#FFF'}}>Neem sapling, the first of over 100 saplings planted on Pathanamthitta Ring Road, 4 images through different growth periods</p>
+                            {/* <p style={{color:'#FFF'}}>{neemDescA} <br /><br />{neemDescB}</p> */}
                         </div>
                     </div>
                 </div>

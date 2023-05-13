@@ -92,3 +92,80 @@
 
     color: #F5F5F5;
 }
+
+/* charitable */
+.charitableMain {
+    padding: 2em 0;
+    font-size: 1rem;
+}
+.charitable {
+    padding: 2em 0;
+}
+.charitableContainer {
+    padding: 2em 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.charitableA {
+    width: 48%;
+    height: 80vh;
+}
+.charitableB {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.charitableTitle {
+    padding: 0 0 2em 0;
+}
+.charitableTitle > p {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+.charitableDescript {
+    padding: 0.5em 0;
+}
+.charitableDescript > p {
+    font-size: 1.3em;
+    line-height: 140%;
+}
+
+/* neem */
+.neemMain{
+    padding: 2em 0;
+}
+.neem {
+    padding: 2em 4em;
+}
+.neemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.neemTitle {
+    padding: 0 0 2em 0;
+}
+.neemTitle > p {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+.neemA {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 80vh; */
+}
+.neemAnim {
+    animation: 6s neem infinite linear;
+}
+@keyframes neem {
+    from{
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+}
