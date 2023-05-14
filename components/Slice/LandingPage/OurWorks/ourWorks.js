@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link"
+import { useRef } from "react"
 
 
 export default function OurWork() {
+
+    const hoverRef = useRef();
 
     let subTitle = 'Focused on Education of poor children, healthcare, women empowerment, livelihood for the youth and the environment'
 
@@ -81,7 +84,11 @@ export default function OurWork() {
                             })
                         }
                         <div className="ourwork_Link">
-                            <Link href={'/endeavours'}><div className="ourwork_Link_Text blue"><p>See more...</p></div></Link>
+                            <Link href={'/endeavours'}><div ref={hoverRef} style={{transition:'all 0.3s ease'}} className="ourwork_Link_Text" 
+                            onMouseEnter={() => {hoverRef.current.style.opacity = '0.5'}}
+                            onMouseLeave={() => {hoverRef.current.style.opacity = '1'}}>
+                                <p>See more...</p></div>
+                            </Link>
                         </div>
                     </div>
                 </div>

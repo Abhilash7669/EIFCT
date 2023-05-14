@@ -39,9 +39,9 @@ export default function Footer() {
         <>
         <footer className="footer">
             <div className="footerContainer">
-                <div onClick={() => window.location.href='/'} className="footerLogo" style={{background:'#FFFF', width:'fit-content', borderRadius:'0.75em', display:'flex' ,alignItems:'center', justifyContent:'center'}}>
+                <Link href={'/'} className="footerLogo" style={{background:'#FFFF', width:'fit-content', borderRadius:'0.75em', display:'flex' ,alignItems:'center', justifyContent:'center'}}>
                     <Image height={200} width={200} src="/Landing/EIFCTLogo.svg" alt="EIFCT" />
-                </div>
+                </Link>
                 <div className="footerInfo_Container">
                     <div className="footerInfo">
                         <div className="footerInfo_Header"><p>Navigation</p></div>
