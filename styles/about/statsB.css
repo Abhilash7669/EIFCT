@@ -57,19 +57,23 @@
     }
     
     .statsBContainer {
-        padding: 14em 2em;
+        padding: 4em 2em;
     }
     .about_StatsItem {
-        width: 50%;
-        margin: 2em 0;
+        width: 100%;
+        padding: 4em 0;
+    }
+    .about_StatsIcon {
+        height: 6.9em;
+        width: 6.9em;
     }
     .about_Stats_Stat {
         padding: 1em 0;
     }
     .about_Stats_Stat > p {
-        font-size: 2.2em;
+        font-size: 2.4em;
     }
     .about_Stats_Descript > p {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 }

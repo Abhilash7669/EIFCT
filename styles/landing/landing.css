@@ -59,21 +59,32 @@
 /* media-query */
 @media(max-width: 780px) {
     .hero {
-        height: 100vh;
-
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        padding: 0 1em;
     }  
     .hero_Content_Container {
-        width: 60%;
-        margin-bottom: 30em;
+        width: 100%;
+        margin-bottom: 8em;
+        margin-inline: auto;
     } 
     .hero_Title {
         width: 100%;
+        padding: 2em 0;
     }
     .hero_Title > p {
-        font-size: 6em;
+        font-size: 4em;
         font-weight: 600;
+        text-align: center;
+    }
+    .hero_Description {
+        padding: 0 1em;
     }
     .hero_Description > p {
-        font-size: 2.4em;
+        font-size: 1.6em;
+        text-align: center;
     }
 }

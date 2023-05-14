@@ -15,7 +15,7 @@ export default function Hero() {
             <div className='hero_Content'>
                 <div className="hero_Title">
                     <p>
-                    Empower <span className='green'>Change</span> and Transform <span className='green'>Lives</span>
+                    Empower <span className='green-l'>Change</span> and Transform <span className='green-l'>Lives</span>
                     </p>
                 </div>
                 <div className="hero_Description">

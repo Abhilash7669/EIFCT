@@ -6,7 +6,7 @@ export default function Stats(){
     let statData = [
         {
             title: '2000+',
-            description: 'Institutions Built',
+            description: 'Institutions Built and others under progress',
             src: '/Landing/stats/Institutions.png'
         },
         {
@@ -40,7 +40,7 @@ export default function Stats(){
                                                 { data.title }
                                             </p>
                                         </div>
-                                        <div className="stat_Descript">
+                                        <div className="stat_Descript" style={{textAlign:'center'}}>
                                             <p>{ data.description }</p>
                                         </div>
                                     </div>
