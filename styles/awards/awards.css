@@ -235,6 +235,9 @@
     font-weight: 600;
 
 }
+.gridSwiper.mob {
+    display: none;
+}
 
 /* media-query */
 @media(max-width: 780px) {
@@ -379,5 +382,9 @@
     /* grid-swiper */
     .gridSwiper {
         font-size: 2rem;
+        display: none;
+    }
+    .gridSwiper.mob {
+        display: block;
     }
 }

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper';
+import { Navigation, Pagination} from 'swiper';
 import { useSwiper } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -297,6 +297,67 @@ export default function AwardsGallery() {
                             gridA.map((data, i) => {
                                 return(
                                     <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                </Swiper>
+            </div>
+
+            {/* grid mob */}
+            <div className='gridSwiper mob'>
+                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle'><p>Our Efforts</p></div></div>
+                <Swiper className="gridSwiperContainer" style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px',"--swiper-pagination-bottom": "0px", padding:'0 0 4em 0',
+                        "--swiper-navigation-size":'2rem'}} 
+                        spaceBetween={20}
+                        speed={1000}
+                        pagination={true}
+                        modules={[Pagination]}
+                        slidesPerView={1}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}>
+                    {/* gridA */}
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridC.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    {/* gridB */}
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridB.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridD.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridA.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
                                         <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
                                     </div>
                                 )
