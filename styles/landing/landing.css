@@ -60,8 +60,6 @@
 @media(max-width: 780px) {
     .hero {
         height: 100vh;
-        background: url('/Landing/hero_image.png') no-repeat center center/cover;
-        background-attachment: fixed;
 
     }  
     .hero_Content_Container {
