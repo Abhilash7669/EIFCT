@@ -8,7 +8,6 @@ export default function Hero() {
 
     return(
         <main className='hero'>
-            {/* <div className="heroImage"><img style={{height:'100%', width:'100%', objectFit:'cover'}} src="/Landing/hero_image.png" alt="heroImage" /></div> */}
             <video src='/Landing/heroVid.mp4' autoPlay="true" muted="true" loop="true" 
                           height="100%" width="100%" disableRemotePlayback
                           style={{position:'absolute', top:'0', left:'0', height:'100%', width: '100%', objectFit:'cover',zIndex:'-900'}} />
