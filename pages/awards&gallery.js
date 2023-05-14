@@ -225,25 +225,14 @@ export default function AwardsGallery() {
             </div>
         </section>
         {/* video */}
+        <div className='videoContainer' style={{display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center', background:'#224435'}}>
+                <div style={{padding:'0 0 4em 0'}}><p style={{fontSize:'2.4em', textTransform:'uppercase', fontWeight:'600', color:'#FFF'}}>Agenda</p></div>
+                <div style={{height:'26em', width:'50em'}}>
+                    <video style={{height:'100%', width:'100%', borderRadius:'0.4em'}} src="/awards/wOCvid.mp4" type="video/mp4" playsInline="true" controls="controls"/>
+                </div>
+            </div>
         <section style={{padding:'2em'}}>
 
-            {/* <div style={{padding:'6em 4em', display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center'}}>
-                <div style={{padding:'6em 0'}}><p style={{fontSize:'2.4em', textTransform:'uppercase', fontWeight:'600'}}>Agenda</p></div>
-                <div style={{height:'26em', width:'50em'}}>
-                    <video style={{height:'100%', width:'100%', borderRadius:'0.4em'}} src="/awards/videoO.mp4" type="video/mp4" playsInline="true" controls="controls"/>
-                </div>
-            </div> */}
-
-
-            {/* <div className="collageContainer">
-                <div className="collageWrapper"><p>Collage of Efforts</p></div>
-                <div className="collageA">
-                    <img  src="/awards/collagA.png" alt="collage" />
-                </div>
-                <div className="collageA">
-                    <img src="/awards/collagB.png" alt="collage" />
-                </div>
-            </div> */}
 
             {/* grid swiper */}
             <div className='gridSwiper'>

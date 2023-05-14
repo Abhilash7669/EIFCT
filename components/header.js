@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Link from "next/link";
+
 
 export default function Header(){
 
@@ -8,20 +10,20 @@ export default function Header(){
     return(
         <nav className="nav">
             <div className="nav_Container">
-                <div onClick={() => window.location.href='/'} style={{cursor:'pointer'}} className="logo_Container">
+                <Link href={'/'} style={{cursor:'pointer'}} className="logo_Container">
                     <img 
                         style={{height:'100%', width:'100%', objectFit:'cover'}} 
                         src="/Landing/EIFCTLogo.svg" 
                         alt="EIFCT"/>
-                </div>
+                </Link>
                 <div className="nav_List">
                     {
                         navItem.map((data, i) => {
 
                             return(
-                                <div onClick={() => window.location.href=data.link} className="navItem" key={i}>
+                                <Link href={data.link} className="navItem" key={i}>
                                     <p>{data.item}</p>
-                                </div>
+                                </Link>
                             )
                         })
                     }

@@ -239,8 +239,18 @@
     display: none;
 }
 
+.videoContainer  {
+    padding: 0 4rem 6rem 4rem;
+    font-size: 1rem;    
+}
+
 /* media-query */
 @media(max-width: 780px) {
+    /* video */
+    .videoContainer {
+        font-size: 2rem;
+        padding: 0 4em 9em 4em;
+    }
 
     /* awards-hero */
 
@@ -386,5 +396,6 @@
     }
     .gridSwiper.mob {
         display: block;
+        padding: 16rem 0 6rem 0;
     }
 }

@@ -23,15 +23,15 @@ export default function Footer() {
     let footerSocial = [
         {
             src: '/footer/ytIcon.svg',
-            link:'youtube.com'
+            link:'https://www.youtube.com/'
         },
         {
             src: '/footer/instaIcon.svg',
-            link:'instagram.com'
+            link:'https://www.instagram.com/'
         },
         {
             src: '/footer/fbIcon.svg',
-            link:'facebook.com'
+            link:'https://www.facebook.com/'
         },
     ]
 
@@ -77,9 +77,9 @@ export default function Footer() {
                             {[{
                                 address:'ENHANCE INDIA FOUNDATION CHARITABLE TRUST,M&S TOWERS, PERINGALA POST, COCHIN,KERALA STATE, INDIA. PIN - 683565',
                                 mail: 'enhanceindiafoundation@gmail.com',
-                                mailLink: '',
+                                mailLink: 'mailto: enhanceindiafoundation@gmail.com',
                                 tel: '+918086333033',
-                                telLink:''
+                                telLink:'tel: +918086333033'
                             }].map((data, i) => {
                                 return(
                                     <div className="footerAddress_Item" key={i}>
