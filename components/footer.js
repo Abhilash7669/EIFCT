@@ -39,7 +39,7 @@ export default function Footer() {
         <>
         <footer className="footer">
             <div className="footerContainer">
-                <div className="footerLogo" style={{background:'#FFFF', width:'fit-content', borderRadius:'0.75em', display:'flex' ,alignItems:'center', justifyContent:'center'}}>
+                <div onClick={() => window.location.href='/'} className="footerLogo" style={{background:'#FFFF', width:'fit-content', borderRadius:'0.75em', display:'flex' ,alignItems:'center', justifyContent:'center'}}>
                     <Image height={200} width={200} src="/Landing/EIFCTLogo.svg" alt="EIFCT" />
                 </div>
                 <div className="footerInfo_Container">
