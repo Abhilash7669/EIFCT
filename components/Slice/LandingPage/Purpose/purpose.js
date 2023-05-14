@@ -7,11 +7,6 @@ export default function Purpose() {
 
     let cardData = [
         {
-            src: '/Landing/Purpose/womenEmpowerment.png',
-            title: 'Women Empowerment',
-            description: 'Join us in our efforts to empower women and create a better, more equitable world for all.'
-        },
-        {
             src: '/Landing/Purpose/buildingHome.png',
             title:' Building Homes',
             description: 'We build homes not just for the homeless, but for the orphans and old age homes'
@@ -20,6 +15,11 @@ export default function Purpose() {
             src: '/Landing/Purpose/nature.png',
             title: 'Nature Welfare',
             description: 'We understand that the planet is facing numerous environmental challenges, including climate change, pollution, and habitat destruction.'
+        },
+        {
+            src: '/Landing/Purpose/womenEmpowerment.png',
+            title: 'Women Empowerment',
+            description: 'Join us in our efforts to empower women and create a better, more equitable world for all.'
         },
         {
             src: '/Landing/Purpose/healthWelfare.png',

@@ -11,7 +11,7 @@ export default function OurWork() {
         {
             title: 'Education &',
             colorTitle: 'Literacy',
-            src: '/Landing/OurWork/education&literacy.png',
+            src: '/Landing/OurWork/cultural development.png',
             descriptionA: 'Every child deserves a bright future, but unfortunately, not all of them have access to basic needs such as education, shelter, and food. We believe that every child deserves a chance to thrive, which is why we are committed to building schools and homes for orphans. Our goal is to provide a safe and nurturing environment where they can learn, grow, and reach their full potential.',
             descriptionB: 'Education is a powerful tool that can break the cycle of poverty and transform lives. However, many orphans do not have access to quality education, which limits their opportunities in life. By building schools, we can provide them with a safe and supportive learning environment, where they can gain the knowledge and skills needed to succeed.'
         },
@@ -25,7 +25,7 @@ export default function OurWork() {
         {
             title: 'Cultural',
             colorTitle: 'Development',
-            src: '/Landing/OurWork/cultural development.png',
+            src: '/Landing/OurWork/education&literacy.png',
             descriptionA: 'We believe that our ancient arts and literature, including Sanskrit, Vedas, and Puranas, hold valuable lessons and teachings that can benefit society today',
             descriptionB: 'Encouraging studies on Sanskrit, Vedas, and Puranas: Our charity works to encourage and promote the study of Sanskrit, Vedas, and Puranas. We believe that these ancient texts hold valuable knowledge and wisdom that can benefit people today. We provide resources and support for individuals and institutions interested in pursuing studies in these areas.'
         }

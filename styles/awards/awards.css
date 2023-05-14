@@ -1,6 +1,6 @@
 .awardsHero {
     position: relative;
-    height: 80vh;
+    height: 90vh;
 
     display: flex;
     align-items: center;
@@ -198,7 +198,7 @@
 }
 
 /* collage */
-.collageContainer {
+/* .collageContainer {
     padding: 12em 0;
     font-size: 1rem;
 }
@@ -220,7 +220,22 @@
     height: 100%;
     width: 100%;
     object-fit: contain;
+} */
+
+/* swiper */
+.gridSwiper {
+    padding: 3rem 0;
+    font-size: 1rem;
 }
+.gridSwiperTitle {
+    padding: 0 0 4em 0;
+}
+.gridSwiperTitle > p {
+    font-size: 3em;
+    font-weight: 600;
+
+}
+
 /* media-query */
 @media(max-width: 780px) {
 
@@ -359,5 +374,10 @@
     }
     .neemAnim {
         flex: 0 0 60%;
+    }
+
+    /* grid-swiper */
+    .gridSwiper {
+        font-size: 2rem;
     }
 }

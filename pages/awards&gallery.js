@@ -1,4 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation} from 'swiper';
+import { useSwiper } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import "swiper/css/free-mode";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination'; 
 
 
 export default function AwardsGallery() {
@@ -40,6 +48,90 @@ export default function AwardsGallery() {
         },
         {
             src: '/awards/neem/neemD.jpg'
+        },
+    ]
+
+    let gridB = [
+        {
+            src:'/awards/grid/girdA/imgA.png'
+        },
+        {
+            src:'/awards/grid/girdA/imgB.png'
+        },
+        {
+            src:'/awards/grid/girdA/imgC.png'
+        },
+        {
+            src:'/awards/grid/girdA/imgD.png'
+        },
+        {
+            src:'/awards/grid/girdA/imgE.png'
+        },
+        {
+            src:'/awards/grid/girdA/imgF.png'
+        },
+    ]
+
+    let gridA = [
+        {
+            src:'/awards/grid/gridB/imgA.png'
+        },
+        {
+            src:'/awards/grid/gridB/imgB.png'
+        },
+        {
+            src:'/awards/grid/gridB/imgC.png'
+        },
+        {
+            src:'/awards/grid/gridB/imgD.png'
+        },
+        {
+            src:'/awards/grid/gridB/imgE.png'
+        },
+        {
+            src:'/awards/grid/gridB/imgF.png'
+        },
+    ]
+
+    let gridC = [
+        {
+            src:'/awards/grid/gridC/imgA.png'
+        },
+        {
+            src:'/awards/grid/gridC/imgB.png'
+        },
+        {
+            src:'/awards/grid/gridC/imgC.png'
+        },
+        {
+            src:'/awards/grid/gridC/imgD.png'
+        },
+        {
+            src:'/awards/grid/gridC/imgE.png'
+        },
+        {
+            src:'/awards/grid/gridC/imgF.png'
+        },
+    ]
+
+    let gridD = [
+        {
+            src:'/awards/grid/gridD/imgA.png'
+        },
+        {
+            src:'/awards/grid/gridD/imgB.png'
+        },
+        {
+            src:'/awards/grid/gridD/imgC.png'
+        },
+        {
+            src:'/awards/grid/gridD/imgD.png'
+        },
+        {
+            src:'/awards/grid/gridD/imgE.png'
+        },
+        {
+            src:'/awards/grid/gridD/imgF.png'
         },
     ]
 
@@ -143,7 +235,7 @@ export default function AwardsGallery() {
             </div> */}
 
 
-            <div className="collageContainer">
+            {/* <div className="collageContainer">
                 <div className="collageWrapper"><p>Collage of Efforts</p></div>
                 <div className="collageA">
                     <img  src="/awards/collagA.png" alt="collage" />
@@ -151,7 +243,69 @@ export default function AwardsGallery() {
                 <div className="collageA">
                     <img src="/awards/collagB.png" alt="collage" />
                 </div>
+            </div> */}
+
+            {/* grid swiper */}
+            <div className='gridSwiper'>
+                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle'><p>Our Efforts</p></div></div>
+                <Swiper className="gridSwiperContainer" style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px',
+                        "--swiper-navigation-size":'2rem'}} 
+                        spaceBetween={20}
+                        speed={1000}
+                        navigation={true}
+                        modules={[Navigation]}
+                        slidesPerView={1}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}>
+                    {/* gridA */}
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridC.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    {/* gridB */}
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridB.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridD.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridA.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                </Swiper>
             </div>
+            
         </section>
         </>
     )

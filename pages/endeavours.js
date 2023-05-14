@@ -32,6 +32,9 @@ export default function Endeavours() {
     let textB = 'Healthcare accessibility is a fundamental right. We work tirelessly to improve medical facilities across India. Our efforts include building hospitals, medical colleges, and research centers in various fields, including Ayurveda and Homeopathy. We also extend medical relief to underprivileged sections of society, ensuring that quality healthcare reaches those in need.'
     let textC = 'Healthcare accessibility is a fundamental right. We work tirelessly to improve medical facilities across India. Our efforts include building hospitals, medical colleges, and research centers in various fields, including Ayurveda and Homeopathy. We also extend medical relief to underprivileged sections of society, ensuring that quality healthcare reaches those in need.'
 
+    let textD = 'We believe in the power of education and cultural preservation. Our organization supports free education for deserving children through scholarships and grants. We actively contribute to the total literacy drive by establishing free reading rooms and libraries. Additionally, we open centers dedicated to promoting and developing Indian classical arts, martial arts, and classical music, fostering cultural values and artistic expression.'
+    let textE = 'We are committed to empowering women and supporting their journey towards financial independence. Our initiatives focus on assisting destitute women, widows, and promoting small startups. By providing resources, training, and mentorship, we aim to create a supportive environment that enables women to thrive and contribute to society.'
+    let textF = 'Building homes for the homeless, orphans, and old age homes: We believe that everyone deserves a safe and secure place to call home. Our charity works to provide housing for people who are homeless, orphaned, or elderly. We also work to provide support services like healthcare, education, and job training to help these individuals become self-sufficient.'
 
     return(
         <>
@@ -84,7 +87,7 @@ export default function Endeavours() {
         </section>
         {/* ---- */}
         {/* solutions section */}
-        <section className="ourSol" style={{padding:'2em 0'}}>
+        <section className="ourSol" style={{padding:'2em 0 0 0'}}>
                 <div className="ourSol_Container">
                             {/* contentA */}
                     <div className="pHouseContainer">
@@ -124,14 +127,14 @@ export default function Endeavours() {
                                     </p>
                             </div>
                             <div className="ourSol_img mob">
-                                <img src="/endeavours/A.png" alt="img"/>
+                                <img src="/endeavours/B.png" alt="img"/>
                             </div>
                             <div className="ourSol_Descript">
                                 <p>{textB}</p>
                             </div>
                         </div>
                         <div className="ourSol_img">
-                            <img src="/endeavours/A.png" alt="img"/>
+                            <img src="/endeavours/B.png" alt="img"/>
                         </div>
                     </div>
                     {/* contentC */}
@@ -146,15 +149,15 @@ export default function Endeavours() {
                     <div className="ourSol_Content">
                         <div className="ourSol_TextContainer">
                             <div className="ourSol_Text">
-                                <p>
-                                <span className="blue">Developing</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
+                                <p>Education and
+                                <span className="blue"> Cultural Development</span>
                                 </p>
                             </div>
                             <div className="ourSol_img mob">
                                 <img src="/endeavours/D.png" alt="img"/>
                             </div>
                             <div className="ourSol_Descript">
-                                <p>{textA}</p>
+                                <p>{textD}</p>
                             </div>
                         </div>
                         <div className="ourSol_img">
@@ -165,15 +168,15 @@ export default function Endeavours() {
                     <div className="ourSol_Content reverse">
                         <div className="ourSol_TextContainer setB">
                             <div className="ourSol_Text setBtext">
-                            <p>
-                            <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
+                            <p> 
+                            <span className="blue">Women Empowerment</span> and  Startups
                             </p>
                             </div>
                             <div className="ourSol_img mob">
                                 <img src="/endeavours/E.png" alt="img"/>
                             </div>
                             <div className="ourSol_Descript">
-                                <p>{textB}</p>
+                                <p>{textE}</p>
                             </div>
                         </div>
                         <div className="ourSol_img">
@@ -183,8 +186,8 @@ export default function Endeavours() {
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute C" >
                         <div className="ourSol_AbsoluteContent">
-                            <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
-                            <div className="ourSol_AbsoluteDescript"><p>{textC}</p></div>
+                            <div className="ourSol_AbsoluteTitle"><p>Shelter and Care</p></div>
+                            <div className="ourSol_AbsoluteDescript"><p>{textF}</p></div>
                         </div>
                     </div>
             </div>
