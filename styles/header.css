@@ -2,6 +2,12 @@
     padding: 0.4rem 2rem;
     font-size: 1rem;
     background: #FFFF;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
 }
 .nav_Container {
     padding: 0.2em 12em;

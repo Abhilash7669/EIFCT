@@ -104,24 +104,30 @@
     .mvContainer {
         padding: 20em 0em;
     }
+    .missionTitle {
+        padding: 2em 0;
+    }
     .missionTitle > p {    
         font-size: 8em;
+    }
+    .visionTitle {
+        padding: 2em 0;
     }
     .visionTitle > p {
         font-size: 8em;
     }
     .visionDescription > p {
-        font-size: 2.4em;
+        font-size: 2.8em;
     }
     .missionDescription > p {
-        font-size: 2.4em;
+        font-size: 2.8em;
     }
     .missionImg {
-        width: 52em;
-        height: 80.25em;
+        width: 50em;
+        height: 110.25em;
         position: absolute;
-        top: 15%;
-        left: -102%;
+        top: 5%;
+        left: -98.2%;
         z-index: 100;
     }
     .missionImg > img {
@@ -141,7 +147,7 @@
         width: 50.8em;
         height: auto;
     
-        padding: 6em 6em 18em 6em;
+        padding: 11em 4em 18em 6em;
     }
     .vision {    
         width: 50.8em;

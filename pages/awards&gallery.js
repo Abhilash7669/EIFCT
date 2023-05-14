@@ -50,8 +50,8 @@ export default function AwardsGallery() {
                 <div className="awards_Title">
                     <p>Awards & Gallery</p>
                 </div>
-                <div style={{width:'80%'}}>
-                    <p style={{fontSize:'1.3em', textAlign:'center', fontWeight:'400', lineHeight:'140%', color:'#FFFF'}}>{text}</p>
+                <div className="awards_Descript">
+                    <p>{text}</p>
                 </div>
             </div>
         </main>
@@ -64,8 +64,8 @@ export default function AwardsGallery() {
                         <p>Honors & Achievements</p>
                     </div>
                     <div className="honorsShowcase">
-                        <div style={{height:'100%', width: '100%'}}>
-                            <img style={{height:'100%', width:'100%', objectFit:'cover', borderRadius:'.4em'}} src="/awards/honorsShowcase.png" alt="image" />
+                        <div className="honorsImgShowcase" style={{height:'100%', width: '100%'}}>
+                            <img style={{borderRadius:'.4em'}} src="/awards/honorsShowcase.png" alt="image" />
                         </div>
                     </div>
                     <div className="honorsDescript">
@@ -80,11 +80,21 @@ export default function AwardsGallery() {
                 <div className="charitableContainer">
                     <div className="charitableA">
                         <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
+                        {/* mobile-title */}
+                        <div className="charitableTitle mob">
+                            <p>{charitableTitle}</p>
+                        </div>
+                        {/* ---- */}
                     </div>
                     <div className="charitableB">
                         <div className="charitableTitle">
                             <p>{charitableTitle}</p>
                         </div>
+                        {/* mobile-img */}
+                        <div className="charitableA mob">
+                            <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'fill'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
+                        </div>
+                        {/* ----- */}
                         <div className="charitableDescript">
                             <p>{cDescA} <br /> <br />{cDescB} <br /><br />{cDescC} <br /><br />{cDescD}</p>
                         </div>
@@ -104,7 +114,7 @@ export default function AwardsGallery() {
                             {
                                 carouselImg.map((data, i) => {
                                     return(
-                                            <div className="neemAnim" style={{flex:'0 0 40%', aspectRatio:"3/2", transition:'all 1s ease', transform:'translateX(-50%)', margin:'0 1em'}} key={i}>
+                                            <div className="neemAnim"  key={i}>
                                             <img style={{height:'100%', width:'100%', objectFit:'cover'}} src={data.src} alt="img" />
                                         </div>
                                       
@@ -133,15 +143,13 @@ export default function AwardsGallery() {
             </div> */}
 
 
-            <div className="collageContainer" style={{padding:'12em 0'}}>
-                <div style={{display:'flex', alignItems:'center', justifyContent:'center', margin:'0 0 2em 0'}}>
-                <div><p style={{fontSize:'2.4em', fontWeight:'600'}}>Collage of Efforts</p></div>
+            <div className="collageContainer">
+                <div className="collageWrapper"><p>Collage of Efforts</p></div>
+                <div className="collageA">
+                    <img  src="/awards/collagA.png" alt="collage" />
                 </div>
-                <div className="collageA" style={{height:'200vh', width:'100vw'}}>
-                    <img style={{height:'100%', width:'100%', objectFit:'fill'}} src="/awards/collagA.png" alt="collage" />
-                </div>
-                <div className="collageA" style={{height:'200vh', width:'100vw'}}>
-                    <img style={{height:'100%', width:'100%', objectFit:'fill'}} src="/awards/collagB.png" alt="collage" />
+                <div className="collageA">
+                    <img src="/awards/collagB.png" alt="collage" />
                 </div>
             </div>
         </section>

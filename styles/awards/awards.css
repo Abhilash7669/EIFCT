@@ -36,6 +36,16 @@
     color: #FFF;
     font-weight: 500;
 }
+.awards_Descript {
+    width: 80%;
+}
+.awards_Descript > p {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 400;
+    line-height: 140%;
+    color: #FFFF;
+}
 
 
 
@@ -69,6 +79,11 @@
 .honorsShowcase {
     height: 60vh;
     position: relative;
+}
+.honorsImgShowcase > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .honorsShowcase::after {
     content: '';
@@ -131,10 +146,19 @@
     font-size: 1.3em;
     line-height: 140%;
 }
+/* charitable-mob */
+.charitableTitle.mob {
+    display: none;
+}
+.charitableA.mob {
+    display: none;
+}
+/* ---- */
 
 /* neem */
 .neemMain{
     padding: 2em 0;
+    font-size: 1rem;
 }
 .neem {
     padding: 2em 4em;
@@ -159,6 +183,9 @@
     /* height: 80vh; */
 }
 .neemAnim {
+    flex: 0 0 40%;
+    aspect-ratio: 3/2;
+    margin: 0 1em;
     animation: 6s neem infinite linear;
 }
 @keyframes neem {
@@ -168,4 +195,169 @@
       to {
         transform: translateX(-100%);
       }
+}
+
+/* collage */
+.collageContainer {
+    padding: 12em 0;
+    font-size: 1rem;
+}
+.collageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 2em 0;
+}
+.collageWrapper {
+    font-size: 2.4em;
+    font-weight: 600;
+}
+.collageA {
+    height: 200vh;
+    width: 100vw;
+}
+.collageA > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+/* media-query */
+@media(max-width: 780px) {
+
+    /* awards-hero */
+
+    .awardsHero {
+        font-size: 2rem;
+    }
+    .awards_Title > p {
+        font-size: 7em;
+        font-weight: 600;
+        text-align: center;
+    }
+    .awards_Descript {
+        width: 90%;
+    }
+    .awards_Descript > p {
+        font-size: 1.7em;
+    }
+
+    /* honors */
+    .honors {
+        padding: 2em 0;
+        font-size: 2rem;
+    }
+    .honorsContainer {
+        padding: 4em 4em;
+    }
+    .honorsWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .honorsWrapperTitle {
+        padding: 0 0 4em 0;
+    }
+    .honorsWrapperTitle > p {
+        font-size: 4.4em;
+        text-align: center;
+    }
+    .honorsShowcase {
+        height: 20vh;
+    }
+    .honorsImgShowcase > img {
+        object-fit: cover;
+    }
+    .honorsDescript {
+        margin: 4em 0;
+        width: 100%;
+    }
+    .honorsDescript > p {
+        font-size: 1.6em;
+        line-height: 150%;
+    }
+
+    /* charitable builder */
+    .charitableTitle {
+        display: none;
+    }
+    .charitableA {
+        display: none;
+    }
+    .charitableTitle {
+        display: inline;
+    }
+    .charitableA.mob {
+        display: inline;
+    }
+
+    .charitableMain {
+        padding: 2em 0;
+        font-size: 2rem;
+    }
+    .charitable {
+        padding: 2em 0;
+    }
+    .charitableContainer {
+        padding: 2em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .charitableA {
+        width: 100vw;
+        height: 60vh;
+    }
+    .charitableB {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .charitableTitle {
+        padding: 0 0 6em 0;
+    }
+    .charitableTitle > p {
+        font-size: 4.4em;
+        text-align: center;
+    }
+    .charitableDescript {
+        padding: 6em 0;
+    }
+    .charitableDescript > p {
+        font-size: 1.6em;
+        line-height: 150%;
+    }
+    /* ---- */
+    /* NEEM */
+    .neemMain{
+        padding: 6em 0;
+        font-size: 2rem;
+    }
+    .neem {
+        padding: 2em 0;
+    }
+    .neemContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .neemTitle {
+        /* padding: 0 0 2em 0; */
+        margin: 0 0 1em 0;
+    }
+    .neemTitle > p {
+        font-size: 4.4em;
+        text-align: center;
+    }
+    .neemA {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .neemAnim {
+        flex: 0 0 60%;
+    }
 }

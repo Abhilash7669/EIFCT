@@ -1,0 +1,151 @@
+.footer {
+    font-size: 1rem;
+
+    background: #224435;
+    padding: 2em;
+    color: #FFF;
+}
+.footerContainer {
+    padding: 4em 4em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    border-bottom: 1px #F5F5F5 solid;
+}
+.footerLogo {
+    width: 40%;
+    height: 14em;
+    padding: 1em;
+}
+.footerLogo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* info */
+.footerInfo_Container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 70%;
+}
+.footerInfo {
+    /*  */
+    width: 20%;
+}
+.footerInfo_Header > p { 
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+.footerInfoItems {
+    margin: 0.5em 0;
+}
+.footerItem {
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+}
+.footerItemText > p {
+    font-size: 1em;
+}
+/* social */
+.footerSocial {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.footerSocialItems {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+.footerSocialItem {
+    height: 3em;
+    width: 3em;
+    margin: 0 1em 0 0;
+}
+.footerSocialItem > img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+}
+/* contact */
+.footerContact {
+    width: 40%;
+}
+.footerAdddress_Items {
+    margin: 0.5em 0;
+}
+.footerAddress > p {
+    font-size: 1em;
+    line-height: 140%;
+}
+.footerMail {
+    padding: 1em 0;
+}
+.footerMail > a {
+    font-size: 1em;
+}
+.footerTel > a {
+    font-size: 1em;
+}
+
+/* media-query */
+@media(max-width: 780px) {
+    .footer {
+        font-size: 2.4rem;
+    }
+    .footerContainer {
+        display: block;
+        padding: 4em 2em;
+    }
+    .footerLogo {
+        width: 100%;
+        margin: 0 auto 2em auto;
+    }
+    .footerInfo_Container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2em 0 0 0;
+    }
+    .footerInfo {
+        width: 50%;
+    }
+    .footerInfo_Header {
+        margin: 0 0 1em 0;
+    }
+    .footerInfo_Header > p { 
+        font-size: 1.6em;
+    }
+    .footerItemText > p {
+        font-size: 1.4em;
+    }
+    .footerContact {
+        margin: 2em 0 1em 0;
+        width: 70%;
+    }
+    .footerAddress > p {
+        font-size: 1.4em;
+    }
+   
+    .footerMail > a {
+        font-size: 1.4em;
+    }
+    .footerTel > a {
+        font-size: 1.4em;
+    }
+    .footerSocial {
+        width: 45%;
+    }
+    .footerSocialItem {
+        height: 4em;
+        width: 4em;
+        margin: 0 1em 0 0;
+    }
+    .footerSocialItem > img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+}
