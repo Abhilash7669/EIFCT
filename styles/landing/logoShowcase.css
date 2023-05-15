@@ -54,4 +54,7 @@
         font-size: 1.6em; /* was 1.45em */
         line-height: 160%;
     }
+    .Founders_Message > p {
+        font-size: 4.4em;
+    }
 }
