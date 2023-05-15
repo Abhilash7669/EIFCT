@@ -15,7 +15,7 @@ export default function Stats(){
             src: '/Landing/stats/wEmpower.png'
         },
         {
-            title: '1000+',
+            title: '10,000+',
             description: 'Homes Built',
             src: '/Landing/stats/homesBuilt.png'
         },

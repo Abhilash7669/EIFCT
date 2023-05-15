@@ -32,20 +32,20 @@
     padding: 1em 0;
 }
 .endeavours_Title > p {
-    font-size: 3em;
-    font-weight: 500;
+    font-size: 3.6em;
+    font-weight: 600;
 
     color: #FFFF;
 }
 .endeavours_Descript {
-    width: 80%;
+    width: 70%;
 }
 .endeavours_Descript > p {
     text-align: center;
     font-size: 1.3em;
     color: #FFFF;
 
-    line-height: 130%;
+    line-height: 140%;
 }
 
 /* powerhouse/solutions section */
@@ -64,11 +64,11 @@
     padding: 0 2em;
 }
 .ourSol_Text {
-    width: 70%;
+    width: 80%;
     padding: 5em 0 1em 0;
 }
 .ourSol_Text > p {
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: 600;
     line-height: 140%;
 
@@ -78,7 +78,7 @@
     padding: 0 0 2.4em 0;
 }
 .ourSol_Descript > p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 150%;
 }
 .ourSol_img {
@@ -154,7 +154,7 @@
     justify-content: center;
 }
 .ourSol_AbsoluteTitle > p {
-    font-size: 1.6em;
+    font-size: 2.4em;
     color: #FFFF;
     font-weight: 600;
 }
@@ -163,7 +163,7 @@
     padding: 2em 0;
 }
 .ourSol_AbsoluteDescript > p {
-    font-size: 1.2em;
+    font-size: 1.3em;
     line-height: 150%;
     text-align: center;
     color: #FFF;
@@ -180,7 +180,7 @@
     padding: 2em 0;
 }
 .pHouseTitle > p {
-    font-size: 2.75em;
+    font-size: 3.6em;
     font-weight: 600;
 }
 .pHouseDescript {

@@ -25,12 +25,12 @@ export default function AwardsGallery() {
     let cDescA = 'A philanthropist and charitable builder. Mr.Presannan is dedicated to making a positive impact on society by providing housing and other essential services to those in need.'
     let cDescB = 'Mr.Presannan built more than 13000 homes for the Tribals ,poor homeless.He was the District President of Sainik Association'
     let cDescC = 'Chittar Presannan has also been a vocal advocate for social justice and has reacted to several instances of social discrimination. His efforts have helped to bring about positive change and justice in many cases. His activism and dedication to social causes have made him a respected and influential figure in his community.'
-    let cDescD = 'Overall, Chittar Praeannan"s life and work exemplify a deep commitment to social justice and community service. His entrepreneurial success and charitable work have made him an inspiration to many and a role model for those who seek to make a positive impact on the world around them.'
+    let cDescD = 'Overall, Chittar Presannan"s life and work exemplify a deep commitment to social justice and community service. His entrepreneurial success and charitable work have made him an inspiration to many and a role model for those who seek to make a positive impact on the world around them.'
 
     let carouselImg = [
-        // {
-        //     src: '/awards/neem/neemA.jpg'
-        // },
+         {
+             src: '/awards/neem/neemA.jpg'
+         },
         {
             src: '/awards/neem/neemB.jpg'
         },
@@ -39,6 +39,9 @@ export default function AwardsGallery() {
         },
         {
             src: '/awards/neem/neemD.jpg'
+        },
+        {
+            src: '/awards/neem/neemA.jpg'
         },
         {
             src: '/awards/neem/neemB.jpg'
@@ -225,12 +228,12 @@ export default function AwardsGallery() {
             </div>
         </section>
         {/* video */}
-        <div className='videoContainer' style={{display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center', background:'#224435'}}>
+        {/* <div className='videoContainer' style={{display:"flex", flexDirection:'column', alignItems:'center', justifyContent:'center', background:'#224435'}}>
                 <div style={{padding:'0 0 4em 0'}}><p style={{fontSize:'2.4em', textTransform:'uppercase', fontWeight:'600', color:'#FFF'}}>Agenda</p></div>
                 <div style={{height:'26em', width:'50em'}}>
                     <video style={{height:'100%', width:'100%', borderRadius:'0.4em'}} src="/awards/wOCvid.mp4" type="video/mp4" playsInline="true" controls="controls"/>
                 </div>
-            </div>
+            </div> */}
         <section style={{padding:'2em'}}>
 
 

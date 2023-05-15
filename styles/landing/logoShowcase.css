@@ -5,6 +5,14 @@
 .logo_Showcase_Container {
     padding: 6em 4em;
 }
+.Founders_Message {
+    padding: 0 0 6em 0;
+}
+.Founders_Message > p {
+    font-size: 3.6em;
+    font-weight: 600;
+    color: #0E0E0E;
+}
 .logo_Showcase_Content {
     display: flex;
     flex-direction: column;

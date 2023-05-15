@@ -30,12 +30,12 @@
 .missionTitle > p {
     color: #0E6D87;
 
-    font-size: 2em;
+    font-size: 3.6em;
     font-weight: 600;
     text-transform: uppercase;
 }
 .missionDescription > p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     line-height: 170%;
     color: #F5F5F5;
 }
@@ -74,12 +74,12 @@
 .visionTitle > p {
     color: #0E6D87;
 
-    font-size: 2em;
+    font-size: 3.6em;
     font-weight: 600;
     text-transform: uppercase;
 }
 .visionDescription > p {
-    font-size: 1.6em;
+    font-size: 1.3em;
     line-height: 170%;
     color: #F5F5F5;
 }

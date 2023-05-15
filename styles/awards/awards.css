@@ -32,9 +32,9 @@
     padding: 2em 0;
 }
 .awards_Title > p {
-    font-size: 3em;
+    font-size: 3.6em;
     color: #FFF;
-    font-weight: 500;
+    font-weight: 600;
 }
 .awards_Descript {
     width: 80%;
@@ -70,7 +70,7 @@
     padding: 0 0 4em 0;
 }
 .honorsWrapperTitle > p {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -136,7 +136,7 @@
     padding: 0 0 2em 0;
 }
 .charitableTitle > p {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 600;
 }
 .charitableDescript {
@@ -172,7 +172,7 @@
     padding: 0 0 2em 0;
 }
 .neemTitle > p {
-    font-size: 2.4em;
+    font-size: 3em;
     font-weight: 600;
 }
 .neemA {
@@ -197,30 +197,6 @@
       }
 }
 
-/* collage */
-/* .collageContainer {
-    padding: 12em 0;
-    font-size: 1rem;
-}
-.collageWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 2em 0;
-}
-.collageWrapper {
-    font-size: 2.4em;
-    font-weight: 600;
-}
-.collageA {
-    height: 200vh;
-    width: 100vw;
-}
-.collageA > img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-} */
 
 /* swiper */
 .gridSwiper {

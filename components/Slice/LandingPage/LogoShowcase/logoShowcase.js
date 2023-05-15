@@ -9,10 +9,15 @@ export default function LogoShowcase() {
     
     let textC = 'Maintaining peace and harmony is essential for the growth and development of any country, and India, with its diverse culture and traditions, can serve as an example to the world. By supporting India in these various ways, we can contribute to the country"s growth and development and make it a better place for all its citizens.'
 
+    let FoundersMessage = "Founder's message"
+
     return(
         <section className='logo_Showcase'>
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
+                    <div className="Founders_Message">
+                        <p>{FoundersMessage}</p>
+                    </div>
                     <div className='logo_Showcase_Image'>
                         <img 
                             src='/Landing/EIFCTLogo.svg' 

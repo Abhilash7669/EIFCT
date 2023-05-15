@@ -14,7 +14,7 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/nature.png',
             title: 'Nature Welfare',
-            description: 'We understand that the planet is facing numerous environmental challenges, including climate change, pollution, and habitat destruction.'
+            description: 'We understand that the planet is facing numerous environmental challenges, including climate change, pollution, and habitat destruction. Our aim is to plant thousands of plants across India.'
         },
         {
             src: '/Landing/Purpose/womenEmpowerment.png',
@@ -46,11 +46,11 @@ export default function Purpose() {
                         <div className="purpose_Title">
                             <p>Purpose</p>
                         </div>
-                        <div className="purpose_Description">
+                        {/* <div className="purpose_Description">
                             <p>
                                 We are a  new <span className="blue">trust</span> and our <span className="blue">purpose</span> are many
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="purpose_Cards">
                         <div className="purpose_Cards_Wrapper">

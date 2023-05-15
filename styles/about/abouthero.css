@@ -5,6 +5,7 @@
     position: relative;
 
     background: url('/About/aboutHero.png') no-repeat center center/cover;
+    background-attachment: fixed;
     z-index: -10;
 
     display: flex;
@@ -37,7 +38,8 @@
     padding: 1em 0;
 }
 .about_Title > p {
-    font-size: 3em;
+    font-size: 3.6em;
+    font-weight: 600;
     color: #ffff;
 }
 .about_Descript > p {
