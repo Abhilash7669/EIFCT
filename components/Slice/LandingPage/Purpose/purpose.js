@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useEffect, useRef } from "react";
 import PurposeCard from "../../../purposeCards"
 
 
@@ -38,13 +39,39 @@ export default function Purpose() {
         }
     ]
 
+    // Animation
+    let hide = 'translateY(100%)';
+    let reveal = 'translateY(0)';
+
+    const titleRef = useRef();
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    titleRef.current.style.transform = reveal
+
+                    setTimeout(() => {
+                        document.querySelectorAll('.purpose_Card_Item').forEach(cards => {
+                            cards.style.opacity = '1';
+                        })
+                    }, 500)
+
+                }
+            })
+        }, {threshold: 0.2})
+        observer.observe(document.querySelector('.purpose_Container'))
+    }, [])
+
+
     return(
         <section className="purpose">
             <div className="purpose_Container">
                 <div className="purpose_Content">
                     <div className="purpose_Header">
-                        <div className="purpose_Title">
-                            <p>Purpose</p>
+                        <div className="purpose_Title ofh">
+                            <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>Purpose</p>
                         </div>
                         {/* <div className="purpose_Description">
                             <p>
@@ -57,7 +84,7 @@ export default function Purpose() {
                             {
                                 cardData.map((data, i) => {
                                     return(
-                                        <PurposeCard key={i} data={data} />
+                                        <PurposeCard className="purpose_Card_Item" style={{opacity: '0', transition:'all 1s ease'}}  key={i} data={data} />
                                     )
                                 })
                             }

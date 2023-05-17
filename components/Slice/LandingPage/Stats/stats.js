@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useEffect } from "react"
+
 
 export default function Stats(){
 
@@ -21,6 +23,25 @@ export default function Stats(){
         },
     ]
 
+
+    // Animation
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll('.stat_Item').forEach(item => {
+                        item.style.opacity = '1'
+                    })
+                }
+            })
+        }, {threshold: 0.2})
+        observer.observe(document.querySelector('.stats_Container'));
+
+
+    }, [])
+
+
     return(
         <section className="stats">
             <div className="stats_Container">
@@ -28,7 +49,7 @@ export default function Stats(){
                     {
                         statData.map((data, i) => {
                             return(
-                                <div className="stat_Item" key={i}>
+                                <div className="stat_Item" style={{opacity: '0', transition:'all 1s ease'}} key={i}>
                                     <div className="stat_Img" style={{position:'absolute', top:'0', left:'0'}} >
                                         <img 
                                             style={{height:'100%', width:'100%', objectFit:'cover'}} 

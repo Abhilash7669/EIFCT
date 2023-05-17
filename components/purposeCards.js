@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 
 
-export default function PurposeCard({data}){
+export default function PurposeCard({ data, style, className }){
 
     return(
-        <div className="purpose_Card_Item">
+        <div style={style} className={className}>
             <div className="purpose_Card_img">
                 <img src={data.src} alt="image" />
             </div>

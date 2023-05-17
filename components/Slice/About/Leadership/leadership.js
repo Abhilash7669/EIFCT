@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useEffect, useRef } from "react"
+
 
 export default function Leadership() {
 
@@ -22,12 +24,38 @@ export default function Leadership() {
         }
     ]
 
+    const titleRef = useRef();
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    titleRef.current.style.transform = 'translateY(0)';
+                }
+            })
+        })
+        observer.observe(document.querySelector('.leaders'))
+
+        const observerB = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll('.leaders').forEach(item => {
+                        item.style.opacity = '1'
+                    })
+                }
+            })
+        })
+        observerB.observe(document.querySelector('.leaders'))
+
+    }, [])
+
     return(
         <div className="leadership">
             <div className="leadership__container">
                 <div className="leadership_Content">
-                    <div className="leadership_Title">
-                        <p>
+                    <div className="leadership_Title ofh">
+                        <p ref={titleRef} style={{transform:'translateY(110%)', transition: 'all 1s ease'}}>
                             Our <span className="blue">Leadership</span>
                         </p>
                     </div>
@@ -35,7 +63,7 @@ export default function Leadership() {
                         {
                             leaderData.map((item, i) => {
                                 return(
-                                    <div key={i} className="leader">
+                                    <div key={i} style={{opacity:'0', transition: 'all 2s ease'}} className="leader">
                                         <div className="leaderTitleWrap">
                                             <div className="leaderTitle">
                                                 <p>{item.title}</p>

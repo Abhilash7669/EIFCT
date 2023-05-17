@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 
 
 export default function OurWork() {
@@ -34,18 +34,44 @@ export default function OurWork() {
         }
     ]
 
+    // Animation
+    let hide = 'translateY(100%)';
+    let reveal = 'translateY(0)';
+
+    const titleRef = useRef();
+    const subTitleRef = useRef();
+
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    titleRef.current.style.transform = reveal;
+                    subTitleRef.current.style.transform = reveal;
+                    setTimeout(() => {
+                        document.querySelectorAll('.ourwork_Item').forEach(item => {
+                            item.style.opacity = '1'
+                        })
+                    }, 1500)
+                }
+            })
+        }, {threshold: 0.2})
+        observer.observe(document.querySelector('.ourwork_Container'))
+
+    }, [])
+
+
     return(
         <section className="ourwork">
             <div className="ourwork_Container">
                 <div className="ourwork_Content">
                     <div className="ourwork_Title_Container">
-                        <div className="ourwork_Title">
-                            <p>
+                        <div className="ourwork_Title ofh">
+                            <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>
                                 Our works
                             </p>
                         </div>
-                        <div className="ourwork_SubTitle">
-                            <p>
+                        <div className="ourwork_SubTitle ofh">
+                            <p ref={subTitleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>
                                 { subTitle }
                             </p>
                         </div>
@@ -54,7 +80,7 @@ export default function OurWork() {
                         {
                             ourWorkData.map((data, i) => {
                                 return(
-                                    <div key={i} className="ourwork_Item">
+                                    <div key={i} className="ourwork_Item" style={{opacity:'0', transition: 'all 1s ease'}}>
                                         <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
                                             <div className="ourwork_Item_Title">
                                                 <p>{ data.title } <span>{ data.colorTitle }</span></p>

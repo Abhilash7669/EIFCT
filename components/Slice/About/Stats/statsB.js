@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useEffect } from "react"
+
 
 export default function StatsB() {
 
@@ -24,6 +26,21 @@ export default function StatsB() {
         }
     ]
 
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    document.querySelectorAll('.about_StatsItem').forEach(item => {
+                        item.style.opacity = '1'
+                    })
+                }
+            })
+        }, {threshold: 0.4})
+        observer.observe(document.querySelector('.statsB'))
+
+    }, [])
+
     return(
         <>
             <div className="statsB">
@@ -32,7 +49,7 @@ export default function StatsB() {
                         {
                             statsB.map((item, i) => {
                                 return(
-                                    <div className="about_StatsItem" key={i}>
+                                    <div className="about_StatsItem" style={{opacity: '0', transition:'all 1s ease'}} key={i}>
                                         <div className="about_StatsIcon">
                                             <img src={item.src} alt="logo" />
                                         </div>

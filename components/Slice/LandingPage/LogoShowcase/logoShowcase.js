@@ -1,5 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { useEffect, useRef } from "react";
+
 
 export default function LogoShowcase() {
 
@@ -11,20 +13,49 @@ export default function LogoShowcase() {
 
     let FoundersMessage = "Founder's message"
 
+    // Animation
+    let hide = 'translateY(100%)';
+    let reveal = 'translateY(0)';
+    
+    const titleRef = useRef();
+    const descriptionRef = useRef();
+
+    const logoRef = useRef();
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting){
+                    titleRef.current.style.transform = reveal;
+                    setTimeout(() => {
+                        descriptionRef.current.style.transform = reveal;
+                    }, 1500)
+                    setTimeout(() => {
+                        logoRef.current.style.scale = '1'
+                        logoRef.current.style.opacity = '1'
+                    }, 1000)
+                }
+            })
+        }, {threshold : 0.3})
+        observer.observe(document.querySelector('.logo_Showcase_Container'));
+
+    })
+
     return(
         <section className='logo_Showcase'>
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
-                    <div className="Founders_Message">
-                        <p>{FoundersMessage}</p>
+                    <div className="Founders_Message ofh">
+                        <p ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>{FoundersMessage}</p>
                     </div>
-                    <div className='logo_Showcase_Image'>
+                    <div ref={logoRef} className='logo_Showcase_Image' style={{opacity: '0', scale:'0.4',transition:'all 1s ease'}}>
                         <img 
                             src='/Landing/EIFCTLogo.svg' 
                             alt='Logo'/>
                     </div>
-                    <div className="logo_Showcase_Description">
-                        <p>
+                    <div className="logo_Showcase_Description ofh">
+                        <p ref={descriptionRef} style={{transform: hide, transition:'all 1s ease'}}>
                             The logo for <span className="green" style={{fontWeight:'600'}}>ENHANCE INDIA FOUNDATION CHARITABLE TRUST</span> { logo_Showcase_Description }<br /><br /> {textB}<br /><br />{textC}
                         </p>
                     </div>
