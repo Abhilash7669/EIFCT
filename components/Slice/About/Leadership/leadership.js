@@ -63,7 +63,7 @@ export default function Leadership() {
                         {
                             leaderData.map((item, i) => {
                                 return(
-                                    <div key={i} style={{opacity:'0', transition: 'all 2s ease'}} className="leader">
+                                    <div key={i} style={{opacity:'1', transition: 'all 2s ease'}} className="leader">
                                         <div className="leaderTitleWrap">
                                             <div className="leaderTitle">
                                                 <p>{item.title}</p>
