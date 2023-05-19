@@ -187,7 +187,7 @@ export default function AwardsGallery() {
                         </div>
                         {/* mobile-img */}
                         <div className="charitableA mob">
-                            <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'fill'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
+                            <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
                         </div>
                         {/* ----- */}
                         <div className="charitableDescript">

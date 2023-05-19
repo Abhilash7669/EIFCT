@@ -213,6 +213,7 @@
     }
     .endeavours_Descript {
         width: 80%;
+        margin: 1.4em 0 0 0;
     }
     .endeavours_Descript > p {
         font-size: 1.6em;
@@ -223,20 +224,22 @@
         font-size: 2rem;
     }
     .pHouseTitle > p {
-        font-size: 4.4em;
+        font-size: 6em;
         text-align: center;
+        line-height: 100%;
     }
     .pHouseDescript {
         width: 100%;
+        margin: 2em 0 1em 0;
     }
     .pHouseDescript > p {
         font-size: 1.6em;
     }
     .pHouseContainer {
-        padding: 4em 2em 2em 2em;
+        padding: 4em 1em 2em 1em;
     }
     .ourSol_Text > p {
-        font-size: 2.2em;
+        font-size: 4.2em;
     }
     .ourSol_Descript {
         padding: 3em 0;
@@ -275,17 +278,22 @@
     }
     .ourSol_Text > p {
         text-align: center;
-        font-size: 2.5em;
+        font-size: 3.4em;
         line-height: 140%;
     }
 
     .ourSol_AbsoluteTitle > p {
-        font-size: 2.6em;
+        font-size: 3.4em;
+        text-align: center;
     }
     .ourSol_AbsoluteDescript {
         width: 90%;
     }
     .ourSol_AbsoluteDescript > p {
         font-size: 1.6em;
+    }
+
+    .ourSol_Text.setBtext {
+        width: 100%;
     }
 }

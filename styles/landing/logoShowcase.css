@@ -55,6 +55,7 @@
         line-height: 160%;
     }
     .Founders_Message > p {
-        font-size: 4.4em;
+        font-size: 6em;
+        text-align: center;
     }
 }

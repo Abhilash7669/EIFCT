@@ -133,7 +133,7 @@
     padding: 4em 0 1em 0;
    }
    .ourwork_Title > p {
-    font-size: 4.4em;
+    font-size: 7em;
    }
    .ourwork_SubTitle {
     width: 84%;
@@ -154,7 +154,7 @@
         position: relative;
     }
     .ourwork_Item_Title > p {
-        font-size: 2.5em;
+        font-size: 3.4em;
     }
     .ourwork_Item_Title::after {
         content: "";
