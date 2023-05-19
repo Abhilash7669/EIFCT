@@ -186,14 +186,14 @@
     flex: 0 0 40%;
     aspect-ratio: 3/2;
     margin: 0 1em;
-    animation: 6s neem infinite linear;
+    animation: 18s neem infinite linear;
 }
 @keyframes neem {
     from{
         transform: translateX(0);
       }
       to {
-        transform: translateX(-100%);
+        transform: translateX(-423%);
       }
 }
 

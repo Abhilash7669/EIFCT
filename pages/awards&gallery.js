@@ -29,7 +29,7 @@ export default function AwardsGallery() {
 
     let carouselImg = [
          {
-             src: '/awards/neem/neemA.jpg'
+            src: '/awards/neem/neemA.png'
          },
         {
             src: '/awards/neem/neemB.jpg'
@@ -41,7 +41,7 @@ export default function AwardsGallery() {
             src: '/awards/neem/neemD.jpg'
         },
         {
-            src: '/awards/neem/neemA.jpg'
+            src: '/awards/neem/neemA.png'
         },
         {
             src: '/awards/neem/neemB.jpg'

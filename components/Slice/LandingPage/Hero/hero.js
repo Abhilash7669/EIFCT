@@ -33,13 +33,14 @@ export default function Hero() {
 
     return(
         <main className='hero'>
-            <video src='/Landing/heroVid.mp4' autoPlay="true" muted="true" loop="true" 
-                          height="100%" width="100%" disableRemotePlayback
-                          style={{position:'absolute', top:'0', left:'0', height:'100%', width: '100%', objectFit:'cover',zIndex:'-900'}} />
+            <video className="heroVid" src='/Landing/heroVid.mp4' autoPlay="true" muted="true" loop="true" 
+                           disableRemotePlayback/>
+            <video className="heroVidMob" src='/Landing/HeroVidMob.mp4' autoPlay="true" muted="true" loop="true" 
+                           disableRemotePlayback/>
             <div className='hero_Content_Container'>
             <div className='hero_Content'>
                 <div className="hero_Title ofh">
-                    <p ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>
+                    <p className="grBold" ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>
                     Empower <span className='green-l'>Change</span> and Transform <span className='green-l'>Lives</span>
                     </p>
                 </div>
