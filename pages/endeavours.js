@@ -16,7 +16,7 @@ export default function Endeavours() {
             src: '/About/homesBuilt.svg',
             stat: '10k+',
             desc: 'Homes Built',
-            textColor: '#0E6D87'
+            textColor: '#2FA4C2'
         },
         {
             src: '/About/food.svg',
@@ -40,7 +40,7 @@ export default function Endeavours() {
         <>
         <main className="endeavorus">
             <div className="endeavours_Container">
-                <div className="endeavours_Title">
+                <div className="endeavours_Title grBold">
                     <p>
                         Our Endeavours
                     </p>
@@ -91,7 +91,7 @@ export default function Endeavours() {
                 <div className="ourSol_Container">
                             {/* contentA */}
                     <div className="pHouseContainer">
-                        <div className="pHouseTitle">
+                        <div className="pHouseTitle grBold">
                             <p style={{color:'#000'}}>A Power House of Solutions</p>
                         </div>
                         <div className="pHouseDescript">
@@ -102,7 +102,7 @@ export default function Endeavours() {
                     </div>
                     <div className="ourSol_Content">
                         <div className="ourSol_TextContainer">
-                            <div className="ourSol_Text">
+                            <div className="ourSol_Text grBold">
                                 <p>
                                 <span className="blue">Devloping</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
                                 </p>
@@ -121,7 +121,7 @@ export default function Endeavours() {
                         {/* Content B */}
                     <div className="ourSol_Content reverse" >
                         <div className="ourSol_TextContainer setB">
-                            <div className="ourSol_Text setBtext ">
+                            <div className="ourSol_Text setBtext grBold">
                             <p>
                                     <span className="blue">Medical</span> and <span className="blue">Healthcare</span> Initiatives
                                     </p>
@@ -140,7 +140,7 @@ export default function Endeavours() {
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute">
                         <div className="ourSol_AbsoluteContent">
-                            <div className="ourSol_AbsoluteTitle"><p>Yoga, Meditation and Nature Welfare</p></div>
+                            <div className="ourSol_AbsoluteTitle grBold"><p>Yoga, Meditation and Nature Welfare</p></div>
                             <div className="ourSol_AbsoluteDescript"><p  >{textC}</p></div>
                         </div>
                     </div>
@@ -148,7 +148,7 @@ export default function Endeavours() {
                     {/* contentA */}
                     <div className="ourSol_Content">
                         <div className="ourSol_TextContainer">
-                            <div className="ourSol_Text">
+                            <div className="ourSol_Text grBold">
                                 <p>Education and
                                 <span className="blue"> Cultural Development</span>
                                 </p>
@@ -167,7 +167,7 @@ export default function Endeavours() {
                         {/* Content B */}
                     <div className="ourSol_Content reverse">
                         <div className="ourSol_TextContainer setB">
-                            <div className="ourSol_Text setBtext">
+                            <div className="ourSol_Text setBtext grBold">
                             <p> 
                             <span className="blue">Women Empowerment</span> and  Startups
                             </p>
@@ -186,7 +186,7 @@ export default function Endeavours() {
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute C" >
                         <div className="ourSol_AbsoluteContent">
-                            <div className="ourSol_AbsoluteTitle"><p>Shelter and Care</p></div>
+                            <div className="ourSol_AbsoluteTitle grBold"><p>Shelter and Care</p></div>
                             <div className="ourSol_AbsoluteDescript"><p>{textF}</p></div>
                         </div>
                     </div>

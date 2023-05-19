@@ -32,7 +32,7 @@
     padding: 1em 0;
 }
 .endeavours_Title > p {
-    font-size: 3.6em;
+    font-size: 4em;
     font-weight: 600;
 
     color: #FFFF;
@@ -64,11 +64,11 @@
     padding: 0 2em;
 }
 .ourSol_Text {
-    width: 80%;
+    width: 90%;
     padding: 5em 0 1em 0;
 }
 .ourSol_Text > p {
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 600;
     line-height: 140%;
 
@@ -154,7 +154,7 @@
     justify-content: center;
 }
 .ourSol_AbsoluteTitle > p {
-    font-size: 2.4em;
+    font-size: 3em;
     color: #FFFF;
     font-weight: 600;
 }
@@ -180,7 +180,7 @@
     padding: 2em 0;
 }
 .pHouseTitle > p {
-    font-size: 3.6em;
+    font-size: 4em;
     font-weight: 600;
 }
 .pHouseDescript {

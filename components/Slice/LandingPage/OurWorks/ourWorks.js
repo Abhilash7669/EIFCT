@@ -65,7 +65,7 @@ export default function OurWork() {
             <div className="ourwork_Container">
                 <div className="ourwork_Content">
                     <div className="ourwork_Title_Container">
-                        <div className="ourwork_Title ofh">
+                        <div className="ourwork_Title ofh grBold">
                             <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>
                                 Our works
                             </p>
@@ -82,7 +82,7 @@ export default function OurWork() {
                                 return(
                                     <div key={i} className="ourwork_Item" style={{opacity:'0', transition: 'all 1s ease'}}>
                                         <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
-                                            <div className="ourwork_Item_Title">
+                                            <div className="ourwork_Item_Title grBold">
                                                 <p>{ data.title } <span>{ data.colorTitle }</span></p>
                                             </div>
                                         </div>

@@ -142,7 +142,7 @@ export default function AwardsGallery() {
         <>
         <main className="awardsHero">
             <div className="awards_TextContainer">
-                <div className="awards_Title">
+                <div className="awards_Title grBold">
                     <p>Awards & Gallery</p>
                 </div>
                 <div className="awards_Descript">
@@ -155,7 +155,7 @@ export default function AwardsGallery() {
         <section className="honors">
             <div className="honorsContainer">
                 <div className="honorsWrapper">
-                    <div className="honorsWrapperTitle">
+                    <div className="honorsWrapperTitle grBold">
                         <p>Honors & Achievements</p>
                     </div>
                     <div className="honorsShowcase">
@@ -176,13 +176,13 @@ export default function AwardsGallery() {
                     <div className="charitableA">
                         <div style={{height:'100%', width:'100%'}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
                         {/* mobile-title */}
-                        <div className="charitableTitle mob">
+                        <div className="charitableTitle mob grBold">
                             <p>{charitableTitle}</p>
                         </div>
                         {/* ---- */}
                     </div>
                     <div className="charitableB">
-                        <div className="charitableTitle">
+                        <div className="charitableTitle grBold">
                             <p>{charitableTitle}</p>
                         </div>
                         {/* mobile-img */}
@@ -201,7 +201,7 @@ export default function AwardsGallery() {
             <div className="neem">
                 <div className="neemContainer">
                     <div className="neemA">
-                        <div className="neemTitle" style={{padding:'2em 0 4em 0'}}>
+                        <div className="neemTitle grBold" style={{padding:'2em 0 4em 0'}}>
                             <p style={{color:'#FFF'}}>{neemTitle}</p>
                         </div>
                         {/* carousel */}
@@ -239,7 +239,7 @@ export default function AwardsGallery() {
 
             {/* grid swiper */}
             <div className='gridSwiper'>
-                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle'><p>Our Efforts</p></div></div>
+                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle grBold'><p>Our Efforts</p></div></div>
                 <Swiper className="gridSwiperContainer" style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px',
                         "--swiper-navigation-size":'2rem'}} 
                         spaceBetween={20}

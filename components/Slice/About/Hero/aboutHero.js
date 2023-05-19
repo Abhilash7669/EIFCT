@@ -30,7 +30,7 @@ export default function AboutHero(){
         <div className="aboutHero">
             <div className="about_Container">
                 <div className="about_Text">
-                    <div className="about_Title ofh">
+                    <div className="about_Title ofh grBold">
                         <p ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>About Us</p>
                     </div>
                     <div className="about_Descript ofh">

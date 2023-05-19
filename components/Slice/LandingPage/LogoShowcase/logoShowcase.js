@@ -47,7 +47,7 @@ export default function LogoShowcase() {
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
                     <div className="Founders_Message ofh">
-                        <p ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>{FoundersMessage}</p>
+                        <p className="grBold" ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>{FoundersMessage}</p>
                     </div>
                     <div ref={logoRef} className='logo_Showcase_Image' style={{opacity: '0', scale:'0.4',transition:'all 1s ease'}}>
                         <img 

@@ -28,9 +28,10 @@
     padding: 1em 0;
 }
 .missionTitle > p {
-    color: #0E6D87;
+    /* color: #0E6D87; */
+    color: #97c55e;
 
-    font-size: 3.6em;
+    font-size: 4em;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -72,9 +73,10 @@
     padding: 1em 0;
 }
 .visionTitle > p {
-    color: #0E6D87;
+    /* color: #0E6D87; */
+    color: #97c55e;
 
-    font-size: 3.6em;
+    font-size: 4em;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -88,7 +90,7 @@
     height: 50.25em;
     position: absolute;
     top: -20%;
-    right: -70%;
+    right: -71.9%;
 }
 .visionImg > img {
     width: 100%;

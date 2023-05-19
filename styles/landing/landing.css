@@ -52,11 +52,11 @@
     /* border: 1px red solid; */
 }
 .hero_Title {
-    width: 80%;
+    width: 90%;
     padding: 0.5em 0;
 }
 .hero_Title > p {
-    font-size: 3.6em; /* header font-size 2.8em */
+    font-size: 4em; /* header font-size 2.8em */
     font-weight: 600;
     
     color: #FFFF;

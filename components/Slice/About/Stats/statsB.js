@@ -16,7 +16,7 @@ export default function StatsB() {
             src: '/About/homesBuilt.svg',
             stat: '10k+',
             desc: 'Homes Built',
-            textColor: '#0E6D87'
+            textColor: '#2FA4C2'
         },
         {
             src: '/About/food.svg',

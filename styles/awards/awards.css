@@ -32,7 +32,7 @@
     padding: 2em 0;
 }
 .awards_Title > p {
-    font-size: 3.6em;
+    font-size: 4em;
     color: #FFF;
     font-weight: 600;
 }
@@ -70,7 +70,7 @@
     padding: 0 0 4em 0;
 }
 .honorsWrapperTitle > p {
-    font-size: 3em;
+    font-size: 4em;
     font-weight: 600;
     text-transform: uppercase;
 
@@ -136,7 +136,7 @@
     padding: 0 0 2em 0;
 }
 .charitableTitle > p {
-    font-size: 3em;
+    font-size: 3.6em;
     font-weight: 600;
 }
 .charitableDescript {
@@ -170,10 +170,12 @@
 }
 .neemTitle {
     padding: 0 0 2em 0;
+    width: 80%;
 }
 .neemTitle > p {
-    font-size: 3em;
+    font-size: 3.6em;
     font-weight: 600;
+    text-align: center;
 }
 .neemA {
     width: 100%;
@@ -207,7 +209,7 @@
     padding: 0 0 4em 0;
 }
 .gridSwiperTitle > p {
-    font-size: 3em;
+    font-size: 3.6em;
     font-weight: 600;
 
 }

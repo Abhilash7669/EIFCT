@@ -54,9 +54,9 @@ export default function Leadership() {
         <div className="leadership">
             <div className="leadership__container">
                 <div className="leadership_Content">
-                    <div className="leadership_Title ofh">
+                    <div className="leadership_Title ofh grBold">
                         <p ref={titleRef} style={{transform:'translateY(110%)', transition: 'all 1s ease'}}>
-                            Our <span className="blue">Leadership</span>
+                            Our <span style={{color:'#2FA4C2'}}>Leadership</span>
                         </p>
                     </div>
                     <div className="leaders">
@@ -65,7 +65,7 @@ export default function Leadership() {
                                 return(
                                     <div key={i} style={{opacity:'1', transition: 'all 2s ease'}} className="leader">
                                         <div className="leaderTitleWrap">
-                                            <div className="leaderTitle">
+                                            <div className="leaderTitle grBold">
                                                 <p>{item.title}</p>
                                             </div>
                                         </div>

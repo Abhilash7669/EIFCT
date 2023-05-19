@@ -70,7 +70,7 @@ export default function Purpose() {
             <div className="purpose_Container">
                 <div className="purpose_Content">
                     <div className="purpose_Header">
-                        <div className="purpose_Title ofh">
+                        <div className="purpose_Title ofh grBold">
                             <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>Purpose</p>
                         </div>
                         {/* <div className="purpose_Description">
