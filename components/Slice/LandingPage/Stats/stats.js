@@ -25,14 +25,26 @@ export default function Stats(){
 
 
     // Animation
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if(entry.isIntersecting){
-                    document.querySelectorAll('.stat_Item').forEach(item => {
-                        item.style.opacity = '1'
-                    })
+                    // document.querySelectorAll('.stat_Item').forEach(item => {
+                    //     item[0].style.opacity = '1'
+                    let item = document.querySelectorAll('.stat_Item');
+                    item[0].style.opacity = '1'
+                     item[0].style.scale = '1'
+                    setTimeout(() => {
+                        item[1].style.opacity = '1'
+                         item[1].style.scale = '1'
+                    }, 1000)
+                    setTimeout(() => {
+                        item[2].style.opacity = '1'
+                         item[2].style.scale = '1'
+                    }, 500)
                 }
             })
         }, {threshold: 0.2})
@@ -49,7 +61,7 @@ export default function Stats(){
                     {
                         statData.map((data, i) => {
                             return(
-                                <div className="stat_Item" style={{opacity: '0', transition:'all 1s ease'}} key={i}>
+                                <div className="stat_Item" style={{opacity: '0', scale:'0.95', transition: `all 1s ${quart}`}} key={i}>
                                     <div className="stat_Img" style={{position:'absolute', top:'0', left:'0'}} >
                                         <img 
                                             style={{height:'100%', width:'100%', objectFit:'cover'}} 

@@ -21,7 +21,12 @@
 
     position: relative;
 
+
 }
+.stat_Item:hover {
+    scale: 0.2;
+    cursor: pointer;
+} 
 .stat_Item::before {
     content: '';
     position: absolute;

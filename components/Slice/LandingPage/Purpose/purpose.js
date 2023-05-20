@@ -4,6 +4,12 @@ import { useEffect, useRef } from "react";
 import PurposeCard from "../../../purposeCards"
 
 
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
+
 export default function Purpose() {
 
     let cardData = [
@@ -43,25 +49,96 @@ export default function Purpose() {
     let hide = 'translateY(100%)';
     let reveal = 'translateY(0)';
 
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
+
     const titleRef = useRef();
 
     useEffect(() => {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    titleRef.current.style.transform = reveal
 
-                    setTimeout(() => {
-                        document.querySelectorAll('.purpose_Card_Item').forEach(cards => {
-                            cards.style.opacity = '1';
-                        })
-                    }, 500)
+        gsap.to('.purpTitle', {
+            scrollTrigger: {
+                trigger: '.purpTitle',
+                start: 'top bottom',
+            },
+            y: 0,
+            duration: 0.2,
+        })
 
-                }
-            })
-        }, {threshold: 0.2})
-        observer.observe(document.querySelector('.purpose_Container'))
+        let card = document.querySelectorAll('.purpose_Card_Item');
+
+        gsap.to(card[0], {
+            scrollTrigger: {
+                trigger: '.purpose_Card_Item',
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+        })
+
+        gsap.to(card[1], {
+            scrollTrigger: {
+                trigger: card[1],
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+            // delay: 0.5
+        })
+
+        gsap.to(card[2], {
+            scrollTrigger: {
+                trigger: card[2],
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+            // delay: 1
+        })
+
+        gsap.to(card[3], {
+            scrollTrigger: {
+                trigger: card[3],
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+            // delay: 1.5
+        })
+
+        gsap.to(card[4], {
+            scrollTrigger: {
+                trigger: card[4],
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+            // delay: 2
+        })
+
+        gsap.to(card[5], {
+            scrollTrigger: {
+                trigger: card[5],
+                start: 'top bottom',
+            },
+            y: 0,
+            opacity:1,
+            duration: 0.2,
+            // delay: 2.5
+        })
+
+        
+
+
+
+
     }, [])
 
 
@@ -71,7 +148,7 @@ export default function Purpose() {
                 <div className="purpose_Content">
                     <div className="purpose_Header">
                         <div className="purpose_Title ofh grBold">
-                            <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>Purpose</p>
+                            <p className="purpTitle" ref={titleRef} style={{transform: 'translateY(120%)', transition: `all 1s ${quint}`}}>Purpose</p>
                         </div>
                         {/* <div className="purpose_Description">
                             <p>
@@ -84,7 +161,7 @@ export default function Purpose() {
                             {
                                 cardData.map((data, i) => {
                                     return(
-                                        <PurposeCard className="purpose_Card_Item" style={{opacity: '0', transition:'all 1s ease'}}  key={i} data={data} />
+                                        <PurposeCard className="purpose_Card_Item" style={{opacity: '0', transform: i % 2 == 0 ? 'translateY(50%)':'translateY(50%)', transition: `all 1s ${quart}`}}  key={i} data={data} />
                                     )
                                 })
                             }

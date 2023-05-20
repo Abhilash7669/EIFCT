@@ -12,6 +12,10 @@ export default function Hero() {
     let hide = 'translateY(100%)';
     let reveal = 'translateY(0)';
 
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
+
     const titleRef = useRef();
     const subTitleRef = useRef();
 
@@ -40,12 +44,12 @@ export default function Hero() {
             <div className='hero_Content_Container'>
             <div className='hero_Content'>
                 <div className="hero_Title ofh">
-                    <p className="grBold" ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>
+                    <p className="grBold" ref={titleRef} style={{transform: hide,  transition: `all 1s ${quint}`}}>
                     Empower <span className='green-l'>Change</span> and Transform <span className='green-l'>Lives</span>
                     </p>
                 </div>
                 <div className="hero_Description ofh">
-                    <p ref={subTitleRef} style={{transform: hide, transition:'all 1s ease'}}>
+                    <p ref={subTitleRef} style={{transform: hide,  transition: `all 1s ${quint}`}}>
                     { hero_Description }
                     </p>
                 </div>

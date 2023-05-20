@@ -1,7 +1,13 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link"
 import { useEffect, useRef } from "react"
+
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 
 export default function OurWork() {
@@ -38,26 +44,74 @@ export default function OurWork() {
     let hide = 'translateY(100%)';
     let reveal = 'translateY(0)';
 
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
+
     const titleRef = useRef();
     const subTitleRef = useRef();
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    titleRef.current.style.transform = reveal;
-                    subTitleRef.current.style.transform = reveal;
-                    setTimeout(() => {
-                        document.querySelectorAll('.ourwork_Item').forEach(item => {
-                            item.style.opacity = '1'
-                        })
-                    }, 1500)
-                }
-            })
-        }, {threshold: 0.2})
-        observer.observe(document.querySelector('.ourwork_Container'))
+     const dataRef = useRef();
 
+
+
+     useEffect(() => {
+
+        let main = document.querySelectorAll('.ourwork_Item');
+
+        gsap.to('.titleRef', {
+            scrollTrigger: {
+                trigger: '.ourwork',
+                start: 'top bottom',
+            },
+            y: 0,
+            // opacity: 1,
+            duration: 0.2,
+            ease: quart
+        })
+
+        gsap.to(main[0], {
+            scrollTrigger: {
+                trigger: main[0],
+                start: 'top bottom',
+                // end: 'bottom top',
+            },
+            //  x: 100,
+             translateX: '0%',
+             opacity: 1,
+            duration: 0.2,
+        //    ease: quint,
+        })
+
+        gsap.to(main[1], {
+            scrollTrigger: {
+                trigger: main[1],
+                start: 'top bottom',
+                // end: 'bottom top',
+            },
+            //  x: 100,
+             translateX: '0%',
+            duration: 0.2,
+            opacity: 1,
+        //    ease: quint
+        })
+
+
+        gsap.to(main[2], {
+            scrollTrigger: {
+                trigger: main[2],
+                start: 'top bottom',
+                // end: 'bottom top',
+            },
+            //  x: 100,
+             translateX: '0%',
+            duration: 0.2,
+            opacity: 1,
+        //    ease: quint
+        })
     }, [])
+     
+
 
 
     return(
@@ -66,12 +120,12 @@ export default function OurWork() {
                 <div className="ourwork_Content">
                     <div className="ourwork_Title_Container">
                         <div className="ourwork_Title ofh grBold">
-                            <p ref={titleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>
+                            <p className="titleRef" ref={titleRef} style={{transform: 'translateY(120%)', transition: `all 1s ${quint}`}}>
                                 Our works
                             </p>
                         </div>
                         <div className="ourwork_SubTitle ofh">
-                            <p ref={subTitleRef} style={{transform: 'translateY(120%)', transition:'all 1s ease'}}>
+                            <p ref={subTitleRef} style={{transform: 'translateY(120%)', transition: `all 1s ${quint}`}}>
                                 { subTitle }
                             </p>
                         </div>
@@ -79,8 +133,9 @@ export default function OurWork() {
                     <div className="ourwork_Showcase">
                         {
                             ourWorkData.map((data, i) => {
+
                                 return(
-                                    <div key={i} className="ourwork_Item" style={{opacity:'0', transition: 'all 1s ease'}}>
+                                    <div ref={dataRef} key={i} className="ourwork_Item" style={{transform: i % 2 == 0 ? 'translateX(-100%)':'translateX(100%)', opacity: '0', transition: `all 1s ${quart}`}}>
                                         <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
                                             <div className="ourwork_Item_Title grBold">
                                                 <p>{ data.title } <span>{ data.colorTitle }</span></p>
@@ -96,7 +151,6 @@ export default function OurWork() {
                                         </div>
                                         {/* mob */}
                                         <div className="ourwork_Item_Bottom Mob" style={{
-                                            // background: `${i % 2 == 0 ? 'rgb(117, 155, 69)':'#f5f5f5'}`
                                         color:`${i % 2 == 0 ? '#F5F5F5':''}`}}>
                                             <div className="ourwork_Item_img">
                                                 <img src={ data.src } alt='img' />
@@ -111,8 +165,8 @@ export default function OurWork() {
                         }
                         <div className="ourwork_Link">
                             <Link href={'/endeavours'}><div ref={hoverRef} style={{transition:'all 0.3s ease'}} className="ourwork_Link_Text" 
-                            onMouseEnter={() => {hoverRef.current.style.opacity = '0.5'}}
-                            onMouseLeave={() => {hoverRef.current.style.opacity = '1'}}>
+                                onMouseEnter={() => {hoverRef.current.style.opacity = '0.5'}}
+                                onMouseLeave={() => {hoverRef.current.style.opacity = '1'}}>
                                 <p>See more...</p></div>
                             </Link>
                         </div>

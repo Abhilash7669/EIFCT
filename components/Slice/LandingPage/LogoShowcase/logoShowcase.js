@@ -2,6 +2,11 @@
 
 import { useEffect, useRef } from "react";
 
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 
 export default function LogoShowcase() {
 
@@ -16,6 +21,10 @@ export default function LogoShowcase() {
     // Animation
     let hide = 'translateY(100%)';
     let reveal = 'translateY(0)';
+
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
     
     const titleRef = useRef();
     const descriptionRef = useRef();
@@ -24,21 +33,32 @@ export default function LogoShowcase() {
 
     useEffect(() => {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    titleRef.current.style.transform = reveal;
-                    setTimeout(() => {
-                        descriptionRef.current.style.transform = reveal;
-                    }, 1500)
-                    setTimeout(() => {
-                        logoRef.current.style.scale = '1'
-                        logoRef.current.style.opacity = '1'
-                    }, 1000)
-                }
-            })
-        }, {threshold : 0.3})
-        observer.observe(document.querySelector('.logo_Showcase_Container'));
+        gsap.to('.fMssg', {
+            scrollTrigger: {
+                trigger: '.fMssg',
+                start: 'top bottom',
+            },
+            y: 0,
+            duration: 0.2,
+        })
+
+        gsap.to('.logo_Showcase_Image', {
+            scrollTrigger: {
+                trigger: '.logo_Showcase_Image',
+                start: 'top bottom',
+            },
+            opacity: 1,
+            duration: 1,
+        })
+
+        gsap.to('.logDesc', {
+            scrollTrigger: {
+                trigger: '.logDesc',
+                start: 'top bottom',
+            },
+            y: 0,
+            duration: 0.2,
+        })
 
     })
 
@@ -47,15 +67,15 @@ export default function LogoShowcase() {
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
                     <div className="Founders_Message ofh">
-                        <p className="grBold" ref={titleRef} style={{transform: hide, transition:'all 1s ease'}}>{FoundersMessage}</p>
+                        <p className="fMssg grBold" ref={titleRef} style={{transform: hide, transition: `all 1s ${quint}`}}>{FoundersMessage}</p>
                     </div>
-                    <div ref={logoRef} className='logo_Showcase_Image' style={{opacity: '0', scale:'0.4',transition:'all 1s ease'}}>
+                    <div ref={logoRef} className='logo_Showcase_Image' style={{opacity:'0',transition: `all 1s ${quart}`}}>
                         <img 
                             src='/Landing/EIFCTLogo.svg' 
                             alt='Logo'/>
                     </div>
                     <div className="logo_Showcase_Description ofh">
-                        <p ref={descriptionRef} style={{transform: hide, transition:'all 1s ease'}}>
+                        <p className="logDesc" ref={descriptionRef} style={{transform: hide, transition: `all 1s ${quart}`}}>
                             The logo for <span className="green" style={{fontWeight:'600'}}>ENHANCE INDIA FOUNDATION CHARITABLE TRUST</span> { logo_Showcase_Description }<br /><br /> {textB}<br /><br />{textC}
                         </p>
                     </div>

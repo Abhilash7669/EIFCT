@@ -1,5 +1,10 @@
 import { useEffect, useRef } from "react";
 
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 
 export default function ShowcaseA(){
 
@@ -11,18 +16,20 @@ export default function ShowcaseA(){
 
     const descRef = useRef();
 
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
     useEffect(() => {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                   setTimeout(() => {
-                    descRef.current.style.transform = reveal;
-                   }, 1000)
-                }   
-            })
-        }, {threshold: 0.2})
-        observer.observe(document.querySelector('.showcaseA_Container'))
+        gsap.to('.sCaseA', {
+            scrollTrigger: {
+                trigger: '.showcaseA',
+                start: 'top center',
+            },
+            y: 0,
+            duration: 0.2,
+        })
+
 
     }, [])
 
@@ -30,7 +37,7 @@ export default function ShowcaseA(){
         <section className="showcaseA">
             <div className="showcaseA_Container">
                 <div className="showcaseA_Content ofh">
-                    <p ref={descRef} style={{transform: hide, transition: 'all 1s ease'}}>
+                    <p className="sCaseA" ref={descRef} style={{transform: hide, transition: `all 1s ${quint}`}}>
                         { description }
                     </p>
                 </div>
