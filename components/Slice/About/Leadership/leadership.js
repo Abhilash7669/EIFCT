@@ -1,6 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { useEffect, useRef } from "react"
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
+
 
 
 export default function Leadership() {
@@ -24,29 +29,109 @@ export default function Leadership() {
         }
     ]
 
+    
+
     const titleRef = useRef();
+
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
 
     useEffect(() => {
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    titleRef.current.style.transform = 'translateY(0)';
-                }
-            })
-        })
-        observer.observe(document.querySelector('.leaders'))
+        let leader = document.querySelectorAll('.leader');
 
-        const observerB = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting){
-                    document.querySelectorAll('.leaders').forEach(item => {
-                        item.style.opacity = '1'
-                    })
-                }
-            })
+        gsap.to('.leaderSHIP', {
+            scrollTrigger: {
+                trigger: '.leaderSHIP',
+                start: 'top bottom',
+            },
+             y: 0,
+            duration: 0.2,
         })
-        observerB.observe(document.querySelector('.leaders'))
+
+        let LeaderTitle = document.querySelectorAll('.leaderTitle')
+        let LeaderName = document.querySelectorAll('.leaderName')
+        let LeaderImg = document.querySelectorAll('.founderIMG')
+
+        let AboutLeader = document.querySelectorAll('.aboutLeader')
+
+        gsap.to(LeaderTitle[0], {
+            scrollTrigger: {
+                trigger: LeaderTitle[0],
+                start: 'top bottom',
+            },
+             y: 0,
+            duration: 0.2,
+        })
+
+        gsap.to(LeaderImg[0], {
+            scrollTrigger: {
+                trigger: '.leaderImg',
+                start: 'top bottom',
+            },
+             y: 0,
+             delay:0.5,
+            duration: 0.5,
+        })
+
+        gsap.to(LeaderName[0], {
+            scrollTrigger: {
+                trigger: LeaderName[0],
+                start: 'top bottom',
+            },
+             y: 0,
+             delay:0.6,
+            duration: 0.4,
+        })
+
+        gsap.to(AboutLeader[0], {
+            scrollTrigger: {
+                trigger: AboutLeader[0],
+                start: 'top bottom',
+            },
+             x: 0,
+            duration: 1,
+        })
+
+        gsap.to(LeaderTitle[1], {
+            scrollTrigger: {
+                trigger: LeaderTitle[1],
+                start: 'top bottom',
+            },
+             y: 0,
+            duration: 0.2,
+        })
+
+        let ledImg = document.querySelectorAll('.leaderImg')
+
+        gsap.to(LeaderImg[1], {
+            scrollTrigger: {
+                trigger: ledImg[1],
+                start: 'top bottom',
+            },
+             y: 0,
+            duration: 0.5,
+        })
+
+        gsap.to(LeaderName[1], {
+            scrollTrigger: {
+                trigger: LeaderName[1],
+                start: 'top bottom',
+            },
+             y: 0,
+             delay:0.6,
+            duration: 0.4,
+        })
+
+        gsap.to(AboutLeader[1], {
+            scrollTrigger: {
+                trigger: AboutLeader[1],
+                start: 'top bottom',
+            },
+             x: 0,
+            duration: 2,
+        })
 
     }, [])
 
@@ -55,7 +140,7 @@ export default function Leadership() {
             <div className="leadership__container">
                 <div className="leadership_Content">
                     <div className="leadership_Title ofh grBold">
-                        <p ref={titleRef} style={{transform:'translateY(110%)', transition: 'all 1s ease'}}>
+                        <p className="leaderSHIP" ref={titleRef} style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>
                             Our <span style={{color:'#2FA4C2'}}>Leadership</span>
                         </p>
                     </div>
@@ -63,24 +148,24 @@ export default function Leadership() {
                         {
                             leaderData.map((item, i) => {
                                 return(
-                                    <div key={i} style={{opacity:'1', transition: 'all 2s ease'}} className="leader">
-                                        <div className="leaderTitleWrap">
-                                            <div className="leaderTitle grBold">
+                                    <div key={i} style={{opacity:'1', transition: `all 1s ${quint}`}} className="leader">
+                                        <div className="leaderTitleWrap ofh">
+                                            <div className="leaderTitle grBold" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}>
                                                 <p>{item.title}</p>
                                             </div>
                                         </div>
                                         <div className="leaderContent">
                                             <div className="leaderContentA">
-                                                <div className="leaderImg">
-                                                    <img src={item.src} alt="logo" />
+                                                <div className="leaderImg ofh">
+                                                    <img className="founderIMG" src={item.src} alt="logo" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}} />
                                                 </div>
-                                                <div className="leaderPositionWrap">
-                                                    <div className="leaderName"><p>{item.name}</p></div>
+                                                <div className="leaderPositionWrap ofh">
+                                                    <div className="leaderName" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}><p>{item.name}</p></div>
                                                     {/* <div className="leaderPos"><p>{item.position}</p></div> */}
                                                 </div>
                                             </div>
-                                            <div className="leaderContentB">
-                                                <div className="aboutLeader">
+                                            <div className="leaderContentB ofh">
+                                                <div className="aboutLeader" style={{transform:'translateX(150%)', transition: `all 1s ${quint}`}}>
                                                     <p>{item.descriptA} <br /> <br /> {item.descriptB}</p>
                                                 </div>
                                             </div>
