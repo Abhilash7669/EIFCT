@@ -8,6 +8,7 @@
     left: 0;
     width: 100%;
     z-index: 99999;
+
 }
 .nav_Container {
     padding: 0.2em 12em;
@@ -15,6 +16,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 .logo_Container {
     height: 4em;
@@ -23,28 +25,94 @@
 .nav_List {
     display: flex;
     align-items: center;
+
 }
 .navItem {
     margin-inline: 2em;
 
     cursor: pointer;
+
+}
+
+.mobNav {
+    display: none;
 }
 
 @media(max-width: 780px) {
     .nav {
         padding: 2em;
+        height: 100vh;
+        transform: translateY(-100%);
     }
     .logo_Container {
         height: 12em;
         width: 12em;
+        display: none;
     }
     .nav_Container {
         padding: 0.2em 6em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .nav_List {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
     .navItem {
         margin-inline: 1.6em;
+
+        margin: 2.5em 0;
+        padding: 1em 0;
+
+        width: 80%;
     }
     .navItem > p {
-        font-size: 2.4em;
+        font-size: 7em;
+        text-transform: uppercase;
+        font-family: grBold;
+    }
+
+    /* mob Nav */
+    .mobNav {
+        z-index: 100000000000;
+        background: rgba(255, 255, 255, 1);
+        padding: 6em 4em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        height: 20em;
+        width: 20em;
+        border: 1px black solid;
+        border-radius: 50%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+    }
+    .line1 {
+        border: 2px black solid;
+        width: 80%;
+        margin: 0 0 1em 0;
+
+    }
+    .line3 {
+        border: 2px black solid;
+        width: 80%;
     }
 }
