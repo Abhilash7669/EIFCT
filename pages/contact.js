@@ -1,7 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import emailjs from 'emailjs-com';
+
+//gsap
+import { gsap } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Contact(){
 
@@ -117,6 +122,7 @@ export default function Contact(){
     setFullNameFocused(true);
   };
 
+
   const handleFullNameBlur = () => {
     setFullNameFocused(false);
   };
@@ -159,26 +165,56 @@ export default function Contact(){
       setAddressFocused(false);
    }
 
+    //anim
+    let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
+    let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
+
+    useEffect(() => {
+      gsap.to('.cntTitle', {
+        scrollTrigger: {
+            trigger: '.cntTitle',
+            start: 'top bottom',
+        },
+         y: 0,
+        duration: 0.2,
+    })
+
+    gsap.to('.cntSubtitle', {
+      scrollTrigger: {
+          trigger: '.cntSubtitle',
+          start: 'top bottom',
+      },
+       y: 0,
+       delay:0.5,
+      duration: 0.2,
+  })
+    }, [])
+
+  
+
+
     return(
         <>
-        <section className="contact">
-            <div className="contact_Container">
-                <div className="contact_Text">
-                    <div className="contact_Title grBold">
-                        <p>
+        <section className="contactBg" style={{height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
+        <div className="contact_Text" style={{display:'flex', flexDirection:'column', alignItems:'center', zIndex:'1000'}}>
+                    <div className="contact_Title grBold ofh">
+                        <p className="cntTitle" style={{color:'#FFF', transform:'translateY(100%)',  transition: `all 1s ${quint}`}}>
                             {
-                                Title
+                              Title
                             }
                         </p>
                     </div>
-                    <div className="contact_Subtitle">
-                        <p>
+                    <div className="contact_Subtitle ofh">
+                        <p className="cntSubtitle" style={{textAlign:'center', color:'#FFFF', transform:'translateY(100%)', transition: `all 1s ${quint}`}}>
                             {
-                                SubTitle
+                              SubTitle
                             }
                         </p>
                     </div>
                 </div>
+        </section>
+        <section className="contact">
+            <div className="contact_Container">
                 <div className="contact_FormContainer">
                     <form className="form_Form" ref={form} onSubmit={handleSubmit}>
                     <div className="form_ImgContainer">
@@ -220,7 +256,7 @@ export default function Contact(){
                               onFocus={handleMobileFocus}
                               onBlur={handleMobileBlur}
                               className={mobileFocused ? 'focused' : 'notFocused'}
-                              placeholder='Full Name..'
+                              placeholder='Mobile Number'
                               />
                               {errors.mobileNumber && <p className='form_Error'>{errors.mobileNumber}</p>}
                       </div>
@@ -276,7 +312,7 @@ export default function Contact(){
                       <div className="form_Message center">
                         <label htmlFor="message" 
                               className={messageFocused ? 'textFocused' : 'textNotFocused'}>
-                                  Message
+                                  Message (optional)
                               </label> {/* Message */}
                               <textarea
                               type="text"

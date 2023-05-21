@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Header(){
 
-    let navItem = [{item: 'Home', link: '/'},{item: 'About us', link:'/about-us'},{item: 'Endeavours', link:'/endeavours'},{item: 'Awards and Gallery', link:'/awards&gallery'}];
-
+    let navItem = [{item: 'Home', link: '/'},{item: 'About us', link:'/about-us'},{item: 'Endeavours', link:'/endeavours'},{item: 'Awards and Gallery', link:'/awards&gallery'},{item: 'Contact', link:'/contact'}];
+    
     return(
         <nav className="nav">
             <div className="nav_Container">
