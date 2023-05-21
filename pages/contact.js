@@ -82,6 +82,7 @@ export default function Contact(){
 
       
       console.log('Form submitted');
+      alert("Your Form has been submitted");
     }
   };
 

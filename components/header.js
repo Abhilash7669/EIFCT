@@ -64,6 +64,18 @@ export default function Header(){
                         navItem.map((data, i) => {
 
                             return(
+                                <Link href={data.link} className="navItem" key={i}>
+                                    <p>{data.item}</p>
+                                </Link>
+                            )
+                        })
+                    }
+                </div>
+                <div className="nav_List mob">
+                    {
+                        navItem.map((data, i) => {
+
+                            return(
                                 <Link onClick={hmbrgr} href={data.link} className="navItem" key={i}>
                                     <p>{data.item}</p>
                                 </Link>

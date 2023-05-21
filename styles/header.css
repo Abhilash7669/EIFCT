@@ -25,7 +25,6 @@
 .nav_List {
     display: flex;
     align-items: center;
-
 }
 .navItem {
     margin-inline: 2em;
@@ -34,9 +33,11 @@
 
 }
 
-.mobNav {
+.nav_List.mob{
     display: none;
 }
+
+.mobNav {display: none;}
 
 @media(max-width: 780px) {
     .nav {
@@ -58,6 +59,9 @@
         justify-content: center;
     }
     .nav_List {
+        display: none;
+    }
+    .nav_List.mob {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,7 +84,7 @@
 
     /* mob Nav */
     .mobNav {
-        z-index: 100000000000;
+        z-index: 10000000000000000000;
         background: rgba(255, 255, 255, 1);
         padding: 6em 4em;
         position: fixed;
