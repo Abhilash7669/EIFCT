@@ -14,6 +14,7 @@ export default function Contact(){
   const [mobileNumber, setMobileNumber] = useState('');
   const [message, setMessage] = useState('');
   const [option, setOption] = useState('');
+  const [address, setAddress] = useState('');
 
   const [errors, setErrors] = useState({});
 
@@ -33,6 +34,9 @@ export default function Contact(){
         break;
       case 'option':
         setOption(value);
+        break;
+      case 'address':
+        setAddress(value);
         break;
       case 'message':
         setMessage(value);
@@ -55,12 +59,22 @@ export default function Contact(){
     if (Object.keys(validationErrors).length === 0) {
 
       // Form is valid, you can submit or perform further actions here
-      emailjs.sendForm('service_nu944ga', 'template_z4tseh9', form.current, 'upcY4JFuC8LugmqoZ')
+      emailjs.sendForm('service_x3668de', 'template_yxc2vtv', form.current, 'Q6aK5xiFRMCqHxL4q')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
+      // Clear form
+      setFullName('');
+      setEmail('');
+      setMobileNumber('');
+      setMessage('');
+      setOption('');
+      setAddress('');
+      setErrors({});
+      
+
       
       console.log('Form submitted');
     }
@@ -69,25 +83,29 @@ export default function Contact(){
   const validateForm = () => { // validation for form
     const errors = {};
 
-    // if (!fullName.trim()) {
-    //   errors.fullName = 'Full name is required';
-    // } else if (!/^[A-Za-z]+$/.test(fullName)) {
-    //   errors.fullName = 'Full name should contain only alphabets';
-    // }
+     if (!fullName.trim()) {
+       errors.fullName = 'Full name is required';
+     } else if (!/^[A-Za-z]+$/.test(fullName)) {
+       errors.fullName = 'Full name should contain only alphabets';
+     }
 
-    // if (!email.trim()) {
-    //   errors.email = 'Email address is required';
-    // } else if (!/\S+@\S+\.\S+/.test(email)) {
-    //   errors.email = 'Invalid email address';
-    // }
+     if (!email.trim()) {
+       errors.email = 'Email address is required';
+     } else if (!/\S+@\S+\.\S+/.test(email)) {
+       errors.email = 'Invalid email address';
+     }
 
-    // if (!mobileNumber.trim()) {
-    //     errors.mobileNumber = 'Mobile number is required';
-    //   }  else if (!/^[0-9]+$/.test(mobileNumber)) {
-    //     errors.mobileNumber = 'Mobile number should contain only numbers';
-    //   } else if (!/^\d{10}$/.test(mobileNumber)) {
-    //     errors.mobileNumber = 'Mobile number should be 10 digits';
-    //   }
+     if (!mobileNumber.trim()) {
+         errors.mobileNumber = 'Mobile number is required';
+       }  else if (!/^[0-9]+$/.test(mobileNumber)) {
+         errors.mobileNumber = 'Mobile number should contain only numbers';
+       } else if (!/^\d{10}$/.test(mobileNumber)) {
+         errors.mobileNumber = 'Mobile number should be 10 digits';
+       }
+      
+       if(!address.trim()) {
+        errors.address = 'Address is required'
+       }
 
     return errors;
   };
@@ -130,6 +148,17 @@ export default function Contact(){
      setMessageFocused(false);
    };
 
+   // focus and blur address
+   const [addressFocused, setAddressFocused] = useState(false);
+
+   const handleAddressFocus = () => {
+      setAddressFocused(true);
+   }
+
+   const handleAddressBlur = () => {
+      setAddressFocused(false);
+   }
+
     return(
         <>
         <section className="contact">
@@ -151,38 +180,120 @@ export default function Contact(){
                     </div>
                 </div>
                 <div className="contact_FormContainer">
-                    <form ref={form} onSubmit={handleSubmit}>
-                        <div className="form_Img">
-                            <img src="/Landing/EIFCTLogo.svg" alt="logo" />
+                    <form className="form_Form" ref={form} onSubmit={handleSubmit}>
+                    <div className="form_ImgContainer">
+                      <div className="form_Img">
+                        <img src="/Landing/EIFCTLogo.svg" alt="logo" />
+                      </div>
+                    </div>
+                      <div style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
+                        <div className="form_FullName center">
+                          <label htmlFor="fullName" 
+                              className={fullNameFocused ? 'textFocused' : 'textNotFocused'}>
+                                  Full Name*
+                              </label>
+                              <input 
+                              type="text"
+                              id="fullName"
+                              name="fullName"
+                              value={fullName}
+                              onChange={handleChange}
+                              onFocus={handleFullNameFocus}
+                              onBlur={handleFullNameBlur}
+                              className={fullNameFocused ? 'focused' : 'notFocused'}
+                              placeholder='Full Name..'
+                              />
+                              {errors.fullName && <p className='form_Error'>{errors.fullName}</p>}
                         </div>
-                        <div>
-                            <div className="form_FullName">
-                              <label htmlFor="fullName" 
-                                  className={fullNameFocused ? 'textFocused' : 'textNotFocused'}>
-                                      Full Name*
-                                  </label> {/* First Name */}
-                                  <input 
-                                  type="text"
-                                  id="firstName"
-                                  name="firstName"
-                                  value={fullName}
-                                  onChange={handleChange}
-                                  onFocus={handleFullNameFocus}
-                                  onBlur={handleFullNameBlur}
-                                  className={fullNameFocused ? 'focused' : 'notFocused'}
-                                  placeholder='Full Name..'
-                                  />
-                                  {errors.fullName && <p className='form_Error'>{errors.fullName}</p>}
-                            </div>
-                            <div>
-                              <select value={option} onChange={handleChange} name="option">
-                                <option value="option1">Option 1</option>
-                                <option value="option2">Option 2</option>
-                                <option value="option3">Option 3</option>
-                              </select>
-                            </div>
-                            <button>Submit</button>
-                        </div>
+                        {/* mobile */}
+                      <div className="form_MobileNumber center">
+                        <label htmlFor="mobileNumber" 
+                              className={mobileFocused ? 'textFocused' : 'textNotFocused'}>
+                              MobileNumber*
+                        </label>
+                              <input 
+                              type="text"
+                              id="mobileNumber"
+                              name="mobileNumber"
+                              value={mobileNumber}
+                              onChange={handleChange}
+                              onFocus={handleMobileFocus}
+                              onBlur={handleMobileBlur}
+                              className={mobileFocused ? 'focused' : 'notFocused'}
+                              placeholder='Full Name..'
+                              />
+                              {errors.mobileNumber && <p className='form_Error'>{errors.mobileNumber}</p>}
+                      </div>
+                            
+                      </div>
+                      
+                      {/*  */}
+                      <div className="form_Email center">
+                              <label htmlFor="email" 
+                                      className={emailFocused ? 'textFocused' : 'textNotFocused'}>
+                                      Email *
+                                </label>
+                                      <input 
+                                      type="text"
+                                      id="email"
+                                      name="email"
+                                      value={email}
+                                      onChange={handleChange}
+                                      onFocus={handleEmailFocus}
+                                      onBlur={handleEmailBlur}
+                                      className={emailFocused ? 'focused' : 'notFocused'}
+                                      placeholder='Email'
+                                      />
+                                      {errors.email && <p className='form_Error'>{errors.email}</p>}
+                              </div>
+                      {/* address */}
+                      <div className="form_Address center">
+                        <label htmlFor="address" 
+                              className={addressFocused ? 'textFocused' : 'textNotFocused'}>
+                              Address*
+                        </label>
+                              <input 
+                              type="text"
+                              id="address"
+                              name="address"
+                              value={address}
+                              onChange={handleChange}
+                              onFocus={handleAddressFocus}
+                              onBlur={handleAddressBlur}
+                              className={addressFocused ? 'focused' : 'notFocused'}
+                              placeholder='Enter your Address'
+                              />
+                              {errors.address && <p className='form_Error'>{errors.address}</p>}
+                      </div>
+                      <div className="center">
+                        <label htmlFor="option" className={messageFocused ? 'textFocused' : 'textNotFocused'}>Reason to reach out</label>
+                          <select id="dropdown" value={option} onChange={handleChange} name="option">
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                          </select>
+                      </div>
+                      <div className="form_Message center">
+                        <label htmlFor="message" 
+                              className={messageFocused ? 'textFocused' : 'textNotFocused'}>
+                                  Message
+                              </label> {/* Message */}
+                              <textarea
+                              type="text"
+                              id="message"
+                              name="message"
+                              value={message}
+                              onChange={handleChange}
+                              onFocus={handleMessageFocus}
+                              onBlur={handleMessageBlur}
+                              className={messageFocused ? 'focused' : 'notFocused'}
+                              rows={4} // Specify the number of rows for the textarea
+                              cols={40} // Specify the number of columns for the textarea
+                              />
+                      </div>
+                      <div className="form_Btn">
+                      <button type="submit">Submit</button>
+                      </div>
                     </form>
                 </div>
             </div>

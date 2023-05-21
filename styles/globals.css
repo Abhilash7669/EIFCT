@@ -42,3 +42,8 @@ a {
   overflow: hidden;
 }
 
+.center {
+  display: flex;
+  flex-direction: column;
+}
+

@@ -22,3 +22,128 @@
     line-height: 150%;
     letter-spacing: 0.01em;
 }
+/* Form */
+.contact_FormContainer {
+
+    background: #d9d9d9;
+    border-radius: 2em;
+    padding: 2em 4em;
+
+    margin: 4em 0;
+}
+.form_Form {
+    background-color: #224435;
+    padding: 4em 4em;
+
+    border-radius: 1em;
+}
+.form_ImgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_Img {
+    height: 10em;
+    width: 10em;
+}
+.form_Img > img {
+    height: 100%;
+    width: 100%;
+
+    object-fit: contain;
+}
+label {
+    color: #FFF;
+    margin: 0.5em 0;
+}
+input {
+    background: none;
+    outline: none;
+    color: #FFF;
+
+    padding: 1.4em 2em;
+    border-radius: 0.2em;
+}
+select {
+    padding: 1em;
+    border-radius: 0.2em;
+    background: none;
+    color: #FFF;
+}
+#dropdown option {
+    background: #224435;
+
+    color: #FFF;
+}
+textarea {
+    outline: none;
+    background: none;
+    padding: 2.2em 1em 2.2em 1em;
+    height: 200px;
+
+    resize: none;
+
+    border-radius: 0.6875em;
+    margin: 0 0 0.2em 0;
+    color: #FAFBFF;
+
+}
+/* form input fields */
+.form_FullName {
+    width: 45%;
+    margin: 0.5em 0;
+}
+.form_Email {
+    margin: 0.5em 0;
+}
+.form_MobileNumber {
+    width: 45%;
+    margin: 0.5em 0;
+}
+.form_Address {
+    margin: 0.5em 0;
+}
+.form_Message {
+    margin: 1em 0;
+}
+
+/* states */
+.notFocused {
+    border: 1px grey solid;
+}
+.focused {
+    border: 1px #97c55e solid;
+}
+.textFocused {
+    color: #FFFF;
+}
+.textNotFocused {
+    color: #D9D9D9;
+}
+/* ERROR */
+.form_Error {
+    color: red;
+    margin: 0.5em 0;
+}
+.form_Btn {
+}
+.form_Btn button {
+    outline: none;
+    border: none;
+
+    width: 100%;
+    padding: 1em 0;
+
+    border-radius: 2em;
+    cursor: pointer;
+
+    background: #FFF;
+
+    font-size: 1.6em;
+    transition: all 1s ease;
+}
+.form_Btn:hover button {
+   opacity: 0.9;
+}
