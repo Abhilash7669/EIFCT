@@ -22,11 +22,11 @@ export default function Header(){
 
         if (openBurger) {
             nav.style.transform = 'translateY(0)';
-            lineA.style.transform = 'rotate(120deg)'
+            lineA.style.transform = 'rotate(137deg)'
             lineA.style.margin = '0'
             lineA.style.width= '75%'
             lineC.style.width= '75%'
-            lineC.style.transform = 'rotate(-120deg)'
+            lineC.style.transform = 'rotate(-137deg)'
 
 
 
