@@ -15,6 +15,8 @@ import '../styles/about/leadership.css'
 import '../styles/endeavours/ehero.css'
 import '../styles/awards/awards.css'
 
+import '../styles/contact.css'
+
 
 import '../styles/header.css'
 import '../styles/footer.css'
