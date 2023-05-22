@@ -22,7 +22,7 @@ export default function Header(){
                 navRef.current.style.background = 'none'
                 mobLogo.style.opacity = '0'
 
-                hamburger.style.background = 'rgba(0,0,0,0.1)'
+                hamburger.style.background = 'rgba(255,255,255,0.3)'
             }
             else {
                 navRef.current.style.background = 'rgba(255,255,255,1)'

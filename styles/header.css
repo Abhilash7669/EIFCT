@@ -99,8 +99,8 @@
     }
 
     .hamburger {
-        height: 20em;
-        width: 20em;
+        height: 18em;
+        width: 18em;
         /* border: 1px black solid; */
         /* border-radius: 50%; */
 
@@ -112,12 +112,12 @@
     }
     .line1 {
         border: 2px black solid;
-        width: 60%;
+        width: 50%;
         margin: 0 0 1em 0;
 
     }
     .line3 {
         border: 2px black solid;
-        width: 60%;
+        width: 50%;
     }
 }
