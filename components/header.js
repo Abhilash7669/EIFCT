@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 
 export default function Header(){
@@ -9,6 +9,28 @@ export default function Header(){
     const [openBurger, setOpenBurger] = useState(false)
 
     let navItem = [{item: 'Home', link: '/'},{item: 'About us', link:'/about-us'},{item: 'Endeavours', link:'/endeavours'},{item: 'Awards and Gallery', link:'/awards&gallery'},{item: 'Contact', link:'/contact'}];
+
+    const navRef = useRef();
+
+    useEffect(() => {
+
+        let mobLogo = document.querySelector('.navMob_LogoContainer');
+        let hamburger = document.querySelector('.hamburger');
+
+        window.onscroll = () => {
+            if(window.scrollY > 6) {
+                navRef.current.style.background = 'none'
+                mobLogo.style.opacity = '0'
+
+                hamburger.style.background = 'rgba(0,0,0,0.2)'
+            }
+            else {
+                navRef.current.style.background = 'rgba(255,255,255,1)'
+                mobLogo.style.opacity = '1'
+                hamburger.style.background = 'none'
+            }
+        }
+    })
 
      //anim
      let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
@@ -64,7 +86,7 @@ export default function Header(){
                         navItem.map((data, i) => {
 
                             return(
-                                <Link href={data.link} className="navItem" key={i}>
+                                <Link href={data.link} className="navItem grBold" key={i}>
                                     <p>{data.item}</p>
                                 </Link>
                             )
@@ -86,8 +108,8 @@ export default function Header(){
             </div>
         </nav>
         {/* mobile */}
-        <nav className="mobNav" >
-            <div className="navMob_LogoContainer" style={{ height:'20em', width:'20em'}}>
+        <nav ref={navRef} className="mobNav" style={{transition:`all 1s ${quart}`}}>
+            <div className="navMob_LogoContainer" style={{ height:'20em', width:'20em', transition:`all 1s ${quart}`}}>
                 <Link href={'/'} style={{cursor:'pointer'}}>
                     <img 
                         style={{height:'100%', width:'100%', objectFit:'cover'}} 
@@ -95,7 +117,7 @@ export default function Header(){
                         alt="EIFCT"/>
                 </Link>
             </div>
-            <div className="hamburger" onClick={hmbrgr} >
+            <div className="hamburger"  onClick={hmbrgr} >
                     <div className="line1" style={{transition: `all 1s ${quint}`}}></div>
                     <div className="line3" style={{transition: `all 1s ${quint}`}}></div>
             </div>
