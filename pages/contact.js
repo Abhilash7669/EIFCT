@@ -333,9 +333,12 @@ export default function Contact(){
                       <div className="center">
                         <label htmlFor="option" className={messageFocused ? 'textFocused' : 'textNotFocused'}>Reason to reach out</label>
                           <select id="dropdown" value={option} onChange={handleChange} name="option">
-                            <option value="option1">Option 1</option>
-                            <option value="option2">Option 2</option>
-                            <option value="option3">Option 3</option>
+                            <option value="In need of Shelter/Home">In need of Shelter/Home</option>
+                            <option value="Education">Education</option>
+                            <option value="Building Institutions">Building Institutions</option>
+                            <option value="Food relief packages">Food relief packages</option>
+                            <option value="Women Empowerment">Women Empowerment</option>
+                            <option value="Medical and Health care">Medical and Health care</option>
                           </select>
                       </div>
                       <div className="form_Message center">
