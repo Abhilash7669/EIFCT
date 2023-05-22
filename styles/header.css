@@ -112,12 +112,12 @@
     }
     .line1 {
         border: 2px black solid;
-        width: 80%;
+        width: 60%;
         margin: 0 0 1em 0;
 
     }
     .line3 {
         border: 2px black solid;
-        width: 80%;
+        width: 60%;
     }
 }
