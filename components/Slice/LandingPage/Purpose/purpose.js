@@ -16,7 +16,7 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/buildingHome.png',
             title:' Building Homes',
-            description: 'We build homes not just for the homeless, but for the orphans and old age homes'
+            description: 'We build homes not just for the homeless people and all categories'
         },
         {
             src: '/Landing/Purpose/nature.png',

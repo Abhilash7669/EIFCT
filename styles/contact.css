@@ -1,5 +1,7 @@
 .contactBg {
-    background: url('/contactHeroImg.png') no-repeat center center/cover;
+    /* background: url('/contactHeroImg.png') no-repeat center center/cover; */
+    background: url('/Hero\ Image\ Contact.png') no-repeat center center/cover;
+
     background-attachment: fixed;
 
     height: 100vh;
@@ -171,6 +173,8 @@ textarea {
 @media(max-width: 780px) {
     .contactBg {
         font-size: 2rem;
+        background: url('/Hero\ IMG\ Contact\ mobile.png') no-repeat center center/cover;
+
     }
     .contact_Title > p {
         font-size: 7em;

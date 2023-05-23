@@ -46,6 +46,8 @@ export default function Header(){
             nav.style.transform = 'translateY(0)';
             lineA.style.transform = 'rotate(137deg)'
             lineA.style.margin = '0'
+            lineC.style.margin = '0'
+
             lineC.style.transform = 'rotate(-137deg)'
 
 

@@ -39,7 +39,7 @@ export default function Hero() {
         <main className='hero'>
             <video className="heroVid" src='/Landing/heroVid.mp4' autoPlay="true" muted="true" loop="true" 
                            disableRemotePlayback/>
-            <video className="heroVidMob" src='/Landing/HeroVidMob.mp4' autoPlay="true" muted="true" loop="true" 
+            <video className="heroVidMob" src='/Landing/HeroVidMob.mp4' style={{objectFit:'cover'}} autoPlay="true" muted="true" loop="true" 
                            disableRemotePlayback/>
             <div className='hero_Content_Container'>
             <div className='hero_Content'>
