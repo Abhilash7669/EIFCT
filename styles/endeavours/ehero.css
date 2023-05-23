@@ -209,9 +209,13 @@
 
         background-attachment: unset;
     }
+    .endeavours_Title {
+        width: 80%;
+    }
     .endeavours_Title > p {
         font-size: 6em;
         font-weight: 600;
+        text-align: center;
     }
     .endeavours_Descript {
         width: 80%;
