@@ -206,6 +206,8 @@
 @media(max-width: 780px) {
     .endeavorus {
         font-size: 2rem;
+
+        background-attachment: unset;
     }
     .endeavours_Title > p {
         font-size: 6em;
@@ -295,5 +297,15 @@
 
     .ourSol_Text.setBtext {
         width: 100%;
+    }
+
+    .ourSol_ContentAbsolute {
+        background: url('/endeavours/C.png') no-repeat center center/cover;
+        background-attachment: unset;
+    }
+    .ourSol_ContentAbsolute.C {
+ 
+        background: url('/endeavours/F.png') no-repeat center center/cover;
+        background-attachment: unset;
     }
 }

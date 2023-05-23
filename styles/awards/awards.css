@@ -234,6 +234,8 @@
 
     .awardsHero {
         font-size: 2rem;
+
+        background-attachment: unset;
     }
     .awards_Title > p {
         font-size: 7em;

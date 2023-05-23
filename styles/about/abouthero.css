@@ -51,7 +51,7 @@
     .aboutHero {
         font-size: 2rem;
 
-        background-attachment: fixed;
+        background-attachment: unset;
     }
     .about_Title > p {
         font-size: 7em;
