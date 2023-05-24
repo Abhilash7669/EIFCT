@@ -39,7 +39,7 @@ export default function LogoShowcase() {
                 start: 'top bottom',
             },
             y: 0,
-            duration: 0.2,
+            duration: 0.1,
         })
 
         gsap.to('.logo_Showcase_Image', {
@@ -48,16 +48,16 @@ export default function LogoShowcase() {
                 start: 'top bottom',
             },
             opacity: 1,
-            duration: 1,
+            duration: 0.3,
         })
 
         gsap.to('.logDesc', {
             scrollTrigger: {
-                trigger: '.logDesc',
+                trigger: '.logo_Showcase_Image',
                 start: 'top bottom',
             },
             y: 0,
-            duration: 0.2,
+            duration: 0.4,
         })
 
     })
@@ -67,7 +67,7 @@ export default function LogoShowcase() {
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
                     <div className="Founders_Message ofh">
-                        <p className="fMssg grBold" ref={titleRef} style={{transform: hide, transition: `all 1s ${quint}`}}>{FoundersMessage}</p>
+                        <p className="fMssg grBold" ref={titleRef} style={{transform: hide, transition: `all 1 ${quint}`}}>{FoundersMessage}</p>
                     </div>
                     <div ref={logoRef} className='logo_Showcase_Image' style={{opacity:'0',transition: `all 1s ${quart}`}}>
                         <img 

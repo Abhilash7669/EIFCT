@@ -40,7 +40,7 @@ export default function Stats(){
                     setTimeout(() => {
                         item[1].style.opacity = '1'
                          item[1].style.scale = '1'
-                    }, 1000)
+                    }, 300)
                     setTimeout(() => {
                         item[2].style.opacity = '1'
                          item[2].style.scale = '1'

@@ -91,7 +91,7 @@ export default function Leadership() {
                 start: 'top bottom',
             },
              x: 0,
-            duration: 1,
+            duration: 0.4,
         })
 
         gsap.to(LeaderTitle[1], {
@@ -130,7 +130,7 @@ export default function Leadership() {
                 start: 'top bottom',
             },
              x: 0,
-            duration: 2,
+            duration: 0.4,
         })
 
     }, [])
@@ -140,7 +140,7 @@ export default function Leadership() {
             <div className="leadership__container">
                 <div className="leadership_Content">
                     <div className="leadership_Title ofh grBold">
-                        <p className="leaderSHIP" ref={titleRef} style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>
+                        <p className="leaderSHIP" ref={titleRef} style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>
                             Our <span style={{color:'#2FA4C2'}}>Leadership</span>
                         </p>
                     </div>
@@ -150,22 +150,22 @@ export default function Leadership() {
                                 return(
                                     <div key={i} style={{opacity:'1', transition: `all 1s ${quint}`}} className="leader">
                                         <div className="leaderTitleWrap ofh">
-                                            <div className="leaderTitle grBold" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}>
+                                            <div className="leaderTitle grBold" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>
                                                 <p>{item.title}</p>
                                             </div>
                                         </div>
                                         <div className="leaderContent">
                                             <div className="leaderContentA">
                                                 <div className="leaderImg ofh">
-                                                    <img className="founderIMG" src={item.src} alt="logo" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}} />
+                                                    <img className="founderIMG" src={item.src} alt="logo" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}} />
                                                 </div>
                                                 <div className="leaderPositionWrap ofh">
-                                                    <div className="leaderName" style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}><p>{item.name}</p></div>
+                                                    <div className="leaderName" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}><p>{item.name}</p></div>
                                                     {/* <div className="leaderPos"><p>{item.position}</p></div> */}
                                                 </div>
                                             </div>
                                             <div className="leaderContentB ofh">
-                                                <div className="aboutLeader" style={{transform:'translateX(150%)', transition: `all 1s ${quint}`}}>
+                                                <div className="aboutLeader" style={{transform:'translateX(150%)', transition: `all 0.6s ${quint}`}}>
                                                     <p>{item.descriptA} <br /> <br /> {item.descriptB}</p>
                                                 </div>
                                             </div>

@@ -56,7 +56,7 @@ export default function MissionVision() {
                     {
                         mission.map((item, i) => {
                             return(
-                                <div className="mission" style={{opacity: '0', transition: `all 1s ${quint}`}} key={i}>
+                                <div className="mission" style={{opacity: '0', transition: `all 0.6s ${quint}`}} key={i}>
                                     <div className="missionTitle grBold"><p>{item.title}</p></div>
                                     <div className="missionDescription"><p>{item.description}</p></div>
                                     <div className="missionImg" style={{zIndex:'10000'}}><img src="/About/mission.png" alt="image"  /></div>
@@ -69,7 +69,7 @@ export default function MissionVision() {
                     {
                         vision.map((item, i) => {
                             return(
-                                <div className="vision" style={{opacity: '0',  transition: `all 1s ${quint}`}} key={i}>
+                                <div className="vision" style={{opacity: '0',  transition: `all 0.6s ${quint}`}} key={i}>
                                     <div className="visionTitle grBold"><p>{item.title}</p></div>
                                     <div className="visionDescription"><p>{item.description}</p></div>
                                     <div className="visionImg" ><img src="/About/vision.png" alt="image" /></div>

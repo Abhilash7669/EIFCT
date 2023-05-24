@@ -113,7 +113,7 @@ export default function Endeavours() {
             start: 'top bottom',
         },
          y: 0,
-        duration: 0.5,
+        duration: 0.4,
     })
 
     gsap.to('.powerDesc', {
@@ -122,7 +122,7 @@ export default function Endeavours() {
             start: 'top bottom',
         },
          y: 0,
-        duration: 1,
+        duration: 0.4,
     })
 
     let soulContent = document.querySelectorAll('.ourSol_Content')
@@ -134,7 +134,7 @@ export default function Endeavours() {
         },
          x: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     gsap.to(soulContent[1], {
@@ -144,7 +144,7 @@ export default function Endeavours() {
         },
          x: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     gsap.to(soulContent[2], {
@@ -154,7 +154,7 @@ export default function Endeavours() {
         },
          x: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
    
     gsap.to(soulContent[3], {
@@ -164,7 +164,7 @@ export default function Endeavours() {
         },
          x: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     let absolTitle = document.querySelectorAll('.absolTitle')
@@ -176,7 +176,7 @@ export default function Endeavours() {
         },
          y: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     gsap.to(absolTitle[1], {
@@ -186,7 +186,7 @@ export default function Endeavours() {
         },
          y: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     let absolDesc = document.querySelectorAll('.absolDesc')
@@ -198,7 +198,7 @@ export default function Endeavours() {
         },
          y: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
     gsap.to(absolDesc[1], {
@@ -208,7 +208,7 @@ export default function Endeavours() {
         },
          y: 0,
         //  delay:1,
-        duration: 1,
+        duration: 0.4,
     })
 
 
@@ -248,12 +248,12 @@ export default function Endeavours() {
         <main className="endeavorus">
             <div className="endeavours_Container">
                 <div className="endeavours_Title grBold ofh">
-                    <p className="endTitle" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>
+                    <p className="endTitle" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>
                         Our Endeavours
                     </p>
                 </div>
                 <div className="endeavours_Descript ofh" >
-                    <p className="endDessc" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>
+                    <p className="endDessc" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>
                         { heroDescript }
                     </p>
                 </div>
@@ -268,7 +268,7 @@ export default function Endeavours() {
                         {
                             statsB.map((item, i) => {
                                 return(
-                                    <div className="about_StatsItem" style={{transform: i == 0 ? 'translateX(-100%)' : i == 1 ? 'translateX(-100%)': i == 2 ? 'translateX(-100%)': null, transition: `all 1s ${quint}`, opacity:'0'}} key={i}>
+                                    <div className="about_StatsItem" style={{transform: i == 0 ? 'translateX(-100%)' : i == 1 ? 'translateX(-100%)': i == 2 ? 'translateX(-100%)': null, transition: `all 0.6s ${quint}`, opacity:'0'}} key={i}>
                                         <div className="about_StatsIcon">
                                             <img src={item.src} alt="logo" />
                                         </div>
@@ -299,15 +299,15 @@ export default function Endeavours() {
                             {/* contentA */}
                     <div className="pHouseContainer ofh">
                         <div className="pHouseTitle grBold ofh" >
-                            <p className="powerTitl" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`,color:'#000'}}>A Power House of Solutions</p>
+                            <p className="powerTitl" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`,color:'#000'}}>A Power House of Solutions</p>
                         </div>
                         <div className="pHouseDescript ofh">
-                            <p className="powerDesc" style={{transform:'translateY(150%)', transition: `all 1s ${quart}`, color:'#000'}} >
+                            <p className="powerDesc" style={{transform:'translateY(150%)', transition: `all 0.6s ${quart}`, color:'#000'}} >
                                 {phouseDescript}
                             </p>
                         </div>
                     </div>
-                    <div className="ourSol_Content" style={{ transition: `all 1s ${quint}`, transform:'translateX(200%)'}}>
+                    <div className="ourSol_Content" style={{ transition: `all 0.6s ${quint}`, transform:'translateX(200%)'}}>
                         <div className="ourSol_TextContainer" >
                             <div className="ourSol_Text grBold">
                                 <p>
@@ -326,7 +326,7 @@ export default function Endeavours() {
                         </div>
                     </div>
                         {/* Content B */}
-                    <div className="ourSol_Content reverse" style={{ transition: `all 1s ${quint}`, transform:'translateX(-200%)'}}>
+                    <div className="ourSol_Content reverse" style={{ transition: `all 0.6s ${quint}`, transform:'translateX(-200%)'}}>
                         <div className="ourSol_TextContainer setB">
                             <div className="ourSol_Text setBtext grBold ofh">
                             <p className="solText">
@@ -347,13 +347,13 @@ export default function Endeavours() {
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute">
                         <div className="ourSol_AbsoluteContent">
-                            <div className="ourSol_AbsoluteTitle grBold ofh"><p className="absolTitle" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>Yoga, Meditation and Nature Welfare</p></div>
-                            <div className="ourSol_AbsoluteDescript ofh"><p  className="absolDesc" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>{textC}</p></div>
+                            <div className="ourSol_AbsoluteTitle grBold ofh"><p className="absolTitle" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>Yoga, Meditation and Nature Welfare</p></div>
+                            <div className="ourSol_AbsoluteDescript ofh"><p  className="absolDesc" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>{textC}</p></div>
                         </div>
                     </div>
                     {/* secondSet */}
                     {/* contentA */}
-                    <div className="ourSol_Content" style={{ transition: `all 1s ${quint}`, transform:'translateX(200%)'}}>
+                    <div className="ourSol_Content" style={{ transition: `all 0.6s ${quint}`, transform:'translateX(200%)'}}>
                         <div className="ourSol_TextContainer">
                             <div className="ourSol_Text grBold">
                                 <p>Education and
@@ -372,7 +372,7 @@ export default function Endeavours() {
                         </div>
                     </div>
                         {/* Content B */}
-                    <div className="ourSol_Content reverse" style={{ transition: `all 1s ${quint}`, transform:'translateX(-200%)'}}>
+                    <div className="ourSol_Content reverse" style={{ transition: `all 0.6s ${quint}`, transform:'translateX(-200%)'}}>
                         <div className="ourSol_TextContainer setB">
                             <div className="ourSol_Text setBtext grBold">
                             <p> 
@@ -393,8 +393,8 @@ export default function Endeavours() {
                     {/* contentC */}
                     <div className="ourSol_ContentAbsolute C" >
                         <div className="ourSol_AbsoluteContent">
-                            <div className="ourSol_AbsoluteTitle grBold ofh"><p className="absolTitle" style={{transform:'translateY(100%)', transition: `all 1s ${quint}`}}>Shelter and Care</p></div>
-                            <div className="ourSol_AbsoluteDescript ofh"><p className="absolDesc" style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>{textF}</p></div>
+                            <div className="ourSol_AbsoluteTitle grBold ofh"><p className="absolTitle" style={{transform:'translateY(100%)', transition: `all 0.6s ${quint}`}}>Shelter and Care</p></div>
+                            <div className="ourSol_AbsoluteDescript ofh"><p className="absolDesc" style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>{textF}</p></div>
                         </div>
                     </div>
             </div>

@@ -125,7 +125,7 @@ export default function OurWork() {
                             </p>
                         </div>
                         <div className="ourwork_SubTitle ofh">
-                            <p ref={subTitleRef} style={{transform: 'translateY(120%)', transition: `all 1s ${quint}`}}>
+                            <p className="subTitOurworks" ref={subTitleRef} style={{transform: 'translateY(120%)', transition: `all 1s ${quint}`}}>
                                 { subTitle }
                             </p>
                         </div>
@@ -135,7 +135,7 @@ export default function OurWork() {
                             ourWorkData.map((data, i) => {
 
                                 return(
-                                    <div ref={dataRef} key={i} className="ourwork_Item" style={{transform: i % 2 == 0 ? 'translateX(-100%)':'translateX(100%)', opacity: '0', transition: `all 1s ${quart}`}}>
+                                    <div ref={dataRef} key={i} className="ourwork_Item" style={{transform: i % 2 == 0 ? 'translateX(-100%)':'translateX(100%)', opacity: '0', transition: `all 0.6s ${quart}`}}>
                                         <div className="ourwork_ItemTitleContainer" style={{display:'flex', justifyContent: `${ i % 2 == 0 ? 'flex-start' : 'flex-end'}`}}>
                                             <div className="ourwork_Item_Title grBold">
                                                 <p>{ data.title } <span>{ data.colorTitle }</span></p>

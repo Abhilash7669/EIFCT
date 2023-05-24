@@ -37,7 +37,7 @@ export default function ShowcaseA(){
         <section className="showcaseA">
             <div className="showcaseA_Container">
                 <div className="showcaseA_Content ofh">
-                    <p className="sCaseA" ref={descRef} style={{transform: hide, transition: `all 1s ${quint}`}}>
+                    <p className="sCaseA" ref={descRef} style={{transform: hide, transition: `all 0.7s ${quint}`}}>
                         { description }
                     </p>
                 </div>

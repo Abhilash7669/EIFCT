@@ -161,7 +161,7 @@ export default function Purpose() {
                             {
                                 cardData.map((data, i) => {
                                     return(
-                                        <PurposeCard className="purpose_Card_Item" style={{opacity: '0', transform: i % 2 == 0 ? 'translateY(50%)':'translateY(50%)', transition: `all 1s ${quart}`}}  key={i} data={data} />
+                                        <PurposeCard className="purpose_Card_Item" style={{opacity: '0', transform: i % 2 == 0 ? 'translateY(50%)':'translateY(50%)', transition: `all 0.5s ${quart}`}}  key={i} data={data} />
                                     )
                                 })
                             }

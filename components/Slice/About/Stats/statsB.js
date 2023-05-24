@@ -81,7 +81,7 @@ export default function StatsB() {
                         {
                             statsB.map((item, i) => {
                                 return(
-                                    <div className="about_StatsItem" style={{transform: i == 0 ? 'translateX(-100%)' : i == 1 ? 'translateX(-100%)': i == 2 ? 'translateX(-100%)': null, transition: `all 1s ${quint}`, opacity:'0'}} key={i}>
+                                    <div className="about_StatsItem" style={{transform: i == 0 ? 'translateX(-100%)' : i == 1 ? 'translateX(-100%)': i == 2 ? 'translateX(-100%)': null, transition: `all 0.6s ${quint}`, opacity:'0'}} key={i}>
                                         <div className="about_StatsIcon">
                                             <img src={item.src} alt="logo" />
                                         </div>

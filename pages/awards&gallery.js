@@ -309,10 +309,10 @@ export default function AwardsGallery() {
         <main className="awardsHero">
             <div className="awards_TextContainer">
                 <div className="awards_Title grBold ofh">
-                    <p className='awrdsTitle' style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>Awards & Gallery</p>
+                    <p className='awrdsTitle' style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>Awards & Gallery</p>
                 </div>
                 <div className="awards_Descript ofh">
-                    <p className='awardDesc' style={{transform:'translateY(150%)', transition: `all 1s ${quint}`}}>{text}</p>
+                    <p className='awardDesc' style={{transform:'translateY(150%)', transition: `all 0.6s ${quint}`}}>{text}</p>
                 </div>
             </div>
         </main>
@@ -322,15 +322,15 @@ export default function AwardsGallery() {
             <div className="honorsContainer">
                 <div className="honorsWrapper">
                     <div className="honorsWrapperTitle grBold ofh">
-                        <p className='honr' style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}>Honors & Achievements</p>
+                        <p className='honr' style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>Honors & Achievements</p>
                     </div>
-                    <div className="honorsShowcase" style={{opacity:'0', transition: `all 1s ${quint}`}}>
+                    <div className="honorsShowcase" style={{opacity:'0', transition: `all 0.6s ${quint}`}}>
                         <div className="honorsImgShowcase" style={{height:'100%', width: '100%'}}>
                             <img style={{borderRadius:'.4em'}} src="/awards/honorsShowcase.png" alt="image" />
                         </div>
                     </div>
                     <div className="honorsDescript ofh">
-                        <p className='hnrDesc' style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}>{showcaseDescript}</p>
+                        <p className='hnrDesc' style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>{showcaseDescript}</p>
                     </div>
                 </div>
             </div>
@@ -340,26 +340,26 @@ export default function AwardsGallery() {
             <div className="charitable">
                 <div className="charitableContainer">
                     <div className="charitableA ofh">
-                        <div className='chartImg' style={{height:'100%', width:'100%', transform:'translateY(200%)', transition: `all 1s ${quint}`}}>
+                        <div className='chartImg' style={{height:'100%', width:'100%', transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>
                             <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/>
                         </div>
                         {/* mobile-title */}
                         <div className="charitableTitle mob grBold ofh">
-                            <p className='charttTitle' style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}}>{charitableTitle}</p>
+                            <p className='charttTitle' style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>{charitableTitle}</p>
                         </div>
                         {/* ---- */}
                     </div>
                     <div className="charitableB">
                         <div className="charitableTitle grBold ofh">
-                            <p className='charttTitle' style={{transform:'translateY(200%)', transition: `all 1s ${quint}`}} >{charitableTitle}</p>
+                            <p className='charttTitle' style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}} >{charitableTitle}</p>
                         </div>
                         {/* mobile-img */}
                         <div className="charitableA mob ofh">
-                            <div className='chartImg' style={{height:'100%', width:'100%', transform:'translateY(200%)', transition: `all 1s ${quint}`}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
+                            <div className='chartImg' style={{height:'100%', width:'100%', transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}><img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/awards/CHARITABLEbuilder.png"  alt="image"/></div>
                         </div>
                         {/* ----- */}
                         <div className="charitableDescript ofh">
-                            <p className='chartDesccc' style={{transform:'translateX(200%)', transition: `all 1s ${quint}`}}>{cDescA} <br /> <br />{cDescB} <br /><br />{cDescC} <br /><br />{cDescD}</p>
+                            <p className='chartDesccc' style={{transform:'translateX(200%)', transition: `all 0.6s ${quint}`}}>{cDescA} <br /> <br />{cDescB} <br /><br />{cDescC} <br /><br />{cDescD}</p>
                         </div>
                     </div>
                 </div>
@@ -370,10 +370,10 @@ export default function AwardsGallery() {
                 <div className="neemContainer">
                     <div className="neemA">
                         <div className="neemTitle grBold ofh" style={{padding:'2em 0 4em 0'}}>
-                            <p className='nemTit' style={{color:'#FFF',transform:'translateY(200%)', transition: `all 1s ${quint}`}}>{neemTitle}</p>
+                            <p className='nemTit' style={{color:'#FFF',transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>{neemTitle}</p>
                         </div>
                         {/* carousel */}
-                        <div className="carouselContainer" style={{display:'flex', alignItems:'center', width:'100%', overflow:'hidden', flexWrap:'nowrap', whiteSpace:'nowrap', transform:'translateX(120%)', transition: `all 1s ${quint}`}}>
+                        <div className="carouselContainer" style={{display:'flex', alignItems:'center', width:'100%', overflow:'hidden', flexWrap:'nowrap', whiteSpace:'nowrap', transform:'translateX(120%)', transition: `all 0.6s ${quint}`}}>
                             {
                                 carouselImg.map((data, i) => {
                                     return(
@@ -388,7 +388,7 @@ export default function AwardsGallery() {
                     </div>
                     <div className="charitableB">
                         <div className="charitableDescript ofh" style={{padding:'4em 0'}}>
-                            <p className='chartDesc' style={{textAlign:'center', color:'#FFF', transform:'translateY(200%)', transition: `all 1s ${quint}`}}>Neem sapling, the first of over 100 saplings planted on Pathanamthitta Ring Road, 4 images through different growth periods</p>
+                            <p className='chartDesc' style={{textAlign:'center', color:'#FFF', transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>Neem sapling, the first of over 100 saplings planted on Pathanamthitta Ring Road, 4 images through different growth periods</p>
                             {/* <p style={{color:'#FFF'}}>{neemDescA} <br /><br />{neemDescB}</p> */}
                         </div>
                     </div>
@@ -407,8 +407,8 @@ export default function AwardsGallery() {
 
             {/* grid swiper */}
             <div className='gridSwiper'>
-                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle grBold ofh'><p className='effrtTit' style={{transform:'translateY(100%)',  transition: `all 1s ${quint}`}}>Our Efforts</p></div></div>
-                <div className='gridCont' style={{opacity:'0', scale:'0', transition: `all 1s ${quint}`}}>
+                <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle grBold ofh'><p className='effrtTit' style={{transform:'translateY(100%)',  transition: `all 0.6s ${quint}`}}>Our Efforts</p></div></div>
+                <div className='gridCont' style={{opacity:'0', scale:'0', transition: `all 0.6s ${quint}`}}>
                     <Swiper className="gridSwiperContainer" style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px',
                             "--swiper-navigation-size":'2rem'}} 
                             spaceBetween={20}
@@ -471,7 +471,7 @@ export default function AwardsGallery() {
             {/* grid mob */}
             <div className='gridSwiper mob'>
                 <div className='gridSwiperWrap' style={{display:'flex', alignItems:'center', justifyContent:'center'}}><div className='gridSwiperTitle'><p>Our Efforts</p></div></div>
-                <div className='gridCont' style={{opacity:'0', scale:'0', transition: `all 1s ${quint}`}}>
+                <div className='gridCont' style={{opacity:'0', scale:'0', transition: `all 0.6s ${quint}`}}>
                 <Swiper className="gridSwiperContainer" style={{cursor:'grab',scrollSnapType:'x mandatory',scrollPadding:'0 24px',"--swiper-pagination-bottom": "0px", padding:'0 0 4em 0',
                         "--swiper-navigation-size":'2rem'}} 
                         spaceBetween={20}
