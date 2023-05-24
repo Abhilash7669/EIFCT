@@ -16,7 +16,7 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/buildingHome.png',
             title:' Building Homes',
-            description: 'We build homes not just for the homeless people and all categories'
+            description: 'We build homes not just for the homeless people in all categories'
         },
         {
             src: '/Landing/Purpose/nature.png',
@@ -36,7 +36,7 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/medicalInstitutions.png',
             title: 'Medical Institutions',
-            description: 'We build hospitals, medical colleges, and research centers in various fields, including Ayurveda and Homeopathy.'
+            description: 'We build hospitals, medical colleges, and research centers in various fields, including Allopathy, Ayurveda and Homeopathy.'
         },
         {
             src: '/Landing/Purpose/education.png',
