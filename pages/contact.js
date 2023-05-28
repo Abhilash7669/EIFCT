@@ -336,9 +336,8 @@ export default function Contact(){
                             <option value="" disabled selected hidden>In need of..</option>
                             <option value="In need of Shelter/Home">Shelter/Home</option>
                             <option value="Education">Education</option>
-                            <option value="Building Institutions">Building Institutions</option>
-                            <option value="Food relief packages">Food relief packages</option>
-                            <option value="Women Empowerment">Water Tank Supply</option>
+                            <option value="Food relief packages">Food</option>
+                            <option value="Women Empowerment">Water</option>
                             <option value="Medical and Health care">Medical and Health care</option>
                           </select>
                       </div>

@@ -176,13 +176,13 @@ export default function OurWork() {
                                     {
                                         [
                                             {
-                                                src:'/Landing/OurWork/education&literacy.png'
+                                                src:'/Landing/OurWork/gridImgA.png'
                                             },
                                             {
                                                 src:'/Landing/OurWork/gridImgB.png'
                                             },
                                             {
-                                                src:'/Landing/OurWork/gridImgA.png'
+                                                src:'/Landing/OurWork/education&literacy.png'
                                             },
                                             {
                                                 src:'/Landing/OurWork/gridImgD.png'
