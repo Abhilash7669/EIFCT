@@ -31,14 +31,17 @@ export default function OurWork() {
             descriptionA: 'Women are powerful agents of change, but unfortunately, many face significant barriers that prevent them from realizing their full potential. Gender inequality, discrimination, and lack of access to education and resources are just a few of the challenges that women around the world face. However, we believe that empowering women is essential for creating a better future for all.',
             descriptionB: 'Our mission is to create opportunities for women to succeed by providing education, training, and resources.'
         },
-        {
-            title: 'Cultural',
-            colorTitle: 'Development',
-            src: '/Landing/OurWork/education&literacy.png',
-            descriptionA: 'We believe that our ancient arts and literature, including Sanskrit, Vedas, and Puranas, hold valuable lessons and teachings that can benefit society today',
-            descriptionB: 'Encouraging studies on Sanskrit, Vedas, and Puranas: Our charity works to encourage and promote the study of Sanskrit, Vedas, and Puranas. We believe that these ancient texts hold valuable knowledge and wisdom that can benefit people today. We provide resources and support for individuals and institutions interested in pursuing studies in these areas.'
-        }
+        // {
+        //     title: 'Cultural',
+        //     colorTitle: 'Development',
+        //     src: '/Landing/OurWork/education&literacy.png',
+        //     descriptionA: 'We believe that our ancient arts and literature, including Sanskrit, Vedas, and Puranas, hold valuable lessons and teachings that can benefit society today',
+        //     descriptionB: 'Encouraging studies on Sanskrit, Vedas, and Puranas: Our charity works to encourage and promote the study of Sanskrit, Vedas, and Puranas. We believe that these ancient texts hold valuable knowledge and wisdom that can benefit people today. We provide resources and support for individuals and institutions interested in pursuing studies in these areas.'
+        // }
     ]
+
+    let cultDescA = "'We believe that our ancient arts and literature, including Sanskrit, Vedas, and Puranas, hold valuable lessons and teachings that can benefit society today',"
+    let cultDescB = "'Encouraging studies on Sanskrit, Vedas, and Puranas: Our charity works to encourage and promote the study of Sanskrit, Vedas, and Puranas. We believe that these ancient texts hold valuable knowledge and wisdom that can benefit people today. We provide resources and support for individuals and institutions interested in pursuing studies in these areas.'"
 
     // Animation
     let hide = 'translateY(100%)';
@@ -97,9 +100,9 @@ export default function OurWork() {
         })
 
 
-        gsap.to(main[2], {
+        gsap.to('.cultContainer', {
             scrollTrigger: {
-                trigger: main[2],
+                trigger: '.cultContainer',
                 start: 'top bottom',
                 // end: 'bottom top',
             },
@@ -163,6 +166,42 @@ export default function OurWork() {
                                 )
                             })
                         }
+                        {/*  */}
+                        <div className="cultContainer" style={{transform:'translateX(-100%)', opacity: '0', transition: `all 0.6s ${quart}` }}>
+                            <div className="cultTitle grBold">
+                                <p>Cultural Development</p>
+                            </div>
+                            <div className="cultContentContainer">
+                                <div className="cultImgGrid">
+                                    {
+                                        [
+                                            {
+                                                src:'/Landing/OurWork/education&literacy.png'
+                                            },
+                                            {
+                                                src:'/Landing/OurWork/education&literacy.png'
+                                            },
+                                            {
+                                                src:'/Landing/OurWork/education&literacy.png'
+                                            },
+                                            {
+                                                src:'/Landing/OurWork/education&literacy.png'
+                                            }
+                                        ].map((data, i) => {
+                                            return(
+                                                <div className="cultImg" key={i}>
+                                                    <img src={data.src} alt="img" />
+                                                </div>
+                                            )
+                                        })
+                                    }
+                                </div>
+                                <div className="cultDescript">
+                                    <p>{ cultDescA } <br /><br /> { cultDescB }</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/*  */}
                         <div className="ourwork_Link">
                             <Link href={'/endeavours'}><div ref={hoverRef} style={{transition:'all 0.3s ease'}} className="ourwork_Link_Text" 
                                 onMouseEnter={() => {hoverRef.current.style.opacity = '0.5'}}
