@@ -40,8 +40,9 @@ export default function OurWork() {
         // }
     ]
 
-    let cultDescA = "'We believe that our ancient arts and literature, including Sanskrit, Vedas, and Puranas, hold valuable lessons and teachings that can benefit society today',"
-    let cultDescB = "'Encouraging studies on Sanskrit, Vedas, and Puranas: Our charity works to encourage and promote the study of Sanskrit, Vedas, and Puranas. We believe that these ancient texts hold valuable knowledge and wisdom that can benefit people today. We provide resources and support for individuals and institutions interested in pursuing studies in these areas.'"
+    let cultDescA = "The trust recognizes the immense historical and spiritual significance of the Sanskrit Vedas, Puranas, and the Bhagavad Gita. It works towards the preservation, translation, and dissemination of these sacred texts to ensure that their wisdom and teachings are accessible to people worldwide. This includes funding research projects, publishing scholarly works, and organizing educational programs and seminars to deepen understanding and appreciation of these texts."
+
+    let cultDescB = "In addition to the textual aspect, the Cultural Heritage Trust is committed to supporting the art form of Kathakali, a traditional dance-drama from Kerala that brings to life stories from Hindu mythology. The charity provides resources and support for Kathakali performers, promotes training and education in this art form, and organizes performances and workshops to showcase the beauty and significance of Kathakali."
 
     // Animation
     let hide = 'translateY(100%)';
@@ -182,7 +183,7 @@ export default function OurWork() {
                                                 src:'/Landing/OurWork/gridImgB.png'
                                             },
                                             {
-                                                src:'/Landing/OurWork/education&literacy.png'
+                                                src:'/Landing/OurWork/gridImgC.png'
                                             },
                                             {
                                                 src:'/Landing/OurWork/gridImgD.png'

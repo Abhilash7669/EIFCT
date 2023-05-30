@@ -147,6 +147,27 @@ export default function AwardsGallery() {
         },
     ]
 
+    let gridE = [
+        {
+            src:'/galimg1.jpg'
+        },
+        {
+            src:'/galimg2.jpg'
+        },
+        {
+            src:'/galimg3.jpg'
+        },
+        {
+            src:'/galimg4.jpg'
+        },
+        {
+            src:'/galimg5.jpg'
+        },
+        {
+            src:'/galimg6.jpg'
+        },
+    ]
+
     //anim
     let quint = 'cubic-bezier(0.85, 0, 0.15, 1)';
     let quart = 'cubic-bezier(0.76, 0.00, 0.24, 1.00)';
@@ -430,6 +451,17 @@ export default function AwardsGallery() {
                                 })
                             }
                         </SwiperSlide>
+                        <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                            {
+                                gridE.map((data, i) => {
+                                    return(
+                                        <div key={i} style={{height:'20em', width:'33.33%', margin:'1em 0'}}>
+                                            <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                        </div>
+                                    )
+                                })
+                            }
+                        </SwiperSlide>
                         {/* gridB */}
                         <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
                             {
@@ -485,6 +517,17 @@ export default function AwardsGallery() {
                     <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
                         {
                             gridC.map((data, i) => {
+                                return(
+                                    <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
+                                        <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />
+                                    </div>
+                                )
+                            })
+                        }
+                    </SwiperSlide>
+                    <SwiperSlide className="gridA" style={{display:'flex', flexWrap:'wrap'}}>
+                        {
+                            gridE.map((data, i) => {
                                 return(
                                     <div key={i} style={{height:'20em', width:'45%', margin:'1em 1em'}}>
                                         <img style={{height:'100%', width:'100%', objectFit:'contain'}} src={data.src} alt="image" />

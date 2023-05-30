@@ -311,7 +311,7 @@ export default function Endeavours() {
                         <div className="ourSol_TextContainer" >
                             <div className="ourSol_Text grBold">
                                 <p>
-                                <span className="blue">Devloping</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
+                                <span className="blue">Developing</span> Institutions for the Physically <span className="blue">Disabled</span> and <span className="blue">Handicapped</span>
                                 </p>
                             </div>
                                 <div className="ourSol_img mob">
