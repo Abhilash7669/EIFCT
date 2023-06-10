@@ -382,23 +382,17 @@ export default function Contact(){
                       {
                         option === "In need of Shelter/Home" ?
                         <div ref={popupRef} style={{height:'100vh', width:'100vw', position:'fixed', top:'0', left:'0', zIndex:'9200', background:'#FFF', color:'#000', display:'flex', alignItems:'center', justifyContent:'center'}}> 
-                        <div style={{position:'absolute', top:'10%', right:'10%', cursor:'pointer'}} onClick={hidePopup}>X</div>
+                        <div className="popUpClose" onClick={hidePopup}>X</div>
                           <div className="popUpText_Container">
                             <p style={{color:'#FFF'}}>
                               {popupText} <br /> { popupTextBr } 
                             </p>
-                            <a style={{color:'#FFF', opacity:'0.9'}} href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf" target="_blank">DOWNLOAD FORM</a>
+                            <a style={{color:'#FFF'}} href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf" target="_blank">DOWNLOAD FORM</a>
                           </div>
                         </div>
                         :
                         null
                       }
-                      <div className="homeDiv" style={{display: option === "In need of Shelter/Home" ? 'flex':'none', flexDirection:'column', alignItems:'center', padding:'1em 0 3em 0'}}>
-                        <label>
-                          Download the below form, update and send the form to *insert mail via email
-                        </label>
-                        <a href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf">DOWNLOAD FORM</a>
-                      </div>
                       {/*  */}
                       <div className="form_Btn">
                       <button type="submit">Submit</button>
