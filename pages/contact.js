@@ -83,8 +83,7 @@ export default function Contact(){
     if (Object.keys(validationErrors).length === 0) {
 
       // Form is valid, you can submit or perform further actions here
-      // emailjs.sendForm('service_x3668de', 'template_yxc2vtv', form.current, 'Q6aK5xiFRMCqHxL4q')
-      emailjs.sendForm('service_nu944ga', 'template_z4tseh9', form.current, 'upcY4JFuC8LugmqoZ')
+      emailjs.sendForm('service_x3668de', 'template_yxc2vtv', form.current, 'Q6aK5xiFRMCqHxL4q')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
