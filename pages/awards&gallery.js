@@ -32,9 +32,9 @@ export default function AwardsGallery() {
     let neemDescB = '"Planting Hope" is a celebration of human kindness, environmental consciousness, and the profound impact of small actions. It inspires viewers to recognize the power within themselves to make a difference, whether through planting trees, supporting local initiatives, or spreading awareness about the importance of sustainable practices.'
 
     let cDescA = 'A philanthropist and charitable builder. Mr.Presannan is dedicated to making a positive impact on society by providing housing and other essential services to those in need.'
-    let cDescB = 'Mr.Presannan built more than 13000 homes for the Tribals ,poor homeless.He was the District President of Sainik Association'
+    let cDescB = 'Mr.Presannan built more than 13000 homes for the Tribals, poor and for the homeless. He was the District President of Sainik Association.'
     let cDescC = 'Chittar Presannan has also been a vocal advocate for social justice and has reacted to several instances of social discrimination. His efforts have helped to bring about positive change and justice in many cases. His activism and dedication to social causes have made him a respected and influential figure in his community.'
-    let cDescD = 'Overall, Chittar Presannan"s life and work exemplify a deep commitment to social justice and community service. His entrepreneurial success and charitable work have made him an inspiration to many and a role model for those who seek to make a positive impact on the world around them.'
+    let cDescD = "Overall, Chittar Presannan's life and work exemplify a deep commitment to social justice and community service. His entrepreneurial success and charitable work have made him an inspiration to many and a role model for those who seek to make a positive impact on the world around them."
 
     let carouselImg = [
          {
@@ -409,7 +409,7 @@ export default function AwardsGallery() {
                     </div>
                     <div className="charitableB">
                         <div className="charitableDescript ofh" style={{padding:'4em 0'}}>
-                            <p className='chartDesc' style={{textAlign:'center', color:'#FFF', transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>Neem sapling, the first of over 100 saplings planted on Pathanamthitta Ring Road, 4 images through different growth periods</p>
+                            <p className='chartDesc' style={{textAlign:'center', color:'#FFF', transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}>Neem sapling, the first of over 100 saplings planted on Pathanamthitta Ring Road, 4 images through different growth periods.</p>
                             {/* <p style={{color:'#FFF'}}>{neemDescA} <br /><br />{neemDescB}</p> */}
                         </div>
                     </div>

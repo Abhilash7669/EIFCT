@@ -61,7 +61,7 @@
 }
 .ourSol_TextContainer {
     width: 50%;
-    padding: 0 2em;
+    padding: 0 1em 0 4em;
 }
 .ourSol_Text {
     width: 90%;
@@ -99,6 +99,7 @@
 .ourSol_TextContainer.setB {
     width: 45%;
     margin: 2em 0;
+    padding: 0 2em;
 }
 .ourSol_Text.setBtext {
     width: 62%;

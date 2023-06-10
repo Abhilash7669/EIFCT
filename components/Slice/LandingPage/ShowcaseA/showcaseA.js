@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function ShowcaseA(){
 
-    let description = 'Through our efforts to build homes for the homeless, orphans, and elderly, and our commitment to planting ayurvedic plants and building medical institutions, we are working to create a better future for all. Join us in making a positive impact on the world'
+    let description = 'Through our efforts to build homes for the homeless, orphans, elderly and our commitment to planting ayurvedic plants and building medical institutions, we are working to create a better future for all. Join us in making a positive impact on the world.'
 
     // Animation
     let hide = 'translateY(100%)';

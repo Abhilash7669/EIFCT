@@ -16,12 +16,12 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/buildingHome.png',
             title:' Building Homes',
-            description: 'We build homes for the homeless people in all categories'
+            description: 'We build homes for the homeless people in all categories.'
         },
         {
             src: '/Landing/Purpose/nature.png',
             title: 'Nature Welfare',
-            description: 'We understand that the planet is facing numerous environmental challenges, including climate change, pollution, and habitat destruction. Our aim is to plant thousands of plants across India.'
+            description: 'We understand that the planet is facing numerous environmental challenges, including climate change, pollution and habitat destruction. Our aim is to plant thousands of plants across India.'
         },
         {
             src: '/Landing/Purpose/womenEmpowerment.png',
@@ -41,7 +41,7 @@ export default function Purpose() {
         {
             src: '/Landing/Purpose/education.png',
             title: 'Education',
-            description: 'We promote education by providing scholarships, grants, and free educational resources to deserving children.'
+            description: 'We promote education by providing scholarships, grants and free educational resources to deserving children.'
         }
     ]
 

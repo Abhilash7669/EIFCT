@@ -15,6 +15,17 @@ export default function Contact(){
     let Title = "Let Us Be Your Beacon of Hope"
     let SubTitle = " Our contact form is a lifeline for those seeking assistance and support at ENHANCE INDIA FOUNDATION CHARITABLE TRUST. We understand that life can sometimes feel overwhelming, but you don't have to face it alone."
 
+    //Pop up text
+    let popupText = 'Hi, we see that you have picked the "Shelter/Home".'
+    let popupTextBr = "Kindly find the download link to the form below, download and fill in the form and send it to this *insert mail here"
+
+    const popupRef = useRef();
+
+    const hidePopup = () => {
+        popupRef.current.style.display = "none";
+    }
+
+
     // Form 
   const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
@@ -23,10 +34,14 @@ export default function Contact(){
   const [option, setOption] = useState('');
   const [address, setAddress] = useState('');
 
+  // const [file, setFile] = useState('');
+
   const [errors, setErrors] = useState({});
 
-  const handleChange = (event) => {
+  const handleChange =  (event) => {
     const { name, value } = event.target;
+
+
 
     // Update state based on input name
     switch (name) {
@@ -48,6 +63,8 @@ export default function Contact(){
       case 'message':
         setMessage(value);
         break;
+      // case 'my_file':
+      //   setFile(value);
       default:
         break;
     }
@@ -56,17 +73,18 @@ export default function Contact(){
   const form = useRef();
 
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const validationErrors = validateForm();
     setErrors(validationErrors);
 
-    
+
 
     if (Object.keys(validationErrors).length === 0) {
 
       // Form is valid, you can submit or perform further actions here
-      emailjs.sendForm('service_x3668de', 'template_yxc2vtv', form.current, 'Q6aK5xiFRMCqHxL4q')
+      // emailjs.sendForm('service_x3668de', 'template_yxc2vtv', form.current, 'Q6aK5xiFRMCqHxL4q')
+      emailjs.sendForm('service_nu944ga', 'template_z4tseh9', form.current, 'upcY4JFuC8LugmqoZ')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -87,6 +105,7 @@ export default function Contact(){
       alert("Your Form has been submitted");
     }
   };
+
 
   const validateForm = () => { // validation for form
     const errors = {};
@@ -359,6 +378,28 @@ export default function Contact(){
                               cols={40} // Specify the number of columns for the textarea
                               />
                       </div>
+                      {/* if option is home this will be displayed */}
+                      {
+                        option === "In need of Shelter/Home" ?
+                        <div ref={popupRef} style={{height:'100vh', width:'100vw', position:'fixed', top:'0', left:'0', zIndex:'9200', background:'#FFF', color:'#000', display:'flex', alignItems:'center', justifyContent:'center'}}> 
+                        <div style={{position:'absolute', top:'10%', right:'10%', cursor:'pointer'}} onClick={hidePopup}>X</div>
+                          <div className="popUpText_Container">
+                            <p style={{color:'#FFF'}}>
+                              {popupText} <br /> { popupTextBr } 
+                            </p>
+                            <a style={{color:'#FFF', opacity:'0.9'}} href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf" target="_blank">DOWNLOAD FORM</a>
+                          </div>
+                        </div>
+                        :
+                        null
+                      }
+                      <div className="homeDiv" style={{display: option === "In need of Shelter/Home" ? 'flex':'none', flexDirection:'column', alignItems:'center', padding:'1em 0 3em 0'}}>
+                        <label>
+                          Download the below form, update and send the form to *insert mail via email
+                        </label>
+                        <a href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf">DOWNLOAD FORM</a>
+                      </div>
+                      {/*  */}
                       <div className="form_Btn">
                       <button type="submit">Submit</button>
                       </div>

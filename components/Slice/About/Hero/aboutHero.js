@@ -38,7 +38,7 @@ export default function AboutHero(){
                         <p ref={titleRef} style={{transform: hide, transition: `all 1s ${quint}`}}>About Us</p>
                     </div>
                     <div className="about_Descript ofh">
-                        <p ref={subTitleRef} style={{transform: hide, transition: `all 1s ${quint}`}}>Driven by compassion and a deep commitment to building a better future for all</p>
+                        <p ref={subTitleRef} style={{transform: hide, transition: `all 1s ${quint}`}}>Driven by compassion and a deep commitment to building a better future for all.</p>
                     </div>
                 </div>
             </div>
