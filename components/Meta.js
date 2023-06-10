@@ -10,6 +10,7 @@ export default function Meta() {
         <meta name="title" content="Enhance India Foundation" />
         <meta name="description" content="We believe that every person deserves the opportunity to live a life of dignity and purpose, and it is our goal to help make this a reality for as many people as possible." />
 
+        <meta name="google-site-verification" content="PR2gxrY5xwLaAeeUq8kYeV1gEYF_mNIQU1erx1vEpcI" />
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://enhanceindiafoundation.com/" />
