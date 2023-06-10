@@ -23,10 +23,12 @@ import '../styles/footer.css'
 import Header from '../components/header'
 import Footer from '../components/footer'
 import Head from '../components/head'
+import Meta from '../components/Meta'
 
 export default function App({ Component, pageProps }) {
   return(
     <>
+      <Meta />
       <Header />
       <Component {...pageProps} />
       <Footer />
