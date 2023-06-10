@@ -35,17 +35,17 @@ export default function App({ Component, pageProps }) {
 
             {/* <!-- Open Graph / Facebook --> */}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content="https://metatags.io" />
+            <meta property="og:url" content="https://enhanceindiafoundation.com" />
             <meta property="og:title" content="EnhanceIndiaFoundation" />
             <meta property="og:description" content="We believe that every person deserves the opportunity to live a life of dignity and purpose, and it is our goal to help make this a reality for as many people as possible." />
-            <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png" />
+            <meta property="og:image" content="/meta-img.png" />
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:url" content="https://metatags.io" />
+            <meta property="twitter:url" content="https://enhanceindiafoundation.com" />
             <meta property="twitter:title" content="EnhanceIndiaFoundation" />
             <meta property="twitter:description" content="We believe that every person deserves the opportunity to live a life of dignity and purpose, and it is our goal to help make this a reality for as many people as possible." />
-            <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"></meta>
+            <meta property="twitter:image" content="/meta-img.png"></meta>
 
             {/* favicon */}
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
