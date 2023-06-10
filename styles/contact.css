@@ -183,6 +183,8 @@ textarea {
     z-index: 1000;
     background: #224435;
     width: 70%;
+    height: 80%;
+    border-radius: 0.625em;
 }
 .popUpText_Container > p {
     color: #FFF;
@@ -190,11 +192,16 @@ textarea {
 
     font-size: 1.4em;
     line-height: 150%;
-    padding: 1em 0;
+    padding: 2em 0 1em 0;
 }
 .popUpText_Container > a {
     opacity: 0.8;
-    font-size: 1.8em;
+    font-size: 1.6em;
+    background: #FFF;
+    color: #000;
+    border-radius: 20em;
+    margin: 1em 0 0 0;
+    padding: 1em;
 }
 .popUpText_Container > a:hover {
     opacity: 1;
@@ -207,6 +214,9 @@ textarea {
     right: 10%;
     cursor: pointer;
     font-size: 2em;
+}
+.emailText {
+    font-size: 1.4em;
 }
 
 @media(max-width: 780px) {
@@ -265,18 +275,23 @@ textarea {
 
     /* popup */
     .popUpText_Container {
-        width: 100%;
+        width: 90%;
+        height: 60%;
         padding: 16em 2em;
+        transform: translate(0, 0%);
     }
     .popUpText_Container > p {
-        padding: 2em 0;
+        padding: 3em 0 2em 0;
     }
     .popUpClose {
         position: absolute;
-        top: 15%;
-        right: 10%;
+        top: 14%;
+        right: 8%;
         cursor: pointer;
         font-size: 3em;
+    }
+    .emailText {
+        font-size: 1.6em;
     }
     
 }

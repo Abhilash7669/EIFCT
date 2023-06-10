@@ -44,6 +44,7 @@ export default function OurWork() {
 
     let cultDescB = "In addition to the textual aspect, the Cultural Heritage Trust is committed to supporting the art form of Kathakali, a traditional dance-drama from Kerala that brings to life stories from Hindu mythology. The charity provides resources and support for Kathakali performers, promotes training and education in this art form, and organizes performances and workshops to showcase the beauty and significance of Kathakali."
 
+    let cultDescC = "Indian Classical dances like Kathakali, Bharatanatyam, Mohiniyattam, Theyyam, Ottamthullal, Kuchipudi, Thiruvathirakali etc. Also we promote and train Kalaripayattu amongst Children and adults. Kalaripayattu is a martial art designed for the ancient battle field."
     // Animation
     let hide = 'translateY(100%)';
     let reveal = 'translateY(0)';
@@ -198,7 +199,7 @@ export default function OurWork() {
                                     }
                                 </div>
                                 <div className="cultDescript">
-                                    <p>{ cultDescA } <br /><br /> { cultDescB }</p>
+                                    <p>{ cultDescA }<br /><br />{cultDescC} <br /><br /> { cultDescB }</p>
                                 </div>
                             </div>
                         </div>

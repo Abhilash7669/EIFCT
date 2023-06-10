@@ -2,6 +2,10 @@
 import { useEffect, useRef, useState } from "react";
 import Head from 'next/head'
 
+import Image from "next/image";
+import Link from "next/link";
+
+
 
 import emailjs from 'emailjs-com';
 
@@ -16,8 +20,9 @@ export default function Contact(){
     let SubTitle = " Our contact form is a lifeline for those seeking assistance and support at ENHANCE INDIA FOUNDATION CHARITABLE TRUST. We understand that life can sometimes feel overwhelming, but you don't have to face it alone."
 
     //Pop up text
-    let popupText = 'Hi, we see that you have picked the "Shelter/Home".'
-    let popupTextBr = "Kindly find the download link to the form below, download and fill in the form and send it to this *insert mail here"
+    let popupText = 'Hi, we see that you have picked the option "Shelter/Home".'
+    let popupTextBr = "Kindly find the download link to the form below, download and fill in the form and send it to this email"
+    let emailText = 'enhanceindiafoundation@gmail.com';
 
     const popupRef = useRef();
 
@@ -380,13 +385,17 @@ export default function Contact(){
                       {/* if option is home this will be displayed */}
                       {
                         option === "In need of Shelter/Home" ?
-                        <div ref={popupRef} style={{height:'100vh', width:'100vw', position:'fixed', top:'0', left:'0', zIndex:'9200', background:'#FFF', color:'#000', display:'flex', alignItems:'center', justifyContent:'center'}}> 
+                        <div ref={popupRef} style={{height:'100vh', width:'100vw', position:'fixed', top:'0', left:'0', zIndex:'9200', borderRadius:'0.625em', background:'#FFF', color:'#000', display:'flex', alignItems:'center', justifyContent:'center'}}> 
                         <div className="popUpClose" onClick={hidePopup}>X</div>
                           <div className="popUpText_Container">
+                            <div style={{background:'#FFF', borderRadius:'0.75em', height:'10em', width:'10em'}}>
+                              <img style={{height:'100%', width:'100%', objectFit:'contain'}} src="/Landing/EIFCTLogo.svg" alt="logo" />
+                            </div>
                             <p style={{color:'#FFF'}}>
-                              {popupText} <br /> { popupTextBr } 
+                              {popupText} <br /> { popupTextBr } <br /><br /><span className="emailText">{emailText}</span> 
+
                             </p>
-                            <a style={{color:'#FFF'}} href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf" target="_blank">DOWNLOAD FORM</a>
+                            <a href="/contact/ENHANCE INDIA FOUNTATION FORM new with house.pdf" target="_blank">DOWNLOAD FORM</a>
                           </div>
                         </div>
                         :
