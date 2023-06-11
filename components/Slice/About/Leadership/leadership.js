@@ -145,7 +145,7 @@ export default function Leadership() {
                         </p>
                     </div>
                     <div className="leaders">
-                        {
+                        {/* {
                             leaderData.map((item, i) => {
                                 return(
                                     <div key={i} style={{opacity:'1', transition: `all 1s ${quint}`}} className="leader">
@@ -154,14 +154,13 @@ export default function Leadership() {
                                                 <p>{item.title}</p>
                                             </div>
                                         </div>
-                                        <div className="leaderContent">
+                                        <div className="leaderContent" style={{border:'1px red solid'}}>
                                             <div className="leaderContentA">
                                                 <div className="leaderImg ofh">
                                                     <img className="founderIMG" src={item.src} alt="logo" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}} />
                                                 </div>
                                                 <div className="leaderPositionWrap ofh">
                                                     <div className="leaderName" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}}><p>{item.name}</p></div>
-                                                    {/* <div className="leaderPos"><p>{item.position}</p></div> */}
                                                 </div>
                                             </div>
                                             <div className="leaderContentB ofh">
@@ -169,6 +168,39 @@ export default function Leadership() {
                                                     <p>{item.descriptA} <br /> <br /> {item.descriptB}</p>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                )
+                            })
+                        } */}
+                        {
+                            leaderData.map((item, i) => {
+                                return(
+                                    <div className="newLeaderDiv" key={i}>
+                                        <div className="newLeaderPos grBold" >
+                                        <p style={{color:'#000'}}>{item.title}</p>
+                                        </div>
+                                        <div className="newLeaderTextDiv">
+                                            <div className="leaderTitle ofh grBold">
+                                                <p style={{color:'#FFF'}}>{item.title}</p>
+                                            </div>
+                                            <div className="ofh">
+
+                                            <div className="leaderName ofh" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`, color:'#FFF'}}><p>{item.name}</p></div>
+                                            </div>
+                                            <div className="aboutLeader ofh" style={{transform:'translateX(150%)', transition: `all 0.6s ${quint}`}}>
+                                                <p style={{color:'#FFF'}}>{item.descriptA} <br /> <br /> {item.descriptB}</p>
+                                            </div>
+
+                                            <div className="newContainerDiv">
+                                                <div style={{position:'relative'}}>
+                                                    <div className="blackDiv" />
+                                                    <div className="leaderImg ofh">
+                                                        <img className="founderIMG" src={item.src} alt="logo" style={{transform:'translateY(200%)', transition: `all 0.6s ${quint}`}} />
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
                                 )

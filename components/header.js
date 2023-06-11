@@ -116,8 +116,8 @@ export default function Header(){
                 </Link>
             </div>
             <div className="hamburger"  onClick={hmbrgr} >
-                    <div className="line1" style={{transition: `all 1s ${quint}`}}></div>
-                    <div className="line3" style={{transition: `all 1s ${quint}`}}></div>
+                <div className="line1" style={{transition: `all 1s ${quint}`}}></div>
+                <div className="line3" style={{transition: `all 1s ${quint}`}}></div>
             </div>
         </nav>
         </>
