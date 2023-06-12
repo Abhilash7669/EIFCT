@@ -38,6 +38,15 @@ export default function Leadership() {
 
 
     useEffect(() => {
+        let Title = document.querySelectorAll('.newLeaderPos')
+
+        let Target = Title[0];
+
+        Target.style.transform = 'translateY(100%)'
+       })
+
+
+    useEffect(() => {
 
         let leader = document.querySelectorAll('.leader');
 
@@ -148,11 +157,6 @@ export default function Leadership() {
                         {
                             leaderData.map((item, i) => {
 
-                                let Title = document.querySelectorAll('.newLeaderPos')
-
-                                let Target = Title[0];
-
-                                Target.style.transform = 'translateY(100%)'
 
                                 return(
                                     <div className="newLeaderDiv" key={i}>
