@@ -10,6 +10,8 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function LogoShowcase() {
 
+    let text = "It's the logo of"
+
     let logo_Showcase_Description = 'is a powerful representation of supporting India and its growth in many aspects. The two hands supporting the Indian map signify the idea of supporting India in all ways possible. The top portion of the tree growing on top represents the growth and development of India in various areas, such as education, economy, and environment.'
 
     let textB = "Planting trees across India is an essential step towards creating a sustainable environment, reducing pollution and a remedy for global warming. Providing food, jobs, and homes for all Indians is crucial in ensuring the well-being and prosperity of the country's citizens. Building educational institutions and providing quality education to all Indians is a significant step towards developing Indian culture and promoting innovation and progress."
@@ -67,7 +69,7 @@ export default function LogoShowcase() {
             <div className='logo_Showcase_Container'>
                 <div className='logo_Showcase_Content'>
                     <div className="Founders_Message ofh">
-                        <p className="fMssg grBold" ref={titleRef} style={{transform: hide, transition: `all 1 ${quint}`}}>{FoundersMessage}</p>
+                        <p className="fMssg grBold" ref={titleRef} style={{transform: hide, transition: `all 1 ${quint}`, color:'#FFF'}}>{FoundersMessage}</p>
                     </div>
                     <div ref={logoRef} className='logo_Showcase_Image' style={{opacity:'0',transition: `all 1s ${quart}`}}>
                         <img 
@@ -75,8 +77,8 @@ export default function LogoShowcase() {
                             alt='Logo'/>
                     </div>
                     <div className="logo_Showcase_Description ofh">
-                        <p className="logDesc" ref={descriptionRef} style={{transform: hide, transition: `all 1s ${quart}`}}>
-                            The logo for <span className="green" style={{fontWeight:'600'}}>ENHANCE INDIA FOUNDATION CHARITABLE TRUST</span> { logo_Showcase_Description }<br /><br /> {textB}<br /><br />{textC}
+                        <p className="logDesc" ref={descriptionRef} style={{transform: hide, transition: `all 1s ${quart}`, color:'#FFF'}}>
+                            {text} <span className="" style={{fontWeight:'600'}}>ENHANCE INDIA FOUNDATION CHARITABLE TRUST</span> { logo_Showcase_Description }<br /><br /> {textB}<br /><br />{textC}
                         </p>
                     </div>
                 </div>

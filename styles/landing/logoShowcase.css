@@ -1,6 +1,8 @@
 .logo_Showcase {
     padding: 2rem;
     font-size: 1rem;
+
+    background: #224435;
 }
 .logo_Showcase_Container {
     padding: 6em 4em;
@@ -21,10 +23,17 @@
 .logo_Showcase_Image {
     width: 18.5em;
     height: 19.18em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFF;
+    border-radius: 0.75em;
 }
 .logo_Showcase_Image > img {
-    height: 100%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
     object-fit: contain;
 }
 .logo_Showcase_Description {
