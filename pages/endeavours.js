@@ -20,7 +20,7 @@ export default function Endeavours() {
             src: '/About/trees.svg',
             stat: '10k+',
             desc: 'Trees Planted',
-            textColor: '#63764C'
+            textColor: '#97c55e'
         },
         {
             src: '/About/homesBuilt.svg',
