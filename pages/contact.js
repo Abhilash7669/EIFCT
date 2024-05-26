@@ -12,6 +12,7 @@ import emailjs from 'emailjs-com';
 //gsap
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import UnderConstruction from "../components/under-construction";
 gsap.registerPlugin(ScrollTrigger)
 
 export default function Contact(){
@@ -221,7 +222,8 @@ export default function Contact(){
 
     return(
         <>
-        <section className="contactBg" style={{height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
+        <UnderConstruction />
+        {/* <section className="contactBg" style={{height:'100vh', display:'flex', alignItems:'center', justifyContent:'center'}}>
         <div className="contact_Text" style={{display:'flex', flexDirection:'column', alignItems:'center', zIndex:'1000'}}>
                     <div className="contact_Title grBold ofh">
                         <p className="cntTitle" style={{color:'#FFF', transform:'translateY(100%)',  transition: `all 1s ${quint}`}}>
@@ -267,7 +269,7 @@ export default function Contact(){
                               />
                               {errors.fullName && <p className='form_Error'>{errors.fullName}</p>}
                         </div>
-                        {/* mobile */}
+                        mobile
                       <div className="form_MobileNumber center">
                         <label htmlFor="mobileNumber" 
                               className={mobileFocused ? 'textFocused' : 'textNotFocused'}>
@@ -289,7 +291,7 @@ export default function Contact(){
                             
                       </div>
                       
-                      {/*  */}
+                      
                       <div className="form_Email center">
                               <label htmlFor="email" 
                                       className={emailFocused ? 'textFocused' : 'textNotFocused'}>
@@ -308,7 +310,7 @@ export default function Contact(){
                                       />
                                       {errors.email && <p className='form_Error'>{errors.email}</p>}
                               </div>
-                      {/* address */}
+                      address
                       <div className="form_Address center">
                         <label htmlFor="address" 
                               className={addressFocused ? 'textFocused' : 'textNotFocused'}>
@@ -342,7 +344,7 @@ export default function Contact(){
                         <label htmlFor="message" 
                               className={messageFocused ? 'textFocused' : 'textNotFocused'}>
                                   Message (optional)
-                              </label> {/* Message */}
+                              </label> Message
                               <textarea
                               type="text"
                               id="message"
@@ -352,11 +354,10 @@ export default function Contact(){
                               onFocus={handleMessageFocus}
                               onBlur={handleMessageBlur}
                               className={messageFocused ? 'focused' : 'notFocused'}
-                              rows={4} // Specify the number of rows for the textarea
-                              cols={40} // Specify the number of columns for the textarea
+                              rows={4} 
+                              cols={40} 
                               />
                       </div>
-                      {/* if option is home this will be displayed */}
                       {
                         option === "In need of Shelter/Home" ?
                         <div ref={popupRef} style={{height:'100vh', width:'100vw', position:'fixed', top:'0', left:'0', zIndex:'9200', borderRadius:'0.625em', background:'#FFF', color:'#000', display:'flex', alignItems:'center', justifyContent:'center'}}> 
@@ -375,14 +376,13 @@ export default function Contact(){
                         :
                         null
                       }
-                      {/*  */}
                       <div className="form_Btn">
                       <button type="submit">Submit</button>
                       </div>
                     </form>
                 </div>
             </div>
-        </section>
+        </section> */}
         </>
     )
 }

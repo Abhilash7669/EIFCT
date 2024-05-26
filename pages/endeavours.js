@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Head from 'next/head'
 
 
@@ -8,10 +8,15 @@ import Head from 'next/head'
 //gsap
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import UnderConstruction from "../components/under-construction";
 gsap.registerPlugin(ScrollTrigger)
 
 
 export default function Endeavours() {
+
+    const [ isConstruction, setIsConstruction ] = useState(false)
+
+    
 
     let heroDescript = 'At ENHANCE INDIA FOUNDATION CHARITABLE TRUST, we are dedicated to making a positive impact in the lives of individuals and communities. Through our various initiatives, we work tirelessly to address critical social issues, uplift the underprivileged, and create a better future for all. Here is a brief overview of what we do.'
 
@@ -216,6 +221,10 @@ export default function Endeavours() {
 
     })
 
+    if(isConstruction === false) {
+        return <UnderConstruction />
+    }
+
 
     return(
         <>
@@ -234,7 +243,7 @@ export default function Endeavours() {
             </div>
         </main>
 
-        endeavour stats
+        {/* endeavour stats */}
         <section>
         <div className="statsB">
                 <div className="statsBContainer">
@@ -266,8 +275,8 @@ export default function Endeavours() {
                 </div>
             </div>
         </section>
-        ----
-        solutions section
+        {/* ---- */}
+        {/* solutions section */}
         <section className="ourSol" style={{padding:'2em 0 0 0'}}>
                 <div className="ourSol_Container">
                             {/* contentA */}

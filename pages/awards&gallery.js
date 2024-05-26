@@ -14,11 +14,16 @@ import Head from 'next/head'
 //gsap
 import { gsap } from "gsap/dist/gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import UnderConstruction from '../components/under-construction';
 gsap.registerPlugin(ScrollTrigger)
 
 
 export default function AwardsGallery() {
+
+    const [ isConstruction, setIsConstruction ] = useState(false)
+
+    
 
 
     let text = 'Welcome to our Awards & Gallery section, where we proudly showcase the recognition and impact of our charity work. Here, you will find a collection of achievements, awards, and memorable moments that highlight our dedication to making a positive difference in the lives of others.'
@@ -298,6 +303,10 @@ export default function AwardsGallery() {
          })
 
     })
+
+    if(isConstruction === false) {
+        return <UnderConstruction />
+    }
 
     return(
         <>
