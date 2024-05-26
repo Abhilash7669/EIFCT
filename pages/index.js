@@ -6,18 +6,20 @@ import Purpose from '../components/Slice/LandingPage/Purpose/purpose'
 import ShowcaseA from '../components/Slice/LandingPage/ShowcaseA/showcaseA'
 import OurWork from '../components/Slice/LandingPage/OurWorks/ourWorks'
 import Stats from '../components/Slice/LandingPage/Stats/stats'
+import UnderConstruction from '../components/under-construction'
 
 export default function Home() {
 
 
   return (
     <>
-      <Hero />
+      {/* <Hero />
       <LogoShowcase />
       <Purpose />
       <ShowcaseA />
       <OurWork />
-      <Stats />
+      <Stats /> */}
+      <UnderConstruction />
     </>
   )
 }

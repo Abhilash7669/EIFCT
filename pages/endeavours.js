@@ -234,7 +234,7 @@ export default function Endeavours() {
             </div>
         </main>
 
-        {/* endeavour stats */}
+        endeavour stats
         <section>
         <div className="statsB">
                 <div className="statsBContainer">
@@ -266,8 +266,8 @@ export default function Endeavours() {
                 </div>
             </div>
         </section>
-        {/* ---- */}
-        {/* solutions section */}
+        ----
+        solutions section
         <section className="ourSol" style={{padding:'2em 0 0 0'}}>
                 <div className="ourSol_Container">
                             {/* contentA */}

@@ -29,9 +29,9 @@ export default function App({ Component, pageProps }) {
   return(
     <>
       <Meta />
-      <Header />
+      {/* <Header /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
